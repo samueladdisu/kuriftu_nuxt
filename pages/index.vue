@@ -536,7 +536,7 @@ export default {
     }
   }
   .destinations {
-    margin-top: 4.37rem;
+    margin-top: 6.25rem;
     .container {
       display: grid;
       place-items: center;
@@ -616,7 +616,7 @@ export default {
     background-blend-mode: overlay;
     height: 40vh;
     // background-attachment: fixed;
-    margin-top: 4.37rem;
+    margin-top: 6.25rem;
     .container {
       position: relative;
       .harmony-text {
@@ -626,7 +626,7 @@ export default {
         position: absolute;
         right: 0;
         background: #fff;
-        padding: 0.5rem;
+        padding: 1rem;
         h4 {
           @extend .h4;
 
@@ -646,7 +646,7 @@ export default {
           display: grid;
           place-items: left;
           a {
-            font-size: 0.88rem;
+            font-size: 0.7rem;
             color: $kuriftu-grey;
             hr {
               color: $kuriftu-grey;
@@ -664,12 +664,17 @@ export default {
       .container {
         .harmony-text {
           width: 30%;
+          .explore {
+            a {
+              font-size: 0.88rem;
+            }
+          }
         }
       }
     }
   }
   .memory {
-    margin-top: 4.37rem;
+    margin-top: 6.25rem;
     .container {
       display: grid;
       place-items: center;
@@ -745,7 +750,7 @@ export default {
     }
   }
   .wellness {
-    margin-top: 4.37rem;
+    margin-top: 6.25rem;
     .container {
       h2 {
         color: $kuriftu-black;
@@ -820,7 +825,7 @@ export default {
   }
 
   .special-offer {
-    margin-top: 4.37rem;
+    margin-top: 6.25rem;
     .container {
       h2 {
         color: $kuriftu-black;
@@ -901,7 +906,7 @@ export default {
     }
   }
   .construction {
-    margin-top: 4.37rem;
+    margin-top: 6.25rem;
     .container {
       h2 {
         color: $kuriftu-black;
@@ -959,7 +964,7 @@ export default {
 
   .footer {
     background: $kuriftu-black;
-    margin-top: 4.37rem;
+    margin-top: 6.25rem;
 
     .container {
       .footer-wrapper {
