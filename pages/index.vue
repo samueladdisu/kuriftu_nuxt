@@ -508,7 +508,10 @@ export default {
         width: 17rem;
       }
       h4 {
-        @extend .h4;
+        // @extend .h4;  
+        font-family: 'Neue Helvetica Bold';
+        
+        font-size: 2rem;
         margin-top: 0.94rem;
       }
       p {
