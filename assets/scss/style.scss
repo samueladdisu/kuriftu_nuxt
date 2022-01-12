@@ -409,13 +409,13 @@ body {
 
 .huge {
   font-family: "HelveticaNeue";
-  font-weight: 700;
+  font-weight: 500;
   font-size: 5rem;
   line-height: 4.31rem;
 }
 .h1 {
   font-family: "Futura", "Poppins";
-  font-weight: 700;
+  font-weight: 500;
   font-size: 5rem;
   line-height: 4.31rem;
 }
@@ -442,7 +442,7 @@ body {
 }
 @include responsive($lg) {
   .text {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 2rem;
   }
 }
@@ -477,8 +477,8 @@ body {
 @include responsive($xl) {
   .h2 {
     font-family: "Futura", "Poppins";
-    font-weight: 700;
-    font-size: 3.31rem;
+    font-weight: 400;
+    font-size: 3rem;
     line-height: 3.98rem;
   }
 }
@@ -603,8 +603,8 @@ $trans: all 0.5s ease-in-out;
 
 @include responsive($lg) {
   .btn {
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 0.9rem;
+    font-weight: 400;
   }
 }
 
@@ -612,7 +612,7 @@ $trans: all 0.5s ease-in-out;
   @extend .btn-rounded;
   background: transparent;
   color: $primary-color;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.3rem;
   border-color: $primary-color;
   &:hover {

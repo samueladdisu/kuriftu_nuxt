@@ -38,21 +38,25 @@
     </div>
     <section class="welcome">
       <div class="container">
-        <div class="welcome-img">
-          <img src="../assets/image/welcome.jpg" alt="" />
+        <div class="welcome-wrapper">
+          <div class="welcome-img">
+            <img src="../assets/image/welcome.jpg" alt="" />
+          </div>
+          <div class="welcome-desc">
+            <h4>WELCOME TO KURIFTU RESORT</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
+              tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam
+              lectus at massa enim elementum varius dictumst. Nulla a, sed enim
+              turpis non lacinia fusce. Quis volutpat sit ullamcorper vitae
+              magna vel sit pharetra scelerisque.
+            </p>
+            <div class="book-buttons">
+              <a class="btn btn-primary" href="#">BOOK NOW</a>
+              <a class="btn btn-outline-brown" href="#">VIEW GALLERY</a>
+            </div>
+          </div>
         </div>
-        <h4>WELCOME TO KURIFTU RESORT</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
-          tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam lectus
-          at massa enim elementum varius dictumst. Nulla a, sed enim turpis non
-          lacinia fusce. Quis volutpat sit ullamcorper vitae magna vel sit
-          pharetra scelerisque.
-        </p>
-      </div>
-      <div class="book-buttons">
-        <a class="btn btn-primary" href="#">BOOK NOW</a>
-        <a class="btn btn-outline-brown" href="#">VIEW GALLERY</a>
       </div>
     </section>
     <section class="destinations">
@@ -321,9 +325,7 @@
                   <div></div>
                 </ul>
               </div>
-            </div>
 
-            <div class="upper">
               <div class="desti">
                 <h3 class="desti-title">Experience</h3>
                 <ul class="desti-list">
@@ -456,6 +458,7 @@ export default {
           @include responsive($md) {
             margin-top: 20rem;
           }
+
           .icons {
             margin-top: 2rem;
             width: 1.5rem;
@@ -477,6 +480,11 @@ export default {
           }
         }
       }
+    }
+  }
+  @include responsive($xl) {
+    header {
+      height: 100vh;
     }
   }
   .fixed-button {
@@ -501,40 +509,91 @@ export default {
   .welcome {
     margin-top: 6.25rem;
     .container {
-      display: grid;
-      place-items: center;
       width: 100%-30%;
-      .welcome-img {
-        width: 17rem;
+      .welcome-wrapper {
+        display: grid;
+        place-items: center;
+        .welcome-img {
+          img {
+            width: 17rem;
+          }
+        }
+        .welcome-desc {
+          h4 {
+            @extend .h4;
+            margin-top: 0.94rem;
+            text-align: center;
+            font-weight: 600;
+          }
+          p {
+            @extend .text;
+            margin-top: 0.94rem;
+            text-align: center;
+          }
+          .book-buttons {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1.88rem;
+          }
+        }
       }
-      h4 {
-        @extend .h4;
-        margin-top: 0.94rem;
-      }
-      p {
-        @extend .text;
-        margin-top: 0.94rem;
-      }
-    }
-    .book-buttons {
-      display: flex;
-      justify-content: space-between;
-      margin: 1.88rem;
     }
   }
   @include responsive($md) {
     .welcome {
       .container {
-        .welcome-img {
-          width: 20rem;
+        .welcome-wrapper {
+          .welcome-img {
+            img {
+              width: 20rem;
+            }
+          }
+          .welcome-desc {
+            .book-buttons {
+              justify-content: center;
+              gap: 1rem;
+            }
+          }
         }
-      }
-      .book-buttons {
-        justify-content: center;
-        gap: 1rem;
       }
     }
   }
+  @include responsive($lg) {
+    .welcome {
+      margin-top: 8.13rem;
+      .container {
+        width: 100%-10%;
+        .welcome-wrapper {
+          display: flex;
+          justify-content: center;
+          gap: 3rem;
+          .welcome-img {
+            img {
+              width: 23rem;
+            }
+          }
+          .welcome-desc {
+            width: 100%-60%;
+            h4 {
+              margin-top: 0rem;
+              text-align: left;
+              font-size: 1.5rem;
+            }
+            p {
+              margin-top: 1.88rem;
+              text-align: left;
+            }
+            .book-buttons {
+              justify-content: flex-start;
+              gap: 1rem;
+              margin-top: 2.88rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .destinations {
     margin-top: 6.25rem;
     .container {
@@ -545,8 +604,6 @@ export default {
         @extend .h2;
         margin-top: 0.94rem;
         text-align: center;
-
-        margin-top: 0.94rem;
       }
       p {
         margin-top: 0.94rem;
@@ -600,17 +657,89 @@ export default {
         .top-2 {
           display: grid;
           grid-template-columns: 1fr 1fr;
+          align-items: flex-end;
+          gap: 1rem;
         }
         .bottom-3 {
           display: grid;
+          align-items: flex-end;
           grid-template-columns: 1fr 1fr 1fr;
           gap: 1rem;
         }
       }
     }
   }
+  @include responsive($lg) {
+    .destinations {
+      margin-top: 8.13rem;
+      .container {
+        .top-2 {
+          margin-top: 2.88rem;
+          .bishoftu,
+          .bishoftu1 {
+            .bishoftu-desc {
+              h4,
+              p {
+                margin-top: 1.88rem;
+              }
+            }
+          }
+        }
+        .bottom-3 {
+          margin-top: 2.88rem;
+          .bishoftu {
+            .bishoftu-desc {
+              h4,
+              p {
+                margin-top: 1.88rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($xl) {
+    .destinations {
+      .container {
+        .top-2 {
+          margin-top: 2.88rem;
+          .bishoftu,
+          .bishoftu1 {
+            .bishoftu-img {
+              img {
+                width: 40rem;
+              }
+            }
+            .bishoftu-desc {
+              h4,
+              p {
+                margin-top: 1.88rem;
+              }
+            }
+          }
+        }
+        .bottom-3 {
+          margin-top: 2.88rem;
+          .bishoftu {
+            .bishoftu-img {
+              img {
+                width: 30rem;
+              }
+            }
+            .bishoftu-desc {
+              h4,
+              p {
+                margin-top: 1.88rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .harmony {
-    background: url(../assets/image/harmony-min.jpg) no-repeat;
+    background: url(../assets/image/harmony.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -673,6 +802,59 @@ export default {
       }
     }
   }
+  @include responsive($lg) {
+    .harmony {
+      // background: url(../assets/image/harmony-min.jpg) no-repeat;
+
+      margin-top: 8.13rem;
+      .container {
+        .harmony-text {
+          h4 {
+            font-size: 1.3rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+          width: 30%;
+          .explore {
+            a {
+              font-size: 0.88rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($xl) {
+    .harmony {
+      background: url(../assets/image/harmony-min.jpg) no-repeat;
+      height: 70vh;
+      .container {
+        .harmony-text {
+          h4 {
+            font-size: 2rem;
+            line-height: 2rem;
+          }
+          p {
+            font-size: 1.3rem;
+          }
+          width: 25%;
+          .explore {
+            a {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($xxl) {
+    .harmony {
+      background: url(../assets/image/harmony2.jpg) no-repeat;
+      background-position: center top;
+    }
+  }
+
   .memory {
     margin-top: 6.25rem;
     .container {
@@ -749,6 +931,25 @@ export default {
       }
     }
   }
+  @include responsive($lg) {
+    .memory {
+      margin-top: 8.13rem;
+      .container {
+        .memory-slide {
+          gap: 8rem;
+          .memory-slide-card {
+            img {
+              width: 25rem;
+            }
+            .img-bottom {
+              width: 25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .wellness {
     margin-top: 6.25rem;
     .container {
@@ -823,7 +1024,64 @@ export default {
       }
     }
   }
+  @include responsive($lg) {
+    .wellness {
+      margin-top: 8.13rem;
+      .wellness-slide {
+        margin-top: 4.37rem;
+        margin-left: 20rem;
 
+        .well-1 {
+          .image-name {
+            margin-top: -3rem;
+          }
+        }
+      }
+      .container {
+        .wellness-button {
+          margin-top: 4.37rem;
+          margin-left: 10rem;
+        }
+      }
+    }
+  }
+  @include responsive($xl) {
+    .wellness {
+      margin-top: 8.13rem;
+      .wellness-slide {
+        margin-top: 4.37rem;
+        margin-left: 25rem;
+
+        .well-1 {
+          .image-name {
+            margin-top: -3rem;
+          }
+        }
+      }
+      .container {
+        .wellness-button {
+          margin-top: 4.37rem;
+          margin-left: 10rem;
+        }
+      }
+    }
+  }
+  @include responsive($xxl) {
+    .wellness {
+      .wellness-slide {
+        margin-left: 60rem;
+      }
+      .container {
+        .wellness-button {
+          margin-left: 20rem;
+          gap: 3rem;
+          img {
+            width: 3.5rem;
+          }
+        }
+      }
+    }
+  }
   .special-offer {
     margin-top: 6.25rem;
     .container {
@@ -841,7 +1099,7 @@ export default {
           display: flex;
           align-items: center;
           justify-items: center;
-          // gap: 1rem;
+          gap: 0.5rem;
 
           .slide-card {
             img {
@@ -849,7 +1107,7 @@ export default {
           }
 
           .next-icon {
-            margin-left: -1rem;
+            // margin-left: -1rem;
           }
         }
         .gift-desc {
@@ -905,6 +1163,43 @@ export default {
       }
     }
   }
+  @include responsive($lg) {
+    .special-offer {
+      margin-top: 8.13rem;
+      .container {
+        .special-offer-all {
+          display: flex;
+
+          .special-slide {
+            margin-top: 4.37rem;
+            .slide-card {
+              img {
+                width: 70rem;
+              }
+            }
+
+            .next-icon,
+            .back-icon {
+              img {
+                width: 5rem;
+              }
+            }
+          }
+          .gift-desc {
+            margin-left: 1rem;
+            margin-right: 1rem;
+
+            .book-buttons {
+              display: flex;
+              justify-content: left;
+
+              margin-top: 1.88rem;
+            }
+          }
+        }
+      }
+    }
+  }
   .construction {
     margin-top: 6.25rem;
     .container {
@@ -938,7 +1233,7 @@ export default {
           .book-buttons {
             display: flex;
             justify-content: center;
-            margin: 1.88rem;
+            margin-top: 1.88rem;
           }
         }
       }
@@ -961,17 +1256,49 @@ export default {
       }
     }
   }
-
+  @include responsive($lg) {
+    .construction {
+      margin-top: 8.13rem;
+      .container {
+        .construction-all {
+          margin-top: 4.37rem;
+          display: flex;
+          .construction-img {
+            img {
+              width: 23rem;
+            }
+          }
+          .constr-desc {
+            width: 100%-60%;
+            h4 {
+              margin-top: 0rem;
+              text-align: left;
+              font-size: 1.5rem;
+            }
+            p {
+              margin-top: 1.88rem;
+              text-align: left;
+            }
+            .book-buttons {
+              justify-content: flex-start;
+              gap: 1rem;
+              margin-top: 2.88rem;
+            }
+          }
+        }
+      }
+    }
+  }
   .footer {
     background: $kuriftu-black;
     margin-top: 6.25rem;
 
     .container {
       .footer-wrapper {
-        display: grid;
-        place-items: center;
         .footer-link-container {
           .upper {
+            display: grid;
+            place-items: center;
             .desti {
               .desti-title {
                 color: $kuriftu-brown;
@@ -1048,11 +1375,11 @@ export default {
       .container {
         .footer-wrapper {
           .footer-link-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            place-items: center;
-            gap: 10rem;
             .upper {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              place-items: center;
+
               .desti {
                 .desti-title {
                   text-align: left;
@@ -1090,7 +1417,42 @@ export default {
       }
     }
   }
+  @include responsive($lg) {
+    .footer {
+      margin-top: 8.13rem;
+      .container {
+        .footer-wrapper {
+          .footer-link-container {
+            place-items: center;
+            .upper {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              gap: 5rem;
+              .desti {
+                .desti-title {
+                  text-align: left;
+                }
+                .desti-list {
+                  text-align: left;
+                  margin-top: 0.98rem;
+                  margin-bottom: 0.98rem;
+                }
+              }
+            }
+          }
+        }
 
+        .lower {
+          margin-bottom: 0rem;
+          display: flex;
+          justify-content: space-between;
+          img {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
   // @media screen and (min-width: 768px) {
   //   .footer .container .desti .desti-list div {
   //     flex-direction: column;
