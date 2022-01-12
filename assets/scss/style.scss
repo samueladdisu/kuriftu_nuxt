@@ -401,6 +401,10 @@ $kuriftu-pink: #db4da1;
 $kuriftu-green: #45b75c;
 $kuriftu-purple: #6945a8;
 
+//body
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 // utilities
 
 .huge {
@@ -641,7 +645,7 @@ $trans: all 0.5s ease-in-out;
   color: $kuriftu-brown;
   border-color: $kuriftu-brown;
 }
-.btn-outline-secondary {
+.btn-outline-white {
   background: transparent;
   color: $kuriftu-white;
   border-color: $kuriftu-white;
@@ -650,4 +654,9 @@ $trans: all 0.5s ease-in-out;
   background: transparent;
   color: $kuriftu-brown;
   border-color: $kuriftu-brown;
+}
+.btn-outline-black {
+  background: transparent;
+  color: $kuriftu-black;
+  border-color: $kuriftu-black;
 }

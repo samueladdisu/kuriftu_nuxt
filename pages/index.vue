@@ -12,6 +12,9 @@
           <div class="logo">
             <img src="../assets/image/LOGO 1.svg" alt="" />
           </div>
+          <div class="nav-book-button">
+            <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>
+          </div>
         </div>
         <div class="social">
           <div class="container">
@@ -31,7 +34,7 @@
       </nav>
     </header>
     <div class="fixed-button">
-      <a class="btn btn-outline-secondary" href="./contact">BOOK NOW</a>
+      <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>
     </div>
     <section class="welcome">
       <div class="container">
@@ -59,39 +62,97 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. dolor sit
           amet, consectetur
         </p>
-        <div class="bishoftu">
-          <div class="bishoftu-img">
-            <img src="../assets/image/bishoftu2.jpg" alt="" />
+        <div class="top-2">
+          <div class="bishoftu">
+            <div class="bishoftu-img">
+              <img src="../assets/image/bishoftu2.jpg" alt="" />
+            </div>
+            <div class="bishoftu-desc">
+              <h4>Bishoftu</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
+              </p>
+              <div class="explore">
+                <a href="#"
+                  >EXPLORE
+                  <hr
+                /></a>
+              </div>
+            </div>
           </div>
-          <div class="bishoftu-desc">
-            <h4>Bishoftu</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
-              tincidunt nisl elementum ultrices luctus habitasse.
-            </p>
-            <div class="explore">
-              <a href="#"
-                >EXPLORE
-                <hr
-              /></a>
+          <div class="bishoftu1">
+            <div class="bishoftu-img">
+              <img src="../assets/image/waterpark.jpg" alt="" />
+            </div>
+            <div class="bishoftu-desc">
+              <h4>Waterpark</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
+              </p>
+              <div class="explore">
+                <a href="#"
+                  >EXPLORE
+                  <hr
+                /></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="bishoftu">
-          <div class="bishoftu-img">
-            <img src="../assets/image/waterpark.jpg" alt="" />
+        <div class="bottom-3">
+          <div class="bishoftu">
+            <div class="bishoftu-img">
+              <img src="../assets/image/bishoftu2.jpg" alt="" />
+            </div>
+            <div class="bishoftu-desc">
+              <h4>Waterpark</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
+              </p>
+              <div class="explore">
+                <a href="#"
+                  >EXPLORE
+                  <hr
+                /></a>
+              </div>
+            </div>
           </div>
-          <div class="bishoftu-desc">
-            <h4>Waterpark</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
-              tincidunt nisl elementum ultrices luctus habitasse.
-            </p>
-            <div class="explore">
-              <a href="#"
-                >EXPLORE
-                <hr
-              /></a>
+          <div class="bishoftu">
+            <div class="bishoftu-img">
+              <img src="../assets/image/bishoftu2.jpg" alt="" />
+            </div>
+            <div class="bishoftu-desc">
+              <h4>Waterpark</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
+              </p>
+              <div class="explore">
+                <a href="#"
+                  >EXPLORE
+                  <hr
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="bishoftu">
+            <div class="bishoftu-img">
+              <img src="../assets/image/bishoftu2.jpg" alt="" />
+            </div>
+            <div class="bishoftu-desc">
+              <h4>Waterpark</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
+              </p>
+              <div class="explore">
+                <a href="#"
+                  >EXPLORE
+                  <hr
+                /></a>
+              </div>
             </div>
           </div>
         </div>
@@ -118,7 +179,7 @@
         <div class="memory-slide">
           <img src="../assets/image/Icons/back.svg" alt="" />
           <div class="memory-slide-card">
-            <img src="../assets/image/lequanda-min.jpg" alt="" />
+            <img src="../assets/image/lequanda.jpg" alt="" />
             <div class="img-bottom">
               <h3>lequanda</h3>
               <p>
@@ -167,54 +228,157 @@
     <section class="special-offer">
       <div class="container">
         <h2>Special Offer</h2>
-        <div class="special-slide">
-          <div class="back-icon">
-            <img src="../assets/image/Icons/circle-back.svg" alt="" />
+        <div class="special-offer-all">
+          <div class="special-slide">
+            <div class="back-icon">
+              <img src="../assets/image/Icons/circle-back.svg" alt="" />
+            </div>
+            <div class="slide-card">
+              <img src="../assets/image/waterpark2.jpg" alt="" />
+            </div>
+            <div class="next-icon">
+              <img src="../assets/image/Icons/circle-next.svg" alt="" />
+            </div>
           </div>
-          <div class="slide-card">
-            <img src="../assets/image/waterpark2.jpg" alt="" />
+          <div class="gift-desc">
+            <h4>Gift Vouchers</h4>
+            <p class="header-title">
+              Treat your loved ones to Ethiopia’s greatest family destination
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
+              tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam
+              lectus at massa enim elementum varius dictumst. Nulla a, sed enim
+              turpis non lacinia fusce. Quis volutpat sit ullamcorper vitae
+              magna vel sit pharetra scelerisque.
+            </p>
+            <div class="book-buttons">
+              <a class="btn btn-outline-black" href="#">BUY NOW</a>
+            </div>
           </div>
-          <div class="next-icon">
-            <img src="../assets/image/Icons/circle-next.svg" alt="" />
-          </div>
-        </div>
-        <div class="gift-desc">
-          <h4>Gift Vouchers</h4>
-          <p class="header-title">
-            Treat your loved ones to Ethiopia’s greatest family destination
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
-            tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam
-            lectus at massa enim elementum varius dictumst. Nulla a, sed enim
-            turpis non lacinia fusce. Quis volutpat sit ullamcorper vitae magna
-            vel sit pharetra scelerisque.
-          </p>
         </div>
       </div>
     </section>
+
     <section class="construction">
       <div class="container">
         <h2>Construction</h2>
-        <div class="construction-img">
-          <img src="../assets/image/construction.jpg" alt="" />
-        </div>
-        <div class="const-name">
-          <h4>construction</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
-          </p>
-          <div class="explore">
-            <a href="#"
-              >EXPLORE
-              <hr
-            /></a>
+        <div class="construction-all">
+          <div class="construction-img">
+            <img src="../assets/image/construction.jpg" alt="" />
+          </div>
+          <div class="constr-desc">
+            <h4>Construction 1</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
+              tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam
+              lectus at massa enim elementum varius dictumst. Nulla a, sed enim
+              turpis non lacinia fusce. Quis volutpat sit ullamcorper vitae
+              magna vel sit pharetra scelerisque.
+            </p>
+            <div class="book-buttons">
+              <a class="btn btn-primary" href="#">VIEW MORE</a>
+              <!-- <a class="btn btn-outline-brown" href="#">VIEW GALLERY</a> -->
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <footer></footer>
+
+    <footer class="footer">
+      <div class="container">
+        <section class="footer-wrapper">
+          <div class="footer-link-container">
+            <div class="upper">
+              <div class="desti">
+                <h3 class="desti-title">Destination</h3>
+                <ul class="desti-list">
+                  <div>
+                    <li class="footer-link"><a href="#">Bishoftu</a></li>
+                    <li class="footer-link"><a href="#">Entoto</a></li>
+                    <li class="footer-link"><a href="#">Awash</a></li>
+                    <li class="footer-link"><a href="#">Water Park</a></li>
+                    <li class="footer-link"><a href="#">Lake Tana</a></li>
+                    <li class="footer-link"><a href="#"></a></li>
+                  </div>
+
+                  <div></div>
+                </ul>
+              </div>
+
+              <div class="desti">
+                <h3 class="desti-title">Wellness</h3>
+                <ul class="desti-list">
+                  <div>
+                    <li class="footer-link"><a href="#">Spa</a></li>
+                    <li class="footer-link"><a href="#">Pool</a></li>
+                    <li class="footer-link"><a href="#">Massage</a></li>
+                    <li class="footer-link"><a href="#">Manicure </a></li>
+                    <li class="footer-link"><a href="#">Pedicure</a></li>
+                    <li class="footer-link"><a href="#"></a></li>
+                  </div>
+
+                  <div></div>
+                </ul>
+              </div>
+            </div>
+
+            <div class="upper">
+              <div class="desti">
+                <h3 class="desti-title">Experience</h3>
+                <ul class="desti-list">
+                  <div>
+                    <li class="footer-link"><a href="#">Kayaking</a></li>
+                    <li class="footer-link"><a href="#">Archery</a></li>
+                    <li class="footer-link"><a href="#">Cycling</a></li>
+                    <li class="footer-link"><a href="#">Paintball </a></li>
+                    <li class="footer-link"><a href="#">Horse Riding</a></li>
+                    <li class="footer-link"><a href="#"></a></li>
+                  </div>
+
+                  <div></div>
+                </ul>
+              </div>
+
+              <div class="desti">
+                <h3 class="desti-title">Quick Links</h3>
+                <ul class="desti-list">
+                  <div>
+                    <li class="footer-link"><a href="#">Home</a></li>
+                    <li class="footer-link"><a href="#">Entoto</a></li>
+                    <li class="footer-link"><a href="#">Our Story</a></li>
+                    <li class="footer-link"><a href="#">Lake Tana </a></li>
+                    <li class="footer-link"><a href="#">Awash</a></li>
+                    <li class="footer-link"><a href="#"></a></li>
+                  </div>
+
+                  <div></div>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="social">
+            <h3 class="desti-title">follow us on</h3>
+
+            <div class="icon-container">
+              <img src="../assets/image/Icons/facebook.svg" alt="" />
+              <img src="../assets/image/Icons/instagram.svg" alt="" />
+              <img src="../assets/image/Icons/youtube.svg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <hr />
+        <div class="lower">
+          <img src="../assets/image/LOGO 1.svg" alt="" />
+          <p>
+            &copy; 2021. All Rights Reserved. Web Design & Development by
+            <a href="https://versavvymedia.com/">Versavvy Media PLC</a>
+          </p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -275,6 +439,12 @@ export default {
         .logo {
           margin-top: 1rem;
           width: 9rem;
+          @include responsive($md) {
+            width: 11rem;
+          }
+        }
+        .nav-book-button {
+          display: none;
         }
       }
       .social {
@@ -283,9 +453,27 @@ export default {
           align-items: start;
           justify-items: center;
           margin-top: 13rem;
+          @include responsive($md) {
+            margin-top: 20rem;
+          }
           .icons {
             margin-top: 2rem;
             width: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+  @include responsive($lg) {
+    header {
+      nav {
+        .container {
+          align-items: center;
+
+          .nav-book-button {
+            margin-top: 1rem;
+
+            display: block;
           }
         }
       }
@@ -303,6 +491,11 @@ export default {
     text-align: center;
     .btn {
       margin: 1.3rem;
+    }
+  }
+  @include responsive($lg) {
+    .fixed-button {
+      display: none;
     }
   }
   .welcome {
@@ -329,6 +522,19 @@ export default {
       margin: 1.88rem;
     }
   }
+  @include responsive($md) {
+    .welcome {
+      .container {
+        .welcome-img {
+          width: 20rem;
+        }
+      }
+      .book-buttons {
+        justify-content: center;
+        gap: 1rem;
+      }
+    }
+  }
   .destinations {
     margin-top: 4.37rem;
     .container {
@@ -348,38 +554,57 @@ export default {
         font-size: 0.88rem;
         text-align: center;
       }
-      .bishoftu {
-        margin-top: 1.88rem;
-        .bishoftu-img {
-          img {
-            width: 20rem;
-            // height: 10rem;
+      .top-2,
+      .bottom-3 {
+        .bishoftu,
+        .bishoftu1 {
+          margin-top: 1.88rem;
+          .bishoftu-img {
+            img {
+              width: 20rem;
+              // height: 10rem;
+            }
           }
-        }
-        .bishoftu-desc {
-          h4 {
-            @extend .h4;
-            margin-top: 0.94rem;
-          }
-          p {
-            @extend .text;
-            margin-top: 0.94rem;
-            color: $kuriftu-black;
-            text-align: left;
-          }
-          .explore {
-            margin-top: 1.88rem;
-            display: grid;
-            place-items: left;
-            a {
-              font-size: 1rem;
-              color: $kuriftu-grey;
-              hr {
+          .bishoftu-desc {
+            h4 {
+              @extend .h4;
+              margin-top: 0.94rem;
+            }
+            p {
+              @extend .text;
+              margin-top: 0.94rem;
+              color: $kuriftu-black;
+              text-align: left;
+            }
+            .explore {
+              margin-top: 1.88rem;
+              display: grid;
+              place-items: left;
+              a {
+                font-size: 1rem;
                 color: $kuriftu-grey;
-                width: 5rem;
+                hr {
+                  color: $kuriftu-grey;
+                  width: 5rem;
+                }
               }
             }
           }
+        }
+      }
+    }
+  }
+  @include responsive($md) {
+    .destinations {
+      .container {
+        .top-2 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+        .bottom-3 {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 1rem;
         }
       }
     }
@@ -396,8 +621,10 @@ export default {
       position: relative;
       .harmony-text {
         // background: $kuriftu-white;
+        justify-content: flex-end;
         width: 50%;
-        // left:0;
+        position: absolute;
+        right: 0;
         background: #fff;
         padding: 0.5rem;
         h4 {
@@ -419,13 +646,24 @@ export default {
           display: grid;
           place-items: left;
           a {
-            font-size: 1rem;
+            font-size: 0.88rem;
             color: $kuriftu-grey;
             hr {
               color: $kuriftu-grey;
               width: 5rem;
             }
           }
+        }
+      }
+    }
+  }
+  @include responsive($md) {
+    .harmony {
+      height: 50vh;
+
+      .container {
+        .harmony-text {
+          width: 30%;
         }
       }
     }
@@ -483,6 +721,29 @@ export default {
       }
     }
   }
+  @include responsive($md) {
+    .memory {
+      .container {
+        .memory-slide {
+          gap: 5rem;
+          .memory-slide-card {
+            img {
+              width: 20rem;
+            }
+            .img-bottom {
+              width: 20rem;
+
+              p {
+                .arrow {
+                  width: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .wellness {
     margin-top: 4.37rem;
     .container {
@@ -533,48 +794,108 @@ export default {
       }
     }
   }
+  @include responsive($md) {
+    .wellness {
+      .wellness-slide {
+        margin-left: 13rem;
+
+        .well-1 {
+          .wellness-img {
+            z-index: -1rem;
+          }
+          .image-name {
+            margin-top: -2.78rem;
+
+            padding-left: 2rem;
+            padding-right: 2rem;
+          }
+        }
+      }
+      .container {
+        .wellness-button {
+          margin-top: 4.37rem;
+        }
+      }
+    }
+  }
+
   .special-offer {
     margin-top: 4.37rem;
     .container {
       h2 {
         color: $kuriftu-black;
         @extend .h2;
-
         margin-top: 0.94rem;
         text-align: left;
       }
-      .special-slide {
-        margin-top: 1.88rem;
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        // gap: 1rem;
+      .special-offer-all {
+        display: grid;
+        place-items: center;
+        .special-slide {
+          margin-top: 1.88rem;
+          display: flex;
+          align-items: center;
+          justify-items: center;
+          // gap: 1rem;
 
-        .slide-card {
-          img {
+          .slide-card {
+            img {
+            }
+          }
+
+          .next-icon {
+            margin-left: -1rem;
           }
         }
+        .gift-desc {
+          margin-top: 1.88rem;
+          h4 {
+            @extend .h4;
+            margin-top: 0.94rem;
+            color: $kuriftu-brown;
+          }
+          .header-title {
+            color: $kuriftu-grey;
+          }
+          p {
+            @extend .text;
+            margin-top: 0.94rem;
+            color: $kuriftu-black;
+            font-size: 0.88rem;
+            text-align: left;
+          }
+          .book-buttons {
+            display: flex;
+            justify-content: left;
 
-        .next-icon {
-          margin-left: -1rem;
+            margin-top: 1.88rem;
+          }
         }
       }
-      .gift-desc {
-        margin-top: 1.88rem;
-        h4 {
-          @extend .h4;
-          margin-top: 0.94rem;
-          color: $kuriftu-brown;
-        }
-        .header-title {
-          color: $kuriftu-grey;
-        }
-        p {
-          @extend .text;
-          margin-top: 0.94rem;
-          color: $kuriftu-black;
-          font-size: 0.88rem;
-          text-align: left;
+    }
+  }
+  @include responsive($md) {
+    .special-offer {
+      .container {
+        .special-offer-all {
+          .special-slide {
+            .slide-card {
+              img {
+                width: 30rem;
+              }
+            }
+          }
+          .gift-desc {
+            margin-left: 7rem;
+            margin-right: 7rem;
+
+            .book-buttons {
+              display: flex;
+              justify-content: left;
+
+              margin-top: 1.88rem;
+            }
+          }
         }
       }
     }
@@ -582,50 +903,259 @@ export default {
   .construction {
     margin-top: 4.37rem;
     .container {
-      .construction-img {
-        margin-top: 1.88rem;
-        width: 17rem;
-      }
       h2 {
+        color: $kuriftu-black;
         @extend .h2;
         margin-top: 0.94rem;
         text-align: left;
       }
-      p {
-        @extend .text;
-        margin-top: 0.94rem;
-      }
-      .const-name {
-        h4 {
-          @extend .h4;
-          margin-top: 0.94rem;
-          color: $kuriftu-black;
+      .construction-all {
+        display: grid;
+        place-items: center;
+        margin-top: 1.88rem;
+        .construction-img {
+          img {
+            width: 17rem;
+          }
         }
-        p {
-          @extend .text;
-          margin-top: 0.94rem;
-          color: $kuriftu-black;
-          font-size: 0.88rem;
-          text-align: left;
-        }
-        .explore {
-          margin-top: 1rem;
-          display: grid;
-          place-items: left;
-          a {
-            font-size: 1rem;
+        .constr-desc {
+          h4 {
+            @extend .h4;
+            margin-top: 0.94rem;
+            text-align: center;
+          }
+          p {
+            @extend .text;
+            margin-top: 0.94rem;
+            text-align: center;
             color: $kuriftu-grey;
-            hr {
-              color: $kuriftu-grey;
-              width: 5rem;
-            }
+          }
+          .book-buttons {
+            display: flex;
+            justify-content: center;
+            margin: 1.88rem;
           }
         }
       }
     }
   }
-  footer {
-    height: 100vh;
+  @include responsive($md) {
+    .construction {
+      .container {
+        .construction-all {
+          .construction-img {
+            img {
+              width: 20rem;
+            }
+          }
+          .constr-desc {
+            margin-left: 5rem;
+            margin-right: 5rem;
+          }
+        }
+      }
+    }
   }
+
+  .footer {
+    background: $kuriftu-black;
+    margin-top: 4.37rem;
+
+    .container {
+      .footer-wrapper {
+        display: grid;
+        place-items: center;
+        .footer-link-container {
+          .upper {
+            .desti {
+              .desti-title {
+                color: $kuriftu-brown;
+                @extend .h4;
+                margin-top: 4.37rem;
+                text-align: center;
+              }
+              .desti-list {
+                text-align: center;
+                margin-top: 1.88rem;
+                margin-bottom: 1.88rem;
+                // margin-left: 2rem;
+                // gap: 3.31rem;
+                div {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr 1fr;
+                  gap: 3rem;
+                  margin-top: 0.98rem;
+                  .footer-link {
+                    a {
+                      color: $kuriftu-white;
+                      font-size: 0.8rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .social {
+          h3 {
+            color: $kuriftu-brown;
+            @extend .h3;
+            margin-top: 4.37rem;
+            text-align: center;
+            text-transform: uppercase;
+          }
+          .icon-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.88rem;
+            margin-top: 1.88rem;
+            // width: 2rem;
+          }
+        }
+      }
+      hr {
+        margin-top: 4.37rem;
+        color: $kuriftu-brown;
+      }
+      .lower {
+        display: grid;
+        place-items: center;
+        margin-top: 4.37rem;
+        margin-bottom: 5rem;
+        img {
+          width: 10rem;
+        }
+        p {
+          color: $kuriftu-white;
+          font-size: 0.88rem;
+          margin-top: 1.88rem;
+          line-height: 1.3rem;
+          text-align: center;
+          a {
+            color: $kuriftu-blue;
+          }
+        }
+      }
+    }
+  }
+  @include responsive($md) {
+    .footer {
+      .container {
+        .footer-wrapper {
+          .footer-link-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            place-items: center;
+            gap: 10rem;
+            .upper {
+              .desti {
+                .desti-title {
+                  text-align: left;
+                }
+                .desti-list {
+                  text-align: left;
+                  margin-top: 0.98rem;
+                  margin-bottom: 0.98rem;
+
+                  div {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 1.3rem;
+                    margin-top: 0.98rem;
+                    .footer-link {
+                      a {
+                        color: $kuriftu-white;
+                        font-size: 1rem;
+                        text-align: left;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .lower {
+          margin-bottom: 6.3rem;
+          img {
+            width: 15rem;
+          }
+        }
+      }
+    }
+  }
+
+  // @media screen and (min-width: 768px) {
+  //   .footer .container .desti .desti-list div {
+  //     flex-direction: column;
+  //     margin-bottom: 1.13rem;
+  //     gap: 1.13rem;
+  //     margin-left: 0;
+  //     align-items: flex-start;
+  //   }
+
+  //   .footer .container .desti {
+  //     margin-bottom: 2.19rem;
+  //   }
+
+  //   .desti {
+  //     text-align: right;
+  //   }
+
+  //   .footer-link-container {
+  //     max-width: 29.5rem;
+  //     margin: 0 auto;
+  //     margin-top: 3.56rem;
+  //   }
+
+  //   .footer-link-container .upper {
+  //     display: flex;
+  //     justify-content: space-between;
+  //   }
+
+  //   .social {
+  //     margin-bottom: 2.25rem;
+  //   }
+
+  //   .lower img {
+  //     text-align: center;
+  //     margin: 0 auto;
+  //   }
+  // }
+
+  // @media screen and (min-width: 1024px) {
+  //   .footer-link-container {
+  //     display: flex;
+  //     max-width: 90rem;
+  //     margin: 0;
+  //     flex: 1;
+  //   }
+
+  //   .footer-link-container .upper {
+  //     flex: 1;
+  //     justify-content: space-around;
+  //   }
+
+  //   .footer .container .footer-wrapper {
+  //     display: flex;
+  //   }
+
+  //   .footer .lower {
+  //     display: flex;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //     margin-bottom: 2rem;
+  //   }
+
+  //   .footer .lower img {
+  //     margin: 0;
+  //   }
+
+  //   .footer .lower p {
+  //     max-width: 30.38rem;
+  //     text-align: right;
+  //   }
+  // }
 }
 </style>
