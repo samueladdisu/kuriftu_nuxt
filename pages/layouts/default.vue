@@ -2,8 +2,10 @@
   <Nuxt />
 </template>
 
-<style lang="scss">
-  body{
-      font-family: 'Myriad Pro Regular';
+<script>
+export default {
+  mounted(){
+    const boxes = gsap.units.toArray(".box")
   }
-</style>
+}
+</script>

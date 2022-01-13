@@ -36,13 +36,13 @@
     <div class="fixed-button">
       <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>
     </div>
-    <section class="welcome">
+    <section class="welcome" style="overflow-x: hidden">
       <div class="container">
-        <div class="welcome-wrapper">
-          <div class="welcome-img">
+        <div class="welcome-wrapper" style="overflow-x: hidden">
+          <div class="welcome-img" data-aos="slide-right">
             <img src="../assets/image/welcome.jpg" alt="" />
           </div>
-          <div class="welcome-desc">
+          <div class="welcome-desc" data-aos="slide-left">
             <h4>WELCOME TO KURIFTU RESORT</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
@@ -67,7 +67,7 @@
           amet, consectetur
         </p>
         <div class="top-2">
-          <div class="bishoftu">
+          <div class="bishoftu" data-aos="slide-up">
             <div class="bishoftu-img">
               <img src="../assets/image/bishoftu2.jpg" alt="" />
             </div>
@@ -85,7 +85,7 @@
               </div>
             </div>
           </div>
-          <div class="bishoftu1">
+          <div class="bishoftu1" data-aos="slide-up">
             <div class="bishoftu-img">
               <img src="../assets/image/waterpark.jpg" alt="" />
             </div>
@@ -105,7 +105,7 @@
           </div>
         </div>
         <div class="bottom-3">
-          <div class="bishoftu">
+          <div class="bishoftu" data-aos="slide-up">
             <div class="bishoftu-img">
               <img src="../assets/image/bishoftu2.jpg" alt="" />
             </div>
@@ -123,7 +123,7 @@
               </div>
             </div>
           </div>
-          <div class="bishoftu">
+          <div class="bishoftu" data-aos="slide-up">
             <div class="bishoftu-img">
               <img src="../assets/image/bishoftu2.jpg" alt="" />
             </div>
@@ -141,7 +141,7 @@
               </div>
             </div>
           </div>
-          <div class="bishoftu">
+          <div class="bishoftu" data-aos="slide-up">
             <div class="bishoftu-img">
               <img src="../assets/image/bishoftu2.jpg" alt="" />
             </div>
@@ -180,23 +180,82 @@
       <div class="container">
         <h2>Make a Memory That Will Last a Life time</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <div class="memory-slide">
-          <img src="../assets/image/Icons/back.svg" alt="" />
-          <div class="memory-slide-card">
+        <div class="memory-slide owl-carousel">
+          <!-- <img src="../assets/image/Icons/back.svg" alt="" /> -->
+
+          <div class="memory-slide-card item">
             <img src="../assets/image/lequanda.jpg" alt="" />
             <div class="img-bottom">
               <h3>lequanda</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <div class="bottom-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <img
                   class="arrow"
                   src="../assets/image/Icons/arrow-black.svg"
                   alt=""
                 />
-              </p>
+              </div>
             </div>
           </div>
-          <img src="../assets/image/Icons/next.svg" alt="" />
+
+          <div class="memory-slide-card item">
+            <img src="../assets/image/lequanda.jpg" alt="" />
+            <div class="img-bottom">
+              <h3>lequanda</h3>
+              <div class="bottom-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img
+                  class="arrow"
+                  src="../assets/image/Icons/arrow-black.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="memory-slide-card item">
+            <img src="../assets/image/lequanda.jpg" alt="" />
+            <div class="img-bottom">
+              <h3>lequanda</h3>
+              <div class="bottom-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img
+                  class="arrow"
+                  src="../assets/image/Icons/arrow-black.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="memory-slide-card item">
+            <img src="../assets/image/lequanda.jpg" alt="" />
+            <div class="img-bottom">
+              <h3>lequanda</h3>
+              <div class="bottom-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img
+                  class="arrow"
+                  src="../assets/image/Icons/arrow-black.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="memory-slide-card item">
+            <img src="../assets/image/lequanda.jpg" alt="" />
+            <div class="img-bottom">
+              <h3>lequanda</h3>
+              <div class="bottom-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img
+                  class="arrow"
+                  src="../assets/image/Icons/arrow-black.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- <img src="../assets/image/Icons/next.svg" alt="" /> -->
         </div>
       </div>
     </section>
@@ -205,7 +264,7 @@
         <h2>Wellness</h2>
       </div>
       <div class="wellness-slide">
-        <div class="well-1">
+        <div class="well-1 1">
           <img
             class="wellness-img"
             src="../assets/image/wellness-min.jpg"
@@ -215,8 +274,22 @@
             <h5>Massages</h5>
           </div>
         </div>
-        <div class="well-1">
-          <img class="wellness-img" src="../assets/image/Spa-min.jpg" alt="" />
+        <div class="well-1 2">
+          <img
+            class="wellness-img"
+            src="../assets/image/wellness-min.jpg"
+            alt=""
+          />
+          <div class="image-name">
+            <h5>Massages</h5>
+          </div>
+        </div>
+        <div class="well-1 3">
+          <img
+            class="wellness-img"
+            src="../assets/image/wellness-min.jpg"
+            alt=""
+          />
           <div class="image-name">
             <h5>Massages</h5>
           </div>
@@ -224,16 +297,26 @@
       </div>
       <div class="container">
         <div class="wellness-button">
-          <img src="../assets/image/Icons/back.svg" alt="" />
-          <img src="../assets/image/Icons/next.svg" alt="" />
+          <img
+            src="../assets/image/Icons/back.svg"
+            @click="move"
+            class="prev"
+            alt=""
+          />
+          <img
+            src="../assets/image/Icons/next.svg"
+            @click="move"
+            class="next"
+            alt=""
+          />
         </div>
       </div>
     </section>
     <section class="special-offer">
       <div class="container">
         <h2>Special Offer</h2>
-        <div class="special-offer-all">
-          <div class="special-slide">
+        <div class="special-offer-all" style="overflow-x: hidden">
+          <div class="special-slide" data-aos="slide-right">
             <div class="back-icon">
               <img src="../assets/image/Icons/circle-back.svg" alt="" />
             </div>
@@ -244,7 +327,7 @@
               <img src="../assets/image/Icons/circle-next.svg" alt="" />
             </div>
           </div>
-          <div class="gift-desc">
+          <div class="gift-desc" data-aos="slide-left">
             <h4>Gift Vouchers</h4>
             <p class="header-title">
               Treat your loved ones to Ethiopia’s greatest family destination
@@ -387,6 +470,8 @@
 
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default {
   data() {
     return {
@@ -394,9 +479,70 @@ export default {
       checkOut: "",
       location: "",
       data: "",
+      showCarousel: false,
     };
   },
+  mounted() {
+    AOS.init({
+      duration: 1500,
+      offset: 120,
+      easing: "ease",
+      once: false,
+      anchorPlacement: "top-bottom",
+    });
+    this.showCarousel = true;
+    gsap.registerPlugin(ScrollTrigger)
+
+    let container = document.querySelector(".wellness");
+
+    gsap.to('.well-1', {
+      x: () =>
+        -(container.scrollWidth - document.documentElement.clientWidth) + "px",
+    
+      scrollTrigger: {
+        trigger: container,
+        invalidateOnRefresh: true,
+        // start: "top center",
+        toggleActions: "restart pause reverse pause",
+        pin: true,
+        scrub: 1,
+        end: () => "+=" + container.offsetWidth,
+      },
+
+    });
+
+    $(".memory-slide").owlCarousel({
+      margin: 10,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        600: {
+          items: 2,
+          nav: false
+        },
+        1000: {
+          items: 3,
+          nav: false
+        }
+      }
+    })
+  },
   methods: {
+    move(e) {
+      if (e.target.classList.contains("prev")) {
+        gsap.to(".well-1", {
+          duration: 1,
+          x: "50%",
+          ease: "expo.out",
+        });
+      }
+    },
     getData() {
       axios
         .post("http://localhost/reservation_system/book.php", {
@@ -520,7 +666,8 @@ export default {
         }
         .welcome-desc {
           h4 {
-            @extend .h4;
+            font-family: "Neue Helvetica Bold";
+            font-size: 2rem;
             margin-top: 0.94rem;
             text-align: center;
             font-weight: 600;
@@ -549,6 +696,11 @@ export default {
             }
           }
           .welcome-desc {
+            h4 {
+              margin-top: 3.94rem;
+              font-size: 3rem;
+              text-transform: capitalize;
+            }
             .book-buttons {
               justify-content: center;
               gap: 1rem;
@@ -577,7 +729,6 @@ export default {
             h4 {
               margin-top: 0rem;
               text-align: left;
-              font-size: 1.5rem;
             }
             p {
               margin-top: 1.88rem;
@@ -601,7 +752,7 @@ export default {
       place-items: center;
       h2 {
         color: $kuriftu-brown;
-        @extend .h2;
+        @extend .title;
         margin-top: 0.94rem;
         text-align: center;
       }
@@ -623,7 +774,7 @@ export default {
           }
           .bishoftu-desc {
             h4 {
-              @extend .h4;
+              @extend .caps;
               margin-top: 0.94rem;
             }
             p {
@@ -742,7 +893,7 @@ export default {
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
-    height: 40vh;
+    // height: 40vh;
     // background-attachment: fixed;
     margin-top: 6.25rem;
     .container {
@@ -756,7 +907,7 @@ export default {
         background: #fff;
         padding: 1rem;
         h4 {
-          @extend .h4;
+          @extend .title;
 
           font-size: 1.2rem;
           color: $kuriftu-brown;
@@ -859,10 +1010,11 @@ export default {
     .container {
       display: grid;
       place-items: center;
+
       h2 {
         color: $kuriftu-brown;
-        @extend .h2;
-
+        @extend .title;
+        line-height: 1.2;
         margin-top: 0.94rem;
         text-align: center;
         text-transform: uppercase;
@@ -875,31 +1027,34 @@ export default {
       .memory-slide {
         margin-top: 4.37rem;
         display: flex;
-        // justify-content: space-between;
+        overflow-x: scroll;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
         gap: 1rem;
+        width: 100%;
+        &::-webkit-scrollbar {
+          display: none;
+        }
         .memory-slide-card {
-          img {
-            width: 20rem;
-          }
+          min-width: 100%;
+          margin-bottom: 1rem;
           .img-bottom {
             background: $kuriftu-brown;
-
-            padding: 0.5rem;
+            padding: 1rem 0.75rem 1.19rem;
             h3 {
-              color: $kuriftu-white;
-              @extend .h3;
-              margin-top: 0rem;
-              text-align: left;
-              text-transform: uppercase;
+              @extend .caps;
             }
-            p {
+            .bottom-content {
               display: flex;
-              margin-top: 0.94rem;
-              color: $kuriftu-white;
-              text-align: left;
-              margin-bottom: 1rem;
-              .arrow {
-                width: 3rem;
+              justify-content: space-between;
+              p {
+                width: 15.94rem;
+                color: $kuriftu-white;
+                line-height: 1.3rem;
+                text-align: left;
+              }
+              .arrow{
+                width: 2rem !important;
               }
             }
           }
@@ -911,17 +1066,21 @@ export default {
     .memory {
       .container {
         .memory-slide {
-          gap: 5rem;
+          gap: 2rem;
           .memory-slide-card {
-            img {
-              width: 20rem;
-            }
+            min-width: 21.69rem;
+            margin-bottom: 1rem;
             .img-bottom {
-              width: 20rem;
-
-              p {
-                .arrow {
-                  width: 2rem;
+              h3 {
+              }
+              .bottom-content {
+                display: flex;
+                justify-content: space-between;
+                p {
+                  width: 15.94rem;
+                  color: $kuriftu-white;
+                  line-height: 1.3rem;
+                  text-align: left;
                 }
               }
             }
@@ -935,14 +1094,8 @@ export default {
       margin-top: 8.13rem;
       .container {
         .memory-slide {
-          gap: 8rem;
+          // gap: 8rem;
           .memory-slide-card {
-            img {
-              width: 25rem;
-            }
-            .img-bottom {
-              width: 25rem;
-            }
           }
         }
       }
@@ -951,10 +1104,11 @@ export default {
 
   .wellness {
     margin-top: 6.25rem;
+    overflow-x: hidden;
     .container {
       h2 {
         color: $kuriftu-black;
-        @extend .h2;
+        @extend .title;
 
         margin-top: 0.94rem;
         text-align: left;
@@ -966,20 +1120,25 @@ export default {
       margin-top: 1.88rem;
       gap: 2rem;
       margin-left: 1rem;
-
+      width: 100vw;
+      // height: 100vh;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
       .well-1 {
-        .wellness-img {
-          // position: relative;
-          // width: 20rem;
-          // height: 15rem;
-          z-index: -1rem;
-        }
+        min-width: 100%;
+        width: 100%;
+        height: 100%;
+        transform: translateX(30%);
+        position: relative;
+
         .image-name {
           position: absolute;
           background: $kuriftu-brown;
           margin-top: -2.7rem;
 
-          padding: 0.5rem;
+          padding: 0.5rem 1rem;
 
           h5 {
             // width: 90%;
@@ -996,18 +1155,18 @@ export default {
         margin-top: 1.88rem;
         display: flex;
         gap: 1rem;
+        transform: translateX(30%);
       }
     }
   }
   @include responsive($md) {
     .wellness {
       .wellness-slide {
-        margin-left: 13rem;
+        // margin-left: 13rem;
 
         .well-1 {
-          .wellness-img {
-            z-index: -1rem;
-          }
+          transform: translateX(50%);
+          // min-width: none;
           .image-name {
             margin-top: -2.78rem;
 
@@ -1019,6 +1178,7 @@ export default {
       .container {
         .wellness-button {
           margin-top: 4.37rem;
+          transform: translateX(50%);
         }
       }
     }
@@ -1028,9 +1188,12 @@ export default {
       margin-top: 8.13rem;
       .wellness-slide {
         margin-top: 4.37rem;
-        margin-left: 20rem;
-
         .well-1 {
+          transform: translateX(100%);
+          min-width: auto;
+          img {
+            width: 100%;
+          }
           .image-name {
             margin-top: -3rem;
           }
@@ -1038,8 +1201,7 @@ export default {
       }
       .container {
         .wellness-button {
-          margin-top: 4.37rem;
-          margin-left: 10rem;
+          transform: translateX(30%);
         }
       }
     }
@@ -1049,7 +1211,6 @@ export default {
       margin-top: 8.13rem;
       .wellness-slide {
         margin-top: 4.37rem;
-        margin-left: 25rem;
 
         .well-1 {
           .image-name {
@@ -1060,7 +1221,6 @@ export default {
       .container {
         .wellness-button {
           margin-top: 4.37rem;
-          margin-left: 10rem;
         }
       }
     }
@@ -1068,11 +1228,9 @@ export default {
   @include responsive($xxl) {
     .wellness {
       .wellness-slide {
-        margin-left: 60rem;
       }
       .container {
         .wellness-button {
-          margin-left: 20rem;
           gap: 3rem;
           img {
             width: 3.5rem;
@@ -1086,7 +1244,7 @@ export default {
     .container {
       h2 {
         color: $kuriftu-black;
-        @extend .h2;
+        @extend .title;
         margin-top: 0.94rem;
         text-align: left;
       }
@@ -1112,7 +1270,7 @@ export default {
         .gift-desc {
           margin-top: 1.88rem;
           h4 {
-            @extend .h4;
+            @extend .title;
             margin-top: 0.94rem;
             color: $kuriftu-brown;
           }
@@ -1204,7 +1362,7 @@ export default {
     .container {
       h2 {
         color: $kuriftu-black;
-        @extend .h2;
+        @extend .title;
         margin-top: 0.94rem;
         text-align: left;
       }
@@ -1219,7 +1377,7 @@ export default {
         }
         .constr-desc {
           h4 {
-            @extend .h4;
+            @extend .title;
             margin-top: 0.94rem;
             text-align: center;
           }
