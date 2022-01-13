@@ -38,13 +38,15 @@
     </div>
     <section class="welcome">
       <div class="container">
-        <div class="welcome-img">
+        <div class="welcome-img" data-aos="slide-right">
           <img src="../assets/image/welcome.jpg" alt="" />
         </div>
 
-        <div class="welcome-content">
+        <div class="welcome-content" data-aos="slide-left">
           <h4>
-            <span class="hide-text"> Welcome to Kuriftu Resorts</span>
+            <span class="hide-text" data-aos="slide-up">
+              Welcome to Kuriftu Resorts</span
+            >
           </h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
@@ -390,6 +392,8 @@
 
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default {
   data() {
     return {
@@ -398,6 +402,9 @@ export default {
       location: "",
       data: "",
     };
+  },
+  mounted() {
+    AOS.init();
   },
   methods: {
     getData() {
@@ -524,8 +531,8 @@ export default {
           height: 7.63rem;
           top: 0;
           .hide-text {
-            position: absolute;
-            top: 5rem;
+            // position: absolute;
+            // top: 5rem;
           }
         }
         p {
