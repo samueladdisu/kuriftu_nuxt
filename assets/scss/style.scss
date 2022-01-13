@@ -1069,10 +1069,10 @@ $trans: all 0.5s ease-in-out;
 //default col
 @for $i from 0 through $columns {
   .col-#{$i} {
-    flex: 0 0 100% / $columns * $i;
+    flex: 0 0 calc(100% / $columns) * $i;
   }
   .col-offset-#{$i} {
-    margin-left: 100% / $columns * $i;
+    margin-left: calc(100% / $columns) * $i;
   }
 }
 
@@ -1081,10 +1081,10 @@ $trans: all 0.5s ease-in-out;
 @include responsive($sm) {
   @for $i from 0 through $columns {
     .col-sm-#{$i} {
-      flex: 0 0 100% / $columns * $i;
+      flex: 0 0 calc(100% / $columns) * $i;
     }
     .col-sm-offset-#{$i} {
-      margin-left: 100% / $columns * $i;
+      margin-left: calc(100% / $columns) * $i;
     }
   }
 }
@@ -1093,10 +1093,10 @@ $trans: all 0.5s ease-in-out;
 @include responsive($md) {
   @for $i from 0 through $columns {
     .col-md-#{$i} {
-      flex: 0 0 100% / $columns * $i;
+      flex: 0 0 calc(100% / $columns) * $i;
     }
     .col-md-offset-#{$i} {
-      margin-left: 100% / $columns * $i;
+      margin-left: calc(100% / $columns) * $i;
     }
   }
 }
@@ -1105,10 +1105,10 @@ $trans: all 0.5s ease-in-out;
 @include responsive($lg) {
   @for $i from 0 through $columns {
     .col-lg-#{$i} {
-      flex: 0 0 100% / $columns * $i;
+      flex: 0 0 calc(100% / $columns) * $i;
     }
     .col-lg-offset-#{$i} {
-      margin-left: 100% / $columns * $i;
+      margin-left: calc(100% / $columns) * $i;
     }
   }
 }
@@ -1117,10 +1117,10 @@ $trans: all 0.5s ease-in-out;
 @include responsive($xl) {
   @for $i from 0 through $columns {
     .col-xl-#{$i} {
-      flex: 0 0 100% / $columns * $i;
+      flex: 0 0 calc(100% / $columns) * $i;
     }
     .col-xl-offset-#{$i} {
-      margin-left: 100% / $columns * $i;
+      margin-left: calc(100% / $columns) * $i;
     }
   }
 }
