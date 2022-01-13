@@ -36,189 +36,94 @@
     <div class="fixed-button">
       <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>
     </div>
-    <section class="welcome">
+    <section class="stay-offer">
       <div class="container">
-        <div class="welcome-wrapper">
-          <div class="welcome-img">
-            <img src="../assets/image/welcome.jpg" alt="" />
+        <h2>Your Stay</h2>
+        <div class="stay-offer-all">
+          <div class="stay-slide">
+            <div class="back-icon">
+              <img src="../assets/image/Icons/circle-back.svg" alt="" />
+            </div>
+            <div class="slide-card">
+              <img src="../assets/image/Bahirdar.jpg" alt="" />
+            </div>
+            <div class="next-icon">
+              <img src="../assets/image/Icons/circle-next.svg" alt="" />
+            </div>
           </div>
-          <div class="welcome-desc">
-            <h4>WELCOME TO KURIFTU RESORT</h4>
+          <div class="stay-desc">
+            <h4>Deluxe Suite</h4>
+            <p class="header-title">
+              Treat your loved ones to Ethiopia’s greatest family destination
+            </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
               tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam
-              lectus at massa enim elementum varius dictumst. Nulla a, sed enim
-              turpis non lacinia fusce. Quis volutpat sit ullamcorper vitae
-              magna vel sit pharetra scelerisque.
+              lectus at massa enim elementum varius dictumst.
             </p>
             <div class="book-buttons">
-              <a class="btn btn-primary" href="#">BOOK NOW</a>
+              <a class="btn btn-primary" href="#">BUY NOW</a>
               <a class="btn btn-outline-brown" href="#">VIEW GALLERY</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="destinations">
+    <section class="dining">
       <div class="container">
-        <h2>DESTINATIONS</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. dolor sit
-          amet, consectetur
-        </p>
-        <div class="top-2">
-          <div class="bishoftu">
-            <div class="bishoftu-img">
-              <img src="../assets/image/bishoftu2.jpg" alt="" />
+        <h2>Dining</h2>
+        <div class="dining-wrapper">
+          <div class="dining-card">
+            <div class="dining-img">
+              <img src="../assets/image/bahirdardining1.jpg" alt="" />
             </div>
-            <div class="bishoftu-desc">
-              <h4>Bishoftu</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-              </p>
-              <div class="explore">
-                <a href="#"
-                  >EXPLORE
-                  <hr
-                /></a>
-              </div>
+            <div class="food-title">
+              <h3>Desert1</h3>
+            </div>
+            <div class="food-desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
-          <div class="bishoftu1">
-            <div class="bishoftu-img">
-              <img src="../assets/image/waterpark.jpg" alt="" />
+          <div class="dining-card">
+            <div class="dining-img">
+              <img src="../assets/image/bahirdardining2.jpg" alt="" />
             </div>
-            <div class="bishoftu-desc">
-              <h4>Waterpark</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-              </p>
-              <div class="explore">
-                <a href="#"
-                  >EXPLORE
-                  <hr
-                /></a>
-              </div>
+            <div class="food-title">
+              <h3>Desert2</h3>
+            </div>
+            <div class="food-desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
-        </div>
-        <div class="bottom-3">
-          <div class="bishoftu">
-            <div class="bishoftu-img">
-              <img src="../assets/image/bishoftu2.jpg" alt="" />
+          <div class="dining-card">
+            <div class="dining-img">
+              <img src="../assets/image/bahirdardining3.jpg" alt="" />
             </div>
-            <div class="bishoftu-desc">
-              <h4>Waterpark</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-              </p>
-              <div class="explore">
-                <a href="#"
-                  >EXPLORE
-                  <hr
-                /></a>
-              </div>
+            <div class="food-title">
+              <h3>Desert3</h3>
             </div>
-          </div>
-          <div class="bishoftu">
-            <div class="bishoftu-img">
-              <img src="../assets/image/bishoftu2.jpg" alt="" />
-            </div>
-            <div class="bishoftu-desc">
-              <h4>Waterpark</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-              </p>
-              <div class="explore">
-                <a href="#"
-                  >EXPLORE
-                  <hr
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="bishoftu">
-            <div class="bishoftu-img">
-              <img src="../assets/image/bishoftu2.jpg" alt="" />
-            </div>
-            <div class="bishoftu-desc">
-              <h4>Waterpark</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-              </p>
-              <div class="explore">
-                <a href="#"
-                  >EXPLORE
-                  <hr
-                /></a>
-              </div>
+            <div class="food-desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="harmony">
-      <div class="container">
-        <div class="harmony-text">
-          <h4>Harmony at its Finest</h4>
-          <p>An endless variety of experiences await you.</p>
-          <div class="explore">
-            <a href="#"
-              >EXPLORE
-              <hr
-            /></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="memory">
-      <div class="container">
-        <h2>Make a Memory That Will Last a Life time</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <div class="memory-slide">
-          <img src="../assets/image/Icons/back.svg" alt="" />
-          <div class="memory-slide-card">
-            <img src="../assets/image/lequanda.jpg" alt="" />
-            <div class="img-bottom">
-              <h3>lequanda</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                <img
-                  class="arrow"
-                  src="../assets/image/Icons/arrow-black.svg"
-                  alt=""
-                />
-              </p>
-            </div>
-          </div>
-          <img src="../assets/image/Icons/next.svg" alt="" />
-        </div>
-      </div>
-    </section>
-    <section class="wellness">
+    <section class="wellness2">
       <div class="container">
         <h2>Wellness</h2>
       </div>
       <div class="wellness-slide">
         <div class="well-1">
-          <img
-            class="wellness-img"
-            src="../assets/image/wellness-min.jpg"
-            alt=""
-          />
+          <img class="wellness-img" src="../assets/image/massage1.jpg" alt="" />
           <div class="image-name">
             <h5>Massages</h5>
           </div>
         </div>
         <div class="well-1">
-          <img class="wellness-img" src="../assets/image/Spa-min.jpg" alt="" />
+          <img class="wellness-img" src="../assets/image/massage2.jpg" alt="" />
           <div class="image-name">
-            <h5>Massages</h5>
+            <h5>Spa</h5>
           </div>
         </div>
       </div>
@@ -229,66 +134,53 @@
         </div>
       </div>
     </section>
-    <section class="special-offer">
+    <section class="event">
       <div class="container">
-        <h2>Special Offer</h2>
-        <div class="special-offer-all">
-          <div class="special-slide">
-            <div class="back-icon">
-              <img src="../assets/image/Icons/circle-back.svg" alt="" />
+        <h2>Celebration and Events</h2>
+        <div class="event-wrapper">
+          <!-- <div class="event-cards">
+            <div class="event-img">
+              <img src="../assets/image/event1.jpg" alt="" />
             </div>
-            <div class="slide-card">
-              <img src="../assets/image/waterpark2.jpg" alt="" />
-            </div>
-            <div class="next-icon">
-              <img src="../assets/image/Icons/circle-next.svg" alt="" />
+          </div> -->
+          <div class="event-cards">
+            <div class="event-img">
+              <img src="../assets/image/event.jpg" alt="" />
+              <h3>Outside Events</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
+              </p>
             </div>
           </div>
-          <div class="gift-desc">
-            <h4>Gift Vouchers</h4>
-            <p class="header-title">
-              Treat your loved ones to Ethiopia’s greatest family destination
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
-              tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam
-              lectus at massa enim elementum varius dictumst. Nulla a, sed enim
-              turpis non lacinia fusce. Quis volutpat sit ullamcorper vitae
-              magna vel sit pharetra scelerisque.
-            </p>
-            <div class="book-buttons">
-              <a class="btn btn-outline-black" href="#">BUY NOW</a>
+          <div class="event-cards">
+            <!-- <div class="event-img">
+              <img src="../assets/image/event2.jpg" alt="" />
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-wrapper">
+          <div class="gallery-frist-img">
+            <img src="../assets/image/gallery1.jpg" alt="" />
+          </div>
+          <div class="gallery-imgs">
+            <div class="gallery-img">
+              <img src="../assets/image/gallery2.jpg" alt="" />
+            </div>
+            <div class="gallery-img">
+              <img src="../assets/image/gallery3.jpg" alt="" />
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="construction">
-      <div class="container">
-        <h2>Construction</h2>
-        <div class="construction-all">
-          <div class="construction-img">
-            <img src="../assets/image/construction.jpg" alt="" />
-          </div>
-          <div class="constr-desc">
-            <h4>Construction 1</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
-              tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam
-              lectus at massa enim elementum varius dictumst. Nulla a, sed enim
-              turpis non lacinia fusce. Quis volutpat sit ullamcorper vitae
-              magna vel sit pharetra scelerisque.
-            </p>
-            <div class="book-buttons">
-              <a class="btn btn-primary" href="#">VIEW MORE</a>
-              <!-- <a class="btn btn-outline-brown" href="#">VIEW GALLERY</a> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <footer class="footer">
       <div class="container">
         <section class="footer-wrapper">
@@ -410,11 +302,11 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .main {
   background: $kuriftu-white;
   header {
-    background: url("../assets/image/Home.jpg") no-repeat;
+    background: url("../assets/image/tana.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -506,33 +398,57 @@ export default {
       display: none;
     }
   }
-  .welcome {
+  .stay-offer {
     margin-top: 6.25rem;
     .container {
-      width: 100%-30%;
-      .welcome-wrapper {
+      h2 {
+        color: $kuriftu-black;
+        @extend .h2;
+        margin-top: 0.94rem;
+        text-align: left;
+      }
+      .stay-offer-all {
         display: grid;
         place-items: center;
-        .welcome-img {
-          img {
-            width: 17rem;
+        .stay-slide {
+          margin-top: 1.88rem;
+          display: flex;
+          align-items: center;
+          justify-items: center;
+          gap: 0.5rem;
+
+          .slide-card {
+            img {
+            }
+          }
+
+          .next-icon {
+            // margin-left: -1rem;
           }
         }
-        .welcome-desc {
+        .stay-desc {
+          margin-top: 1.88rem;
+          margin-left: 1rem;
+          margin-right: 1rem;
           h4 {
             @extend .h4;
             margin-top: 0.94rem;
-            text-align: center;
-            font-weight: 600;
+            color: $kuriftu-brown;
+            text-align: left;
+          }
+          .header-title {
+            color: $kuriftu-grey;
           }
           p {
             @extend .text;
             margin-top: 0.94rem;
-            text-align: center;
+            color: $kuriftu-black;
+            font-size: 0.88rem;
+            text-align: left;
           }
           .book-buttons {
             display: flex;
-            gap: 0.5rem;
+            gap: 1rem;
             margin-top: 1.88rem;
           }
         }
@@ -540,18 +456,25 @@ export default {
     }
   }
   @include responsive($md) {
-    .welcome {
+    .stay-offer {
       .container {
-        .welcome-wrapper {
-          .welcome-img {
-            img {
-              width: 20rem;
+        .stay-offer-all {
+          .stay-slide {
+            .slide-card {
+              img {
+                width: 25rem;
+              }
             }
           }
-          .welcome-desc {
+          .stay-desc {
+            margin-left: 9rem;
+            margin-right: 9rem;
+
             .book-buttons {
-              justify-content: center;
-              gap: 1rem;
+              display: flex;
+              justify-content: left;
+
+              margin-top: 1.88rem;
             }
           }
         }
@@ -559,41 +482,300 @@ export default {
     }
   }
   @include responsive($lg) {
-    .welcome {
+    .stay-offer {
       margin-top: 8.13rem;
       .container {
-        width: 100%-10%;
-        .welcome-wrapper {
+        .stay-offer-all {
           display: flex;
-          justify-content: center;
-          gap: 3rem;
-          .welcome-img {
-            img {
-              width: 23rem;
+
+          .stay-slide {
+            margin-top: 4.37rem;
+            .slide-card {
+              img {
+                width: 60rem;
+              }
+            }
+
+            .next-icon,
+            .back-icon {
+              img {
+                width: 5rem;
+              }
             }
           }
-          .welcome-desc {
-            width: 100%-60%;
-            h4 {
-              margin-top: 0rem;
-              text-align: left;
-              font-size: 1.5rem;
-            }
-            p {
-              margin-top: 1.88rem;
-              text-align: left;
-            }
+          .stay-desc {
+            width: 100%-20%;
+            margin-left: 5rem;
+            margin-right: 5rem;
             .book-buttons {
-              justify-content: flex-start;
-              gap: 1rem;
-              margin-top: 2.88rem;
+              display: flex;
+              justify-content: left;
+
+              margin-top: 1.88rem;
             }
           }
         }
       }
     }
   }
+  @include responsive($xl) {
+    .stay-offer {
+      .container {
+        .stay-offer-all {
+          .stay-slide {
+            .slide-card {
+              img {
+                width: 50rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .dining {
+    margin-top: 6.25rem;
+    .container {
+      h2 {
+        color: $kuriftu-black;
+        @extend .h2;
+        margin-top: 0.94rem;
+        text-align: left;
+      }
+      .dining-wrapper {
+        margin-top: 1.88rem;
+        display: grid;
+        place-items: center;
 
+        margin-left: 2rem;
+        margin-right: 2rem;
+        .dining-card {
+          margin-top: 1.88rem;
+          .dining-img {
+            position: relative;
+          }
+          .food-title {
+            background: $kuriftu-red;
+            padding: 0.8rem;
+            width: 50%;
+            position: absolute;
+
+            margin-top: -3.4rem;
+
+            h3 {
+              color: $kuriftu-white;
+              @extend .h3;
+
+              text-align: center;
+            }
+          }
+          .food-desc {
+            width: 85%;
+            background: #fff;
+            padding: 1rem;
+            p {
+              @extend .text;
+
+              color: $kuriftu-grey;
+              font-size: 1rem;
+              line-height: 1.3rem;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($md) {
+    .dining {
+      .container {
+        .dining-wrapper {
+          display: flex;
+          gap: 1rem;
+          .dining-card {
+            .dining-img {
+            }
+            .food-title {
+              padding: 0.5rem;
+              width: 20%;
+              margin-top: -2.8rem;
+            }
+            .food-desc {
+              width: 88%;
+
+              padding: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($lg) {
+    .dining {
+      margin-top: 8.13rem;
+    }
+  }
+
+  @include responsive($xl) {
+    .dining {
+      .container {
+        .dining-wrapper {
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+          .dining-card {
+            .dining-img {
+              width: 25rem;
+            }
+            .food-title {
+              padding: 0.5rem;
+              width: 20%;
+              margin-top: -2.8rem;
+            }
+            .food-desc {
+              width: 85%;
+
+              padding: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($xxl) {
+    .dining {
+      .container {
+        .dining-wrapper {
+          gap: 3rem;
+          .dining-card {
+            .food-title {
+              width: 10%;
+            }
+            .food-desc {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .event {
+    margin-top: 6.25rem;
+    .container {
+      h2 {
+        color: $kuriftu-brown;
+        @extend .h2;
+        margin-top: 0.94rem;
+        text-align: center;
+      }
+      .event-wrapper {
+        // display: flex;
+        .event-cards {
+          margin-top: 1.88rem;
+          display: grid;
+          place-items: center;
+          .event-img {
+            width: 20rem;
+          }
+          h3 {
+            color: $kuriftu-black;
+            @extend .h2;
+            margin-top: 0.94rem;
+            font-size: 1.2rem;
+            text-align: center;
+          }
+
+          p {
+            @extend .text;
+            margin-top: 0.94rem;
+            color: $kuriftu-grey;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  @include responsive($md) {
+    .event {
+      margin-top: 6.25rem;
+    }
+  }
+  @include responsive($lg) {
+    .event {
+      margin-top: 8.13rem;
+      .container {
+        .event-wrapper {
+          // display: flex;
+          .event-cards {
+            .event-img {
+              margin-top: 1.88rem;
+              width: 25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .gallery {
+    .container {
+      h2 {
+        color: $kuriftu-black;
+        @extend .h2;
+        margin-top: 0.94rem;
+      }
+      .gallery-wrapper {
+        .gallery-frist-img {
+          margin-top: 0.94rem;
+        }
+        .gallery-imgs {
+          .gallery-img {
+            margin-top: 0.94rem;
+          }
+        }
+      }
+    }
+  }
+  @include responsive($md) {
+    .gallery {
+      .container {
+        .gallery-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 1rem;
+          .gallery-frist-img {
+            margin-top: 1rem;
+          }
+          .gallery-imgs {
+            .gallery-img {
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($xl) {
+    .gallery {
+      margin-top: 8.13rem;
+      .container {
+        .gallery-wrapper {
+          gap: 2rem;
+          margin-left: 5rem;
+          margin-right: 5rem;
+          margin-top: 4.37rem;
+          .gallery-frist-img {
+            margin-top: 2rem;
+          }
+          .gallery-imgs {
+            .gallery-img {
+              margin-top: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
   .destinations {
     margin-top: 6.25rem;
     .container {
@@ -949,7 +1131,7 @@ export default {
     }
   }
 
-  .wellness {
+  .wellness2 {
     margin-top: 6.25rem;
     .container {
       h2 {
@@ -1000,7 +1182,7 @@ export default {
     }
   }
   @include responsive($md) {
-    .wellness {
+    .wellness2 {
       .wellness-slide {
         margin-left: 13rem;
 
@@ -1024,7 +1206,7 @@ export default {
     }
   }
   @include responsive($lg) {
-    .wellness {
+    .wellness2 {
       margin-top: 8.13rem;
       .wellness-slide {
         margin-top: 4.37rem;
@@ -1045,11 +1227,11 @@ export default {
     }
   }
   @include responsive($xl) {
-    .wellness {
+    .wellness2 {
       margin-top: 8.13rem;
       .wellness-slide {
         margin-top: 4.37rem;
-        margin-left: 25rem;
+        margin-left: 35rem;
 
         .well-1 {
           .image-name {
@@ -1061,18 +1243,21 @@ export default {
         .wellness-button {
           margin-top: 4.37rem;
           margin-left: 10rem;
+          img {
+            width: 2.5rem;
+          }
         }
       }
     }
   }
   @include responsive($xxl) {
-    .wellness {
+    .wellness2 {
       .wellness-slide {
-        margin-left: 60rem;
+        margin-left: 70rem;
       }
       .container {
         .wellness-button {
-          margin-left: 20rem;
+          margin-left: 15rem;
           gap: 3rem;
           img {
             width: 3.5rem;
@@ -1081,139 +1266,7 @@ export default {
       }
     }
   }
-  .special-offer {
-    margin-top: 6.25rem;
-    .container {
-      h2 {
-        color: $kuriftu-black;
-        @extend .h2;
-        margin-top: 0.94rem;
-        text-align: left;
-      }
-      .special-offer-all {
-        display: grid;
-        place-items: center;
-        .special-slide {
-          margin-top: 1.88rem;
-          display: flex;
-          align-items: center;
-          justify-items: center;
-          gap: 0.5rem;
 
-          .slide-card {
-            img {
-            }
-          }
-
-          .next-icon {
-            // margin-left: -1rem;
-          }
-        }
-        .gift-desc {
-          margin-top: 1.88rem;
-          h4 {
-            @extend .h4;
-            margin-top: 0.94rem;
-            color: $kuriftu-brown;
-          }
-          .header-title {
-            color: $kuriftu-grey;
-          }
-          p {
-            @extend .text;
-            margin-top: 0.94rem;
-            color: $kuriftu-black;
-            font-size: 0.88rem;
-            text-align: left;
-          }
-          .book-buttons {
-            display: flex;
-            justify-content: left;
-
-            margin-top: 1.88rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($md) {
-    .special-offer {
-      .container {
-        .special-offer-all {
-          .special-slide {
-            .slide-card {
-              img {
-                width: 30rem;
-              }
-            }
-          }
-          .gift-desc {
-            margin-left: 7rem;
-            margin-right: 7rem;
-
-            .book-buttons {
-              display: flex;
-              justify-content: left;
-
-              margin-top: 1.88rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    .special-offer {
-      margin-top: 8.13rem;
-      .container {
-        .special-offer-all {
-          display: flex;
-
-          .special-slide {
-            margin-top: 4.37rem;
-            .slide-card {
-              img {
-                width: 70rem;
-              }
-            }
-
-            .next-icon,
-            .back-icon {
-              img {
-                width: 5rem;
-              }
-            }
-          }
-          .gift-desc {
-            margin-left: 1rem;
-            margin-right: 1rem;
-
-            .book-buttons {
-              display: flex;
-              justify-content: left;
-
-              margin-top: 1.88rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xl) {
-    .special-offer {
-      .container {
-        .special-offer-all {
-          .special-slide {
-            .slide-card {
-              img {
-                width: 50rem;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
   .construction {
     margin-top: 6.25rem;
     .container {
@@ -1316,7 +1369,9 @@ export default {
             .desti {
               .desti-title {
                 color: $kuriftu-brown;
-                @extend .h4;
+                @extend .title;
+                font-size: 1.13rem;
+                text-transform: uppercase;
                 margin-top: 4.37rem;
                 text-align: center;
               }
@@ -1345,10 +1400,11 @@ export default {
         .social {
           h3 {
             color: $kuriftu-brown;
-            @extend .h3;
+            @extend .title;
+            font-size: 1.13rem;
+            text-transform: uppercase;
             margin-top: 4.37rem;
             text-align: center;
-            text-transform: uppercase;
           }
           .icon-container {
             display: flex;
@@ -1373,6 +1429,8 @@ export default {
         }
         p {
           color: $kuriftu-white;
+          @extend .title;
+
           font-size: 0.88rem;
           margin-top: 1.88rem;
           line-height: 1.3rem;
@@ -1498,76 +1556,5 @@ export default {
       }
     }
   }
-  // @media screen and (min-width: 768px) {
-  //   .footer .container .desti .desti-list div {
-  //     flex-direction: column;
-  //     margin-bottom: 1.13rem;
-  //     gap: 1.13rem;
-  //     margin-left: 0;
-  //     align-items: flex-start;
-  //   }
-
-  //   .footer .container .desti {
-  //     margin-bottom: 2.19rem;
-  //   }
-
-  //   .desti {
-  //     text-align: right;
-  //   }
-
-  //   .footer-link-container {
-  //     max-width: 29.5rem;
-  //     margin: 0 auto;
-  //     margin-top: 3.56rem;
-  //   }
-
-  //   .footer-link-container .upper {
-  //     display: flex;
-  //     justify-content: space-between;
-  //   }
-
-  //   .social {
-  //     margin-bottom: 2.25rem;
-  //   }
-
-  //   .lower img {
-  //     text-align: center;
-  //     margin: 0 auto;
-  //   }
-  // }
-
-  // @media screen and (min-width: 1024px) {
-  //   .footer-link-container {
-  //     display: flex;
-  //     max-width: 90rem;
-  //     margin: 0;
-  //     flex: 1;
-  //   }
-
-  //   .footer-link-container .upper {
-  //     flex: 1;
-  //     justify-content: space-around;
-  //   }
-
-  //   .footer .container .footer-wrapper {
-  //     display: flex;
-  //   }
-
-  //   .footer .lower {
-  //     display: flex;
-  //     justify-content: space-between;
-  //     align-items: center;
-  //     margin-bottom: 2rem;
-  //   }
-
-  //   .footer .lower img {
-  //     margin: 0;
-  //   }
-
-  //   .footer .lower p {
-  //     max-width: 30.38rem;
-  //     text-align: right;
-  //   }
-  // }
 }
 </style>
