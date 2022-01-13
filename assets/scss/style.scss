@@ -970,13 +970,35 @@ body {
   z-index: -1;
 }
 .text {
-  font-family: "light bt";
-  font-size: 1.13rem;
+  font-family: "Myriad Pro Regular";
+  font-size: 1rem;
   line-height: 1.75rem;
+  color: $kuriftu-black;
+}
+.title {
+  font-family: "Neue Helvetica Bold";
+  font-size: 1.5rem;
+  line-height: 1.63rem;
+  color: $kuriftu-brown;
+}
+@include responsive($md) {
+  .title {
+    font-size: 2.25rem;
+    line-height: 1.63rem;
+  }
+}
+
+.caps {
+  font-family: "Neue Helvetica Bold";
+  text-transform: uppercase;
+  font-size: 1.13rem;
+  font-weight: 800;
+  line-height: 1.63rem;
+  color: $kuriftu-black;
 }
 @include responsive($lg) {
   .text {
-    font-size: 1.1rem;
+    font-size: 1.13rem;
     line-height: 2rem;
   }
 }

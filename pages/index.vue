@@ -66,8 +66,8 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. dolor sit
           amet, consectetur
         </p>
-        <div class="top-2">
-          <div class="bishoftu">
+        <div class="top-2 row">
+          <div class="bishoftu col-md-4">
             <div class="bishoftu-img">
               <img src="../assets/image/bishoftu2.jpg" alt="" />
             </div>
@@ -85,7 +85,7 @@
               </div>
             </div>
           </div>
-          <div class="bishoftu1">
+          <div class="bishoftu1 col-md-7 col-md-offset-1">
             <div class="bishoftu-img">
               <img src="../assets/image/waterpark.jpg" alt="" />
             </div>
@@ -110,8 +110,8 @@
               <img src="../assets/image/bishoftu2.jpg" alt="" />
             </div>
             <div class="bishoftu-desc">
-              <h4>Waterpark</h4>
-              <p>
+              <h4 class="desti-title">Waterpark</h4>
+              <p class="desti-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Facilisis tincidunt nisl elementum ultrices luctus habitasse.
               </p>
@@ -232,8 +232,8 @@
     <section class="special-offer">
       <div class="container">
         <h2>Special Offer</h2>
-        <div class="special-offer-all">
-          <div class="special-slide">
+        <div class="special-offer-all row">
+          <div class="special-slide col-lg-6">
             <div class="back-icon">
               <img src="../assets/image/Icons/circle-back.svg" alt="" />
             </div>
@@ -244,7 +244,7 @@
               <img src="../assets/image/Icons/circle-next.svg" alt="" />
             </div>
           </div>
-          <div class="gift-desc">
+          <div class="gift-desc col-lg-5 col-lg-offset-1">
             <h4>Gift Vouchers</h4>
             <p class="header-title">
               Treat your loved ones to Ethiopia’s greatest family destination
@@ -267,11 +267,11 @@
     <section class="construction">
       <div class="container">
         <h2>Construction</h2>
-        <div class="construction-all">
-          <div class="construction-img">
+        <div class="construction-all row">
+          <div class="construction-img col-lg-6">
             <img src="../assets/image/construction.jpg" alt="" />
           </div>
-          <div class="constr-desc">
+          <div class="constr-desc col-lg-5 col-lg-offset-1">
             <h4>Construction 1</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
@@ -387,6 +387,8 @@
 
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default {
   data() {
     return {
@@ -395,6 +397,9 @@ export default {
       location: "",
       data: "",
     };
+  },
+  mounted() {
+    AOS.init();
   },
   methods: {
     getData() {
@@ -469,6 +474,7 @@ export default {
   }
   @include responsive($lg) {
     header {
+      height: 100vh;
       nav {
         .container {
           align-items: center;
@@ -597,15 +603,13 @@ export default {
   .destinations {
     margin-top: 6.25rem;
     .container {
-      display: grid;
-      place-items: center;
       h2 {
-        color: $kuriftu-brown;
-        @extend .h2;
+        @extend .title;
         margin-top: 0.94rem;
         text-align: center;
       }
       p {
+        @extend .text;
         margin-top: 0.94rem;
         color: $kuriftu-grey;
         font-size: 0.88rem;
@@ -618,13 +622,13 @@ export default {
           margin-top: 1.88rem;
           .bishoftu-img {
             img {
-              width: 20rem;
-              // height: 10rem;
+              // width: 20rem;
+              height: 10rem;
             }
           }
           .bishoftu-desc {
             h4 {
-              @extend .h4;
+              @extend .caps;
               margin-top: 0.94rem;
             }
             p {
@@ -757,8 +761,8 @@ export default {
         background: #fff;
         padding: 1rem;
         h4 {
-          @extend .h4;
-
+          @extend .title;
+          text-transform: uppercase;
           font-size: 1.2rem;
           color: $kuriftu-brown;
           font-weight: 700;
@@ -861,9 +865,9 @@ export default {
       display: grid;
       place-items: center;
       h2 {
-        color: $kuriftu-brown;
-        @extend .h2;
-
+        @extend .title;
+        font-size: 2rem;
+        line-height: 2.69rem;
         margin-top: 0.94rem;
         text-align: center;
         text-transform: uppercase;
@@ -888,10 +892,9 @@ export default {
             padding: 0.5rem;
             h3 {
               color: $kuriftu-white;
-              @extend .h3;
+              @extend .caps;
               margin-top: 0rem;
               text-align: left;
-              text-transform: uppercase;
             }
             p {
               display: flex;
@@ -955,7 +958,7 @@ export default {
     .container {
       h2 {
         color: $kuriftu-black;
-        @extend .h2;
+        @extend .title;
 
         margin-top: 0.94rem;
         text-align: left;
@@ -979,7 +982,7 @@ export default {
           position: absolute;
           background: $kuriftu-brown;
           margin-top: -2.7rem;
-
+          @extend .caps;
           padding: 0.5rem;
 
           h5 {
@@ -1087,13 +1090,14 @@ export default {
     .container {
       h2 {
         color: $kuriftu-black;
-        @extend .h2;
+        @extend .title;
         margin-top: 0.94rem;
         text-align: left;
       }
       .special-offer-all {
-        display: grid;
-        place-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .special-slide {
           margin-top: 1.88rem;
           display: flex;
@@ -1113,7 +1117,7 @@ export default {
         .gift-desc {
           margin-top: 1.88rem;
           h4 {
-            @extend .h4;
+            @extend .caps;
             margin-top: 0.94rem;
             color: $kuriftu-brown;
           }
@@ -1149,8 +1153,8 @@ export default {
             }
           }
           .gift-desc {
-            margin-left: 7rem;
-            margin-right: 7rem;
+            // margin-left: 7rem;
+            // margin-right: 7rem;
 
             .book-buttons {
               display: flex;
@@ -1205,14 +1209,14 @@ export default {
     .container {
       h2 {
         color: $kuriftu-black;
-        @extend .h2;
+        @extend .title;
         margin-top: 0.94rem;
         text-align: left;
       }
       .construction-all {
-        display: grid;
-        place-items: center;
-        margin-top: 1.88rem;
+        // display: grid;
+        // place-items: center;
+        // margin-top: 1.88rem;
         .construction-img {
           img {
             width: 17rem;
@@ -1220,7 +1224,7 @@ export default {
         }
         .constr-desc {
           h4 {
-            @extend .h4;
+            @extend .caps;
             margin-top: 0.94rem;
             text-align: center;
           }
@@ -1302,7 +1306,7 @@ export default {
             .desti {
               .desti-title {
                 color: $kuriftu-brown;
-                @extend .h4;
+                @extend .caps;
                 margin-top: 4.37rem;
                 text-align: center;
               }
@@ -1331,7 +1335,7 @@ export default {
         .social {
           h3 {
             color: $kuriftu-brown;
-            @extend .h3;
+            @extend .caps;
             margin-top: 4.37rem;
             text-align: center;
             text-transform: uppercase;
