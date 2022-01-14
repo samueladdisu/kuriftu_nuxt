@@ -1,5 +1,9 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: 'static',
+  router: {
+    base: '/kuriftu/'
+  },
   head: {
     title: 'Kuriftu_Site',
     htmlAttrs: {

@@ -559,7 +559,7 @@ export default {
 .main {
   background: $kuriftu-white;
   header {
-    background: url("../assets/image/Home.jpg") no-repeat;
+    background: url("~/assets/image/Home.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -892,7 +892,7 @@ export default {
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
-    // height: 40vh;
+    height: 40vh;
     // background-attachment: fixed;
     margin-top: 6.25rem;
     .container {
