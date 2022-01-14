@@ -181,6 +181,38 @@
         </div>
       </div>
     </section>
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimony-wrapper">
+          <div class="testimony-card">
+            <div class="test-img">
+              <img src="../assets/image/test.svg" alt="" />
+            </div>
+            <div class="test-stars">
+              <img src="../assets/image/Icons/start.svg" alt="" />
+            </div>
+            <p>
+              <b> Wow the best thing ever!</b> Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </p>
+            <h3>Artist, Getachew Bezuwerk</h3>
+          </div>
+          <div class="testimony-card">
+            <div class="test-img">
+              <img src="../assets/image/test.svg" alt="" />
+            </div>
+            <div class="test-stars">
+              <img src="../assets/image/Icons/start.svg" alt="" />
+            </div>
+            <p>
+              <b> Wow the best thing ever!</b> Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </p>
+            <h3>Artist, Getachew Bezuwerk</h3>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
       <div class="container">
         <section class="footer-wrapper">
@@ -306,13 +338,14 @@ export default {
 .main {
   background: $kuriftu-white;
   header {
-    background: url("../assets/image/tana.jpg") no-repeat;
+    background: url("../assets/image/tana.jpg") rgba(0, 6, 27, 0.22) no-repeat;
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
     width: 100%;
     height: 90vh;
     z-index: -1;
+
     nav {
       .container {
         display: flex;
@@ -1342,6 +1375,55 @@ export default {
               gap: 1rem;
               margin-top: 2.88rem;
             }
+          }
+        }
+      }
+    }
+  }
+  .testimonials {
+    margin-top: 6.25rem;
+    .container {
+      .testimony-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        .testimony-card {
+          background: #fff;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          width: 20rem;
+          .test-img {
+            margin-top: -3rem;
+            margin-left: -1.5rem;
+            img {
+              width: 4rem;
+            }
+          }
+          .test-stars {
+            img {
+              margin-left: 1rem;
+              width: 10rem;
+            }
+          }
+          p {
+            margin-left: 1rem;
+            color: $kuriftu-black;
+            @extend .title;
+            font-family: "Neue Helvetica Light Italic";
+            font-size: 0.88rem;
+            margin-top: 0.98rem;
+            line-height: 1.3rem;
+            text-align: left;
+          }
+          h3 {
+            margin-left: 1rem;
+            color: $kuriftu-red;
+            @extend .h3;
+            font-family: "Neue Helvetica Extended Bold";
+            font-size: 0.8rem;
+            margin-top: 0.98rem;
+            line-height: 1.3rem;
+            text-align: left;
           }
         }
       }
