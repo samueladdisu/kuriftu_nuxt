@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{361:function(n,t,e){"use strict";e.r(t);e(15);var o={mounted:function(){gsap.units.toArray(".box")}},r=e(45),component=Object(r.a)(o,(function(){var n=this.$createElement;return(this._self._c||n)("Nuxt")}),[],!1,null,null,null);t.default=component.exports}}]);
