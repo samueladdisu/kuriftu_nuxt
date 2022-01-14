@@ -416,15 +416,6 @@ export default {
           align-items: center;
           justify-items: center;
           gap: 0.5rem;
-
-          .slide-card {
-            img {
-            }
-          }
-
-          .next-icon {
-            // margin-left: -1rem;
-          }
         }
         .stay-desc {
           margin-top: 1.88rem;
@@ -593,8 +584,8 @@ export default {
           display: flex;
           gap: 1rem;
           .dining-card {
-            .dining-img {
-            }
+            // .dining-img {
+            // }
             .food-title {
               padding: 0.5rem;
               width: 20%;

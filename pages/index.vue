@@ -491,14 +491,14 @@ export default {
       anchorPlacement: "top-bottom",
     });
     this.showCarousel = true;
-    gsap.registerPlugin(ScrollTrigger)
+    gsap.registerPlugin(ScrollTrigger);
 
     let container = document.querySelector(".wellness");
 
-    gsap.to('.well-1', {
+    gsap.to(".well-1", {
       x: () =>
         -(container.scrollWidth - document.documentElement.clientWidth) + "px",
-    
+
       scrollTrigger: {
         trigger: container,
         invalidateOnRefresh: true,
@@ -508,7 +508,6 @@ export default {
         scrub: 1,
         end: () => "+=" + container.offsetWidth,
       },
-
     });
 
     $(".memory-slide").owlCarousel({
@@ -520,18 +519,18 @@ export default {
       responsive: {
         0: {
           items: 1,
-          nav: false
+          nav: false,
         },
         600: {
           items: 2,
-          nav: false
+          nav: false,
         },
         1000: {
           items: 3,
-          nav: false
-        }
-      }
-    })
+          nav: false,
+        },
+      },
+    });
   },
   methods: {
     move(e) {
@@ -1053,7 +1052,7 @@ export default {
                 line-height: 1.3rem;
                 text-align: left;
               }
-              .arrow{
+              .arrow {
                 width: 2rem !important;
               }
             }
@@ -1071,8 +1070,8 @@ export default {
             min-width: 21.69rem;
             margin-bottom: 1rem;
             .img-bottom {
-              h3 {
-              }
+              // h3 {
+              // }
               .bottom-content {
                 display: flex;
                 justify-content: space-between;
@@ -1092,13 +1091,6 @@ export default {
   @include responsive($lg) {
     .memory {
       margin-top: 8.13rem;
-      .container {
-        .memory-slide {
-          // gap: 8rem;
-          .memory-slide-card {
-          }
-        }
-      }
     }
   }
 
@@ -1227,8 +1219,8 @@ export default {
   }
   @include responsive($xxl) {
     .wellness {
-      .wellness-slide {
-      }
+      // .wellness-slide {
+      // }
       .container {
         .wellness-button {
           gap: 3rem;
@@ -1258,14 +1250,14 @@ export default {
           justify-items: center;
           gap: 0.5rem;
 
-          .slide-card {
-            img {
-            }
-          }
+          // .slide-card {
+          //   img {
+          //   }
+          // }
 
-          .next-icon {
-            // margin-left: -1rem;
-          }
+          // .next-icon {
+          //   // margin-left: -1rem;
+          // }
         }
         .gift-desc {
           margin-top: 1.88rem;

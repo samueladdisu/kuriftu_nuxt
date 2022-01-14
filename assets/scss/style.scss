@@ -981,13 +981,24 @@ body {
   line-height: 1.63rem;
   color: $kuriftu-brown;
 }
+.nav {
+  font-family: "Neue Helvetica Light";
+  font-size: 1rem;
+  line-height: 1.63rem;
+}
+
 @include responsive($md) {
   .title {
     font-size: 2.25rem;
     line-height: 1.63rem;
   }
 }
-
+@include responsive($lg) {
+  .nav {
+    font-size: 2rem;
+    line-height: 1.63rem;
+  }
+}
 .caps {
   font-family: "Neue Helvetica Bold";
   text-transform: uppercase;
