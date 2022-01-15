@@ -36,11 +36,11 @@
     <div class="fixed-button">
       <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>
     </div>
-    <section class="stay-offer">
+    <section class="stay-offer" style="overflow-x: hidden">
       <div class="container">
         <h2>Your Stay</h2>
-        <div class="stay-offer-all">
-          <div class="stay-slide">
+        <div class="stay-offer-all" style="overflow-x: hidden">
+          <div class="stay-slide" data-aos="slide-right">
             <div class="back-icon">
               <img src="../assets/image/Icons/circle-back.svg" alt="" />
             </div>
@@ -51,7 +51,7 @@
               <img src="../assets/image/Icons/circle-next.svg" alt="" />
             </div>
           </div>
-          <div class="stay-desc">
+          <div class="stay-desc" data-aos="slide-left">
             <h4>Deluxe Suite</h4>
             <p class="header-title">
               Treat your loved ones to Ethiopia’s greatest family destination
@@ -73,7 +73,7 @@
       <div class="container">
         <h2>Dining</h2>
         <div class="dining-wrapper">
-          <div class="dining-card">
+          <div class="dining-card" data-aos="slide-up">
             <div class="dining-img">
               <img src="../assets/image/bahirdardining1.jpg" alt="" />
             </div>
@@ -84,7 +84,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
-          <div class="dining-card">
+          <div class="dining-card" data-aos="slide-up" data-aos-delay="500">
             <div class="dining-img">
               <img src="../assets/image/bahirdardining2.jpg" alt="" />
             </div>
@@ -95,7 +95,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
-          <div class="dining-card">
+          <div class="dining-card" data-aos="slide-up" data-aos-delay="600">
             <div class="dining-img">
               <img src="../assets/image/bahirdardining3.jpg" alt="" />
             </div>
@@ -109,19 +109,37 @@
         </div>
       </div>
     </section>
-    <section class="wellness2">
+   <section class="wellness">
       <div class="container">
         <h2>Wellness</h2>
       </div>
       <div class="wellness-slide">
-        <div class="well-1">
-          <img class="wellness-img" src="../assets/image/massage1.jpg" alt="" />
+        <div class="well-1 1">
+          <img
+            class="wellness-img"
+            src="../assets/image/massage1.jpg"
+            alt=""
+          />
           <div class="image-name">
             <h5>Massages</h5>
           </div>
         </div>
-        <div class="well-1">
-          <img class="wellness-img" src="../assets/image/massage2.jpg" alt="" />
+        <div class="well-1 2">
+          <img
+            class="wellness-img"
+              src="../assets/image/massage1.jpg"
+            alt=""
+          />
+          <div class="image-name">
+            <h5>Massages</h5>
+          </div>
+        </div>
+        <div class="well-1 3">
+          <img
+            class="wellness-img"
+            src="../assets/image/wellness-min.jpg"
+            alt=""
+          />
           <div class="image-name">
             <h5>Spa</h5>
           </div>
@@ -129,8 +147,18 @@
       </div>
       <div class="container">
         <div class="wellness-button">
-          <img src="../assets/image/Icons/back.svg" alt="" />
-          <img src="../assets/image/Icons/next.svg" alt="" />
+          <img
+            src="../assets/image/Icons/back.svg"
+          
+            class="prev"
+            alt=""
+          />
+          <img
+            src="../assets/image/Icons/next.svg"
+        
+            class="next"
+            alt=""
+          />
         </div>
       </div>
     </section>
@@ -181,104 +209,15 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="container">
-        <section class="footer-wrapper">
-          <div class="footer-link-container">
-            <div class="upper">
-              <div class="desti">
-                <h3 class="desti-title">Destination</h3>
-                <ul class="desti-list">
-                  <div>
-                    <li class="footer-link"><a href="#">Bishoftu</a></li>
-                    <li class="footer-link"><a href="#">Entoto</a></li>
-                    <li class="footer-link"><a href="#">Awash</a></li>
-                    <li class="footer-link"><a href="#">Water Park</a></li>
-                    <li class="footer-link"><a href="#">Lake Tana</a></li>
-                    <li class="footer-link"><a href="#"></a></li>
-                  </div>
-
-                  <div></div>
-                </ul>
-              </div>
-
-              <div class="desti">
-                <h3 class="desti-title">Wellness</h3>
-                <ul class="desti-list">
-                  <div>
-                    <li class="footer-link"><a href="#">Spa</a></li>
-                    <li class="footer-link"><a href="#">Pool</a></li>
-                    <li class="footer-link"><a href="#">Massage</a></li>
-                    <li class="footer-link"><a href="#">Manicure </a></li>
-                    <li class="footer-link"><a href="#">Pedicure</a></li>
-                    <li class="footer-link"><a href="#"></a></li>
-                  </div>
-
-                  <div></div>
-                </ul>
-              </div>
-
-              <div class="desti">
-                <h3 class="desti-title">Experience</h3>
-                <ul class="desti-list">
-                  <div>
-                    <li class="footer-link"><a href="#">Kayaking</a></li>
-                    <li class="footer-link"><a href="#">Archery</a></li>
-                    <li class="footer-link"><a href="#">Cycling</a></li>
-                    <li class="footer-link"><a href="#">Paintball </a></li>
-                    <li class="footer-link"><a href="#">Horse Riding</a></li>
-                    <li class="footer-link"><a href="#"></a></li>
-                  </div>
-
-                  <div></div>
-                </ul>
-              </div>
-
-              <div class="desti">
-                <h3 class="desti-title">Quick Links</h3>
-                <ul class="desti-list">
-                  <div>
-                    <li class="footer-link"><a href="#">Home</a></li>
-                    <li class="footer-link"><a href="#">Entoto</a></li>
-                    <li class="footer-link"><a href="#">Our Story</a></li>
-                    <li class="footer-link"><a href="#">Lake Tana </a></li>
-                    <li class="footer-link"><a href="#">Awash</a></li>
-                    <li class="footer-link"><a href="#"></a></li>
-                  </div>
-
-                  <div></div>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="social">
-            <h3 class="desti-title">follow us on</h3>
-
-            <div class="icon-container">
-              <img src="../assets/image/Icons/facebook.svg" alt="" />
-              <img src="../assets/image/Icons/instagram.svg" alt="" />
-              <img src="../assets/image/Icons/youtube.svg" alt="" />
-            </div>
-          </div>
-        </section>
-
-        <hr />
-        <div class="lower">
-          <img src="../assets/image/LOGO 1.svg" alt="" />
-          <p>
-            &copy; 2021. All Rights Reserved. Web Design & Development by
-            <a href="https://versavvymedia.com/">Versavvy Media PLC</a>
-          </p>
-        </div>
-      </div>
-    </footer>
+   
   </div>
 </template>
 
 
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default {
   data() {
     return {
@@ -288,16 +227,37 @@ export default {
       data: "",
     };
   },
+  mounted(){
+     AOS.init({
+      duration: 1500,
+      offset: 120,
+      easing: "ease",
+      once: false,
+      anchorPlacement: "top-bottom",
+    });
+
+     gsap.registerPlugin(ScrollTrigger)
+
+    let container = document.querySelector(".wellness");
+
+    gsap.to('.well-1', {
+      x: () =>
+        -(container.scrollWidth - document.documentElement.clientWidth) + "px",
+    
+      scrollTrigger: {
+        trigger: container,
+        invalidateOnRefresh: true,
+        // start: "top center",
+        toggleActions: "restart pause reverse pause",
+        pin: true,
+        scrub: 1,
+        end: () => "+=" + container.offsetWidth,
+      },
+
+    });
+  },
   methods: {
-    getData() {
-      axios
-        .post("http://localhost/reservation_system/book.php", {
-          action: "fetchall",
-        })
-        .then((response) => {
-          this.data = response.data;
-        });
-    },
+    
   },
 };
 </script>
@@ -311,7 +271,7 @@ export default {
     background-size: cover;
     background-blend-mode: overlay;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     z-index: -1;
     nav {
       .container {
@@ -403,13 +363,13 @@ export default {
     .container {
       h2 {
         color: $kuriftu-black;
-        @extend .h2;
+        @extend .title;
         margin-top: 0.94rem;
         text-align: left;
       }
       .stay-offer-all {
-        display: grid;
-        place-items: center;
+        display: flex;
+        flex-direction: column;
         .stay-slide {
           margin-top: 1.88rem;
           display: flex;
@@ -431,7 +391,8 @@ export default {
           margin-left: 1rem;
           margin-right: 1rem;
           h4 {
-            @extend .h4;
+            @extend .title;
+            font-size: 1.5rem;
             margin-top: 0.94rem;
             color: $kuriftu-brown;
             text-align: left;
@@ -459,6 +420,7 @@ export default {
     .stay-offer {
       .container {
         .stay-offer-all {
+          
           .stay-slide {
             .slide-card {
               img {
@@ -467,8 +429,8 @@ export default {
             }
           }
           .stay-desc {
-            margin-left: 9rem;
-            margin-right: 9rem;
+            // margin-left: 9rem;
+            // margin-right: 9rem;
 
             .book-buttons {
               display: flex;
@@ -486,7 +448,7 @@ export default {
       margin-top: 8.13rem;
       .container {
         .stay-offer-all {
-          display: flex;
+         flex-direction: row;
 
           .stay-slide {
             margin-top: 4.37rem;
@@ -505,8 +467,9 @@ export default {
           }
           .stay-desc {
             width: 100%-20%;
-            margin-left: 5rem;
-            margin-right: 5rem;
+            // margin-left: 5rem;
+            // margin-right: 5rem;
+            margin-top: 5rem;
             .book-buttons {
               display: flex;
               justify-content: left;
@@ -538,7 +501,7 @@ export default {
     .container {
       h2 {
         color: $kuriftu-black;
-        @extend .h2;
+        @extend .title;
         margin-top: 0.94rem;
         text-align: left;
       }
@@ -558,13 +521,14 @@ export default {
             background: $kuriftu-red;
             padding: 0.8rem;
             width: 50%;
+            min-width: 11.31rem;
             position: absolute;
 
             margin-top: -3.4rem;
 
             h3 {
               color: $kuriftu-white;
-              @extend .h3;
+              @extend .caps;
 
               text-align: center;
             }
@@ -664,7 +628,7 @@ export default {
     .container {
       h2 {
         color: $kuriftu-brown;
-        @extend .h2;
+        @extend .title;
         margin-top: 0.94rem;
         text-align: center;
       }
@@ -679,7 +643,7 @@ export default {
           }
           h3 {
             color: $kuriftu-black;
-            @extend .h2;
+            @extend .title;
             margin-top: 0.94rem;
             font-size: 1.2rem;
             text-align: center;
@@ -720,7 +684,7 @@ export default {
     .container {
       h2 {
         color: $kuriftu-black;
-        @extend .h2;
+        @extend .title;
         margin-top: 0.94rem;
       }
       .gallery-wrapper {
@@ -1130,13 +1094,13 @@ export default {
       }
     }
   }
-
-  .wellness2 {
+ .wellness {
     margin-top: 6.25rem;
+    overflow-x: hidden;
     .container {
       h2 {
         color: $kuriftu-black;
-        @extend .h2;
+        @extend .title;
 
         margin-top: 0.94rem;
         text-align: left;
@@ -1148,21 +1112,27 @@ export default {
       margin-top: 1.88rem;
       gap: 2rem;
       margin-left: 1rem;
-
+      width: 100vw;
+      // height: 100vh;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
       .well-1 {
-        .wellness-img {
-          // position: relative;
-          // width: 20rem;
-          // height: 15rem;
-          z-index: -1rem;
+        min-width: 100%;
+        width: 100%;
+        height: 100%;
+        transform: translateX(0%);
+        position: relative;
+        .wellness-img{
+          // min-height: 25.19rem;
+          object-fit: cover;
         }
         .image-name {
           position: absolute;
           background: $kuriftu-brown;
           margin-top: -2.7rem;
-
-          padding: 0.5rem;
-
+          padding: 0.5rem 1rem;
           h5 {
             // width: 90%;
             color: $kuriftu-white;
@@ -1178,18 +1148,18 @@ export default {
         margin-top: 1.88rem;
         display: flex;
         gap: 1rem;
+        transform: translateX(30%);
       }
     }
   }
   @include responsive($md) {
-    .wellness2 {
+    .wellness {
       .wellness-slide {
-        margin-left: 13rem;
+        // margin-left: 13rem;
 
         .well-1 {
-          .wellness-img {
-            z-index: -1rem;
-          }
+          transform: translateX(50%);
+          // min-width: none;
           .image-name {
             margin-top: -2.78rem;
 
@@ -1201,18 +1171,22 @@ export default {
       .container {
         .wellness-button {
           margin-top: 4.37rem;
+          transform: translateX(50%);
         }
       }
     }
   }
   @include responsive($lg) {
-    .wellness2 {
+    .wellness {
       margin-top: 8.13rem;
       .wellness-slide {
         margin-top: 4.37rem;
-        margin-left: 20rem;
-
         .well-1 {
+          transform: translateX(100%);
+          min-width: auto;
+          img {
+            width: 100%;
+          }
           .image-name {
             margin-top: -3rem;
           }
@@ -1220,18 +1194,16 @@ export default {
       }
       .container {
         .wellness-button {
-          margin-top: 4.37rem;
-          margin-left: 10rem;
+          transform: translateX(30%);
         }
       }
     }
   }
   @include responsive($xl) {
-    .wellness2 {
+    .wellness {
       margin-top: 8.13rem;
       .wellness-slide {
         margin-top: 4.37rem;
-        margin-left: 35rem;
 
         .well-1 {
           .image-name {
@@ -1242,22 +1214,16 @@ export default {
       .container {
         .wellness-button {
           margin-top: 4.37rem;
-          margin-left: 10rem;
-          img {
-            width: 2.5rem;
-          }
         }
       }
     }
   }
   @include responsive($xxl) {
-    .wellness2 {
+    .wellness {
       .wellness-slide {
-        margin-left: 70rem;
       }
       .container {
         .wellness-button {
-          margin-left: 15rem;
           gap: 3rem;
           img {
             width: 3.5rem;
@@ -1356,205 +1322,6 @@ export default {
       }
     }
   }
-  .footer {
-    background: $kuriftu-black;
-    margin-top: 6.25rem;
-
-    .container {
-      .footer-wrapper {
-        .footer-link-container {
-          .upper {
-            display: grid;
-            place-items: center;
-            .desti {
-              .desti-title {
-                color: $kuriftu-brown;
-                @extend .title;
-                font-size: 1.13rem;
-                text-transform: uppercase;
-                margin-top: 4.37rem;
-                text-align: center;
-              }
-              .desti-list {
-                text-align: center;
-                margin-top: 1.88rem;
-                margin-bottom: 1.88rem;
-                // margin-left: 2rem;
-                // gap: 3.31rem;
-                div {
-                  display: grid;
-                  grid-template-columns: 1fr 1fr 1fr;
-                  gap: 3rem;
-                  margin-top: 0.98rem;
-                  .footer-link {
-                    a {
-                      color: $kuriftu-white;
-                      font-size: 0.8rem;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        .social {
-          h3 {
-            color: $kuriftu-brown;
-            @extend .title;
-            font-size: 1.13rem;
-            text-transform: uppercase;
-            margin-top: 4.37rem;
-            text-align: center;
-          }
-          .icon-container {
-            display: flex;
-            justify-content: center;
-            gap: 1.88rem;
-            margin-top: 1.88rem;
-            // width: 2rem;
-          }
-        }
-      }
-      hr {
-        margin-top: 4.37rem;
-        color: $kuriftu-brown;
-      }
-      .lower {
-        display: grid;
-        place-items: center;
-        margin-top: 4.37rem;
-        margin-bottom: 5rem;
-        img {
-          width: 10rem;
-        }
-        p {
-          color: $kuriftu-white;
-          @extend .title;
-
-          font-size: 0.88rem;
-          margin-top: 1.88rem;
-          line-height: 1.3rem;
-          text-align: center;
-          a {
-            color: $kuriftu-blue;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($md) {
-    .footer {
-      .container {
-        .footer-wrapper {
-          .footer-link-container {
-            .upper {
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-              place-items: center;
-
-              .desti {
-                .desti-title {
-                  text-align: left;
-                }
-                .desti-list {
-                  text-align: left;
-                  margin-top: 0.98rem;
-                  margin-bottom: 0.98rem;
-
-                  div {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    gap: 1.3rem;
-                    margin-top: 0.98rem;
-                    .footer-link {
-                      a {
-                        color: $kuriftu-white;
-                        font-size: 1rem;
-                        text-align: left;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        .lower {
-          margin-bottom: 6.3rem;
-          img {
-            width: 15rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    .footer {
-      margin-top: 8.13rem;
-      .container {
-        .footer-wrapper {
-          .footer-link-container {
-            place-items: center;
-            .upper {
-              display: grid;
-              grid-template-columns: 1fr 1fr 1fr 1fr;
-              gap: 5rem;
-              .desti {
-                .desti-title {
-                  text-align: left;
-                }
-                .desti-list {
-                  text-align: left;
-                  margin-top: 0.98rem;
-                  margin-bottom: 0.98rem;
-                }
-              }
-            }
-          }
-        }
-
-        .lower {
-          margin-bottom: 0rem;
-          display: flex;
-          justify-content: space-between;
-          img {
-            margin-bottom: 1rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xl) {
-    .footer {
-      .container {
-        .footer-wrapper {
-          display: flex;
-          justify-content: center;
-          align-items: flex-start;
-          gap: 8rem;
-          .footer-link-container {
-            .upper {
-              gap: 8rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xxl) {
-    .footer {
-      .container {
-        .footer-wrapper {
-          gap: 10rem;
-          .footer-link-container {
-            .upper {
-              gap: 10rem;
-            }
-          }
-        }
-      }
-    }
-  }
+ 
 }
 </style>
