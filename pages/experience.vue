@@ -39,18 +39,20 @@
     <section class="experience">
       <div class="container">
         <h2>Experience</h2>
-        <div class="experi-desc">
-          <h4>Unforgettable, Memorable experiences</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
-            tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam
-            lectus at massa enim elementum varius dictumst. Nulla a, sed enim
-            turpis non lacinia fusce. Quis volutpat sit ullamcorper vitae magna
-            vel sit pharetra scelerisque.
-          </p>
-        </div>
-        <div class="experi-img">
-          <img src="../assets/image/3D.svg" alt="" />
+        <div class="experience-wrapper">
+          <div class="experi-desc">
+            <h4>Unforgettable, Memorable experiences</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
+              tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam
+              lectus at massa enim elementum varius dictumst. Nulla a, sed enim
+              turpis non lacinia fusce. Quis volutpat sit ullamcorper vitae
+              magna vel sit pharetra scelerisque.
+            </p>
+          </div>
+          <div class="experi-img">
+            <img src="../assets/image/3D.svg" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -59,9 +61,46 @@
         <div class="destination-links">
           <ul>
             <li><a href="#">Entoto</a></li>
-            <li><a href="#"></a>Waterpark</li>
-            <li><a href="#"></a></li>
+            <li><a href="#">Waterpark</a></li>
+            <li><a href="#">Lake Tana</a></li>
+            <li><a href="#">Awash</a></li>
           </ul>
+        </div>
+        <div class="exper-wrapper">
+          <div class="exper-card">
+            <div class="exper-img">
+              <img src="../assets/image/entoto-exper.jpg" alt="" />
+            </div>
+            <div class="exper-title">
+              <h3>Baking</h3>
+            </div>
+            <div class="exper-desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="explore">
+                <a href="#"
+                  >EXPLORE
+                  <hr
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="exper-card1">
+            <div class="exper-img">
+              <img src="../assets/image/entoto-exper2.jpg" alt="" />
+            </div>
+            <div class="exper-title">
+              <h3>Rock ClImBing</h3>
+            </div>
+            <div class="exper-desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="explore">
+                <a href="#"
+                  >EXPLORE
+                  <hr
+                /></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -197,27 +236,165 @@ export default {
         margin-top: 0.94rem;
         text-align: left;
       }
-      .experi-desc {
-        h4 {
-          @extend .text;
-          margin-top: 0.94rem;
-          text-align: left;
-          color: $kuriftu-grey;
+      .experience-wrapper {
+        .experi-desc {
+          h4 {
+            @extend .text;
+            margin-top: 0.94rem;
+            text-align: left;
+            color: $kuriftu-grey;
+          }
+          p {
+            @extend .text;
+            margin-top: 0.94rem;
+            text-align: left;
+          }
         }
-        p {
-          @extend .text;
-          margin-top: 0.94rem;
-          text-align: left;
+        .experi-img {
         }
       }
-      .experi-img {
+    }
+  }
+  @include responsive($md) {
+    .experience {
+      .container {
+        .experience-wrapper {
+          display: flex;
+          align-items: center;
+          .experi-desc {
+            h4 {
+              @extend .text;
+              margin-top: 0.94rem;
+              text-align: left;
+              color: $kuriftu-grey;
+            }
+            p {
+              @extend .text;
+              margin-top: 0.94rem;
+              text-align: left;
+            }
+          }
+          .experi-img {
+            // margin-left: -3rem;
+            img {
+              width: 140rem;
+            }
+          }
+        }
       }
     }
   }
 
   .experience-links {
+    margin-top: 6.25rem;
     .container {
       .destination-links {
+        ul {
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+          li {
+            a {
+              @extend .title;
+              font-size: 0.9rem;
+              text-transform: uppercase;
+              color: $kuriftu-black;
+              &:hover {
+                color: $kuriftu-blue;
+              }
+            }
+          }
+        }
+      }
+      .exper-wrapper {
+        display: grid;
+        place-items: center;
+
+        .exper-card,
+        .exper-card1 {
+          margin-top: 1.88rem;
+          .exper-img {
+            img {
+              width: 20rem;
+            }
+          }
+          .exper-title {
+            background: $kuriftu-purple;
+            padding: 0.8rem;
+            width: 50%;
+            min-width: 11.31rem;
+            position: absolute;
+            // bottom: 0;
+
+            // margin-top: 15.2rem;
+            margin-top: -3.23rem;
+
+            h3 {
+              color: $kuriftu-white;
+              @extend .caps;
+              font-size: 0.9rem;
+
+              text-align: center;
+            }
+          }
+          .exper-desc {
+            width: 85%;
+            background: #fff;
+            padding: 1rem;
+            p {
+              @extend .text;
+
+              color: $kuriftu-grey;
+              font-size: 0.8rem;
+              line-height: 1.3rem;
+              text-align: left;
+            }
+            .explore {
+              margin-top: 1rem;
+              display: grid;
+              place-items: left;
+              a {
+                font-size: 0.8rem;
+                color: $kuriftu-grey;
+                hr {
+                  color: $kuriftu-grey;
+                  width: 4rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($md) {
+    .experience-links {
+      .container {
+        .destination-links {
+          ul {
+            li {
+              a {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+        .exper-wrapper {
+          display: flex;
+          gap: 5rem;
+
+          .exper-card {
+            .exper-title {
+              width: 10%;
+            }
+          }
+          .exper-card1 {
+            margin-bottom: -10rem;
+            .exper-title {
+              width: 10%;
+            }
+          }
+        }
       }
     }
   }
