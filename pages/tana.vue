@@ -209,7 +209,130 @@
         </div>
       </div>
     </section>
-   
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimony-wrapper">
+          <div class="testimony-card">
+            <div class="test-img">
+              <img src="../assets/image/test.svg" alt="" />
+            </div>
+            <div class="test-stars">
+              <img src="../assets/image/Icons/start.svg" alt="" />
+            </div>
+            <p>
+              <b> Wow the best thing ever!</b> Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </p>
+            <h3>Artist, Getachew Bezuwerk</h3>
+          </div>
+          <div class="testimony-card">
+            <div class="test-img">
+              <img src="../assets/image/test.svg" alt="" />
+            </div>
+            <div class="test-stars">
+              <img src="../assets/image/Icons/start.svg" alt="" />
+            </div>
+            <p>
+              <b> Wow the best thing ever!</b> Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </p>
+            <h3>Artist, Getachew Bezuwerk</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <section class="footer-wrapper">
+          <div class="footer-link-container">
+            <div class="upper">
+              <div class="desti">
+                <h3 class="desti-title">Destination</h3>
+                <ul class="desti-list">
+                  <div>
+                    <li class="footer-link"><a href="#">Bishoftu</a></li>
+                    <li class="footer-link"><a href="#">Entoto</a></li>
+                    <li class="footer-link"><a href="#">Awash</a></li>
+                    <li class="footer-link"><a href="#">Water Park</a></li>
+                    <li class="footer-link"><a href="#">Lake Tana</a></li>
+                    <li class="footer-link"><a href="#"></a></li>
+                  </div>
+
+                  <div></div>
+                </ul>
+              </div>
+
+              <div class="desti">
+                <h3 class="desti-title">Wellness</h3>
+                <ul class="desti-list">
+                  <div>
+                    <li class="footer-link"><a href="#">Spa</a></li>
+                    <li class="footer-link"><a href="#">Pool</a></li>
+                    <li class="footer-link"><a href="#">Massage</a></li>
+                    <li class="footer-link"><a href="#">Manicure </a></li>
+                    <li class="footer-link"><a href="#">Pedicure</a></li>
+                    <li class="footer-link"><a href="#"></a></li>
+                  </div>
+
+                  <div></div>
+                </ul>
+              </div>
+
+              <div class="desti">
+                <h3 class="desti-title">Experience</h3>
+                <ul class="desti-list">
+                  <div>
+                    <li class="footer-link"><a href="#">Kayaking</a></li>
+                    <li class="footer-link"><a href="#">Archery</a></li>
+                    <li class="footer-link"><a href="#">Cycling</a></li>
+                    <li class="footer-link"><a href="#">Paintball </a></li>
+                    <li class="footer-link"><a href="#">Horse Riding</a></li>
+                    <li class="footer-link"><a href="#"></a></li>
+                  </div>
+
+                  <div></div>
+                </ul>
+              </div>
+
+              <div class="desti">
+                <h3 class="desti-title">Quick Links</h3>
+                <ul class="desti-list">
+                  <div>
+                    <li class="footer-link"><a href="#">Home</a></li>
+                    <li class="footer-link"><a href="#">Entoto</a></li>
+                    <li class="footer-link"><a href="#">Our Story</a></li>
+                    <li class="footer-link"><a href="#">Lake Tana </a></li>
+                    <li class="footer-link"><a href="#">Awash</a></li>
+                    <li class="footer-link"><a href="#"></a></li>
+                  </div>
+
+                  <div></div>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="social">
+            <h3 class="desti-title">follow us on</h3>
+
+            <div class="icon-container">
+              <img src="../assets/image/Icons/facebook.svg" alt="" />
+              <img src="../assets/image/Icons/instagram.svg" alt="" />
+              <img src="../assets/image/Icons/youtube.svg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <hr />
+        <div class="lower">
+          <img src="../assets/image/LOGO 1.svg" alt="" />
+          <p>
+            &copy; 2021. All Rights Reserved. Web Design & Development by
+            <a href="https://versavvymedia.com/">Versavvy Media PLC</a>
+          </p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -266,13 +389,14 @@ export default {
 .main {
   background: $kuriftu-white;
   header {
-    background: url("../assets/image/tana.jpg") no-repeat;
+    background: url("../assets/image/tana.jpg") rgba(0, 6, 27, 0.22) no-repeat;
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
     width: 100%;
     height: 100vh;
     z-index: -1;
+
     nav {
       .container {
         display: flex;
@@ -376,15 +500,6 @@ export default {
           align-items: center;
           justify-items: center;
           gap: 0.5rem;
-
-          .slide-card {
-            img {
-            }
-          }
-
-          .next-icon {
-            // margin-left: -1rem;
-          }
         }
         .stay-desc {
           margin-top: 1.88rem;
@@ -557,8 +672,8 @@ export default {
           display: flex;
           gap: 1rem;
           .dining-card {
-            .dining-img {
-            }
+            // .dining-img {
+            // }
             .food-title {
               padding: 0.5rem;
               width: 20%;
@@ -1220,8 +1335,8 @@ export default {
   }
   @include responsive($xxl) {
     .wellness {
-      .wellness-slide {
-      }
+      // .wellness-slide {
+      // }
       .container {
         .wellness-button {
           gap: 3rem;
@@ -1322,6 +1437,254 @@ export default {
       }
     }
   }
- 
+  .testimonials {
+    margin-top: 6.25rem;
+    .container {
+      .testimony-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        .testimony-card {
+          background: #fff;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          width: 20rem;
+          .test-img {
+            margin-top: -3rem;
+            margin-left: -1.5rem;
+            img {
+              width: 4rem;
+            }
+          }
+          .test-stars {
+            img {
+              margin-left: 1rem;
+              width: 10rem;
+            }
+          }
+          p {
+            margin-left: 1rem;
+            color: $kuriftu-black;
+            @extend .title;
+            font-family: "Neue Helvetica Light Italic";
+            font-size: 0.88rem;
+            margin-top: 0.98rem;
+            line-height: 1.3rem;
+            text-align: left;
+          }
+          h3 {
+            margin-left: 1rem;
+            color: $kuriftu-red;
+            @extend .h3;
+            font-family: "Neue Helvetica Extended Bold";
+            font-size: 0.8rem;
+            margin-top: 0.98rem;
+            line-height: 1.3rem;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    background: $kuriftu-black;
+    margin-top: 6.25rem;
+
+    .container {
+      .footer-wrapper {
+        .footer-link-container {
+          .upper {
+            display: grid;
+            place-items: center;
+            .desti {
+              .desti-title {
+                color: $kuriftu-brown;
+                @extend .title;
+                font-size: 1.13rem;
+                text-transform: uppercase;
+                margin-top: 4.37rem;
+                text-align: center;
+              }
+              .desti-list {
+                text-align: center;
+                margin-top: 1.88rem;
+                margin-bottom: 1.88rem;
+                // margin-left: 2rem;
+                // gap: 3.31rem;
+                div {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr 1fr;
+                  gap: 3rem;
+                  margin-top: 0.98rem;
+                  .footer-link {
+                    a {
+                      color: $kuriftu-white;
+                      font-size: 0.8rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .social {
+          h3 {
+            color: $kuriftu-brown;
+            @extend .title;
+            font-size: 1.13rem;
+            text-transform: uppercase;
+            margin-top: 4.37rem;
+            text-align: center;
+          }
+          .icon-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.88rem;
+            margin-top: 1.88rem;
+            // width: 2rem;
+          }
+        }
+      }
+      hr {
+        margin-top: 4.37rem;
+        color: $kuriftu-brown;
+      }
+      .lower {
+        display: grid;
+        place-items: center;
+        margin-top: 4.37rem;
+        margin-bottom: 5rem;
+        img {
+          width: 10rem;
+        }
+        p {
+          color: $kuriftu-white;
+          @extend .title;
+
+          font-size: 0.88rem;
+          margin-top: 1.88rem;
+          line-height: 1.3rem;
+          text-align: center;
+          a {
+            color: $kuriftu-blue;
+          }
+        }
+      }
+    }
+  }
+  @include responsive($md) {
+    .footer {
+      .container {
+        .footer-wrapper {
+          .footer-link-container {
+            .upper {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              place-items: center;
+
+              .desti {
+                .desti-title {
+                  text-align: left;
+                }
+                .desti-list {
+                  text-align: left;
+                  margin-top: 0.98rem;
+                  margin-bottom: 0.98rem;
+
+                  div {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 1.3rem;
+                    margin-top: 0.98rem;
+                    .footer-link {
+                      a {
+                        color: $kuriftu-white;
+                        font-size: 1rem;
+                        text-align: left;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .lower {
+          margin-bottom: 6.3rem;
+          img {
+            width: 15rem;
+          }
+        }
+      }
+    }
+  }
+  @include responsive($lg) {
+    .footer {
+      margin-top: 8.13rem;
+      .container {
+        .footer-wrapper {
+          .footer-link-container {
+            place-items: center;
+            .upper {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              gap: 5rem;
+              .desti {
+                .desti-title {
+                  text-align: left;
+                }
+                .desti-list {
+                  text-align: left;
+                  margin-top: 0.98rem;
+                  margin-bottom: 0.98rem;
+                }
+              }
+            }
+          }
+        }
+
+        .lower {
+          margin-bottom: 0rem;
+          display: flex;
+          justify-content: space-between;
+          img {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+  @include responsive($xl) {
+    .footer {
+      .container {
+        .footer-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 8rem;
+          .footer-link-container {
+            .upper {
+              gap: 8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($xxl) {
+    .footer {
+      .container {
+        .footer-wrapper {
+          gap: 10rem;
+          .footer-link-container {
+            .upper {
+              gap: 10rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 </style>
