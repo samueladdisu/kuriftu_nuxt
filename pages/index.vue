@@ -559,7 +559,7 @@ export default {
 .main {
   background: $kuriftu-white;
   header {
-    background: url("~/assets/image/Home.jpg") no-repeat;
+    background: url("~/assets/image/Home.jpg") rgba(0, 6, 27, 0.22) no-repeat;
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -1462,13 +1462,17 @@ export default {
         .footer-link-container {
           .upper {
             display: grid;
+            grid-template-columns: 1fr 1fr;
             place-items: center;
+
             .desti {
               .desti-title {
                 color: $kuriftu-brown;
-                @extend .h4;
+                @extend .title;
                 margin-top: 4.37rem;
                 text-align: center;
+                font-size: 1rem;
+                text-transform: uppercase;
               }
               .desti-list {
                 text-align: center;
@@ -1478,9 +1482,9 @@ export default {
                 // gap: 3.31rem;
                 div {
                   display: grid;
-                  grid-template-columns: 1fr 1fr 1fr;
-                  gap: 3rem;
-                  margin-top: 0.98rem;
+                  place-items: left;
+                  gap: 1rem;
+                  margin-top: 0.8rem;
                   .footer-link {
                     a {
                       color: $kuriftu-white;
@@ -1495,9 +1499,11 @@ export default {
         .social {
           h3 {
             color: $kuriftu-brown;
-            @extend .h3;
+            @extend .title;
+
             margin-top: 4.37rem;
             text-align: center;
+            font-size: 1rem;
             text-transform: uppercase;
           }
           .icon-container {

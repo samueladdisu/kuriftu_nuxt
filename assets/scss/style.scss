@@ -1070,6 +1070,14 @@ $trans: all 0.5s ease-in-out;
   margin: 0 auto;
   // overflow: hidden;
 }
+// @include responsive($xxl) {
+//   .container {
+//     width: 100% - 10%;
+//     max-width: 1920px;
+//     margin: 0 auto;
+//     // overflow: hidden;
+//   }
+// }
 .row {
   display: flex;
   flex-wrap: wrap;

@@ -589,7 +589,7 @@ export default {
             h3 {
               color: $kuriftu-white;
               @extend .h3;
-
+              font-size: 1rem;
               text-align: center;
             }
           }
@@ -601,7 +601,7 @@ export default {
               @extend .text;
 
               color: $kuriftu-grey;
-              font-size: 1rem;
+              font-size: 0.8rem;
               line-height: 1.3rem;
               text-align: left;
             }
@@ -800,360 +800,6 @@ export default {
       }
     }
   }
-  .destinations {
-    margin-top: 6.25rem;
-    .container {
-      display: grid;
-      place-items: center;
-      h2 {
-        color: $kuriftu-brown;
-        @extend .h2;
-        margin-top: 0.94rem;
-        text-align: center;
-      }
-      p {
-        margin-top: 0.94rem;
-        color: $kuriftu-grey;
-        font-size: 0.88rem;
-        text-align: center;
-      }
-      .top-2,
-      .bottom-3 {
-        .bishoftu,
-        .bishoftu1 {
-          margin-top: 1.88rem;
-          .bishoftu-img {
-            img {
-              width: 20rem;
-            }
-          }
-          .bishoftu-desc {
-            h4 {
-              @extend .h4;
-              margin-top: 0.94rem;
-            }
-            p {
-              @extend .text;
-              margin-top: 0.94rem;
-              color: $kuriftu-black;
-              text-align: left;
-            }
-            .explore {
-              margin-top: 1.88rem;
-              display: grid;
-              place-items: left;
-              a {
-                font-size: 1rem;
-                color: $kuriftu-grey;
-                hr {
-                  color: $kuriftu-grey;
-                  width: 5rem;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($md) {
-    .destinations {
-      .container {
-        .top-2 {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          align-items: flex-end;
-          gap: 1rem;
-        }
-        .bottom-3 {
-          display: grid;
-          align-items: flex-end;
-          grid-template-columns: 1fr 1fr 1fr;
-          gap: 1rem;
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    .destinations {
-      margin-top: 8.13rem;
-      .container {
-        .top-2 {
-          margin-top: 2.88rem;
-          .bishoftu,
-          .bishoftu1 {
-            .bishoftu-desc {
-              h4,
-              p {
-                margin-top: 1.88rem;
-              }
-            }
-          }
-        }
-        .bottom-3 {
-          margin-top: 2.88rem;
-          .bishoftu {
-            .bishoftu-desc {
-              h4,
-              p {
-                margin-top: 1.88rem;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xl) {
-    .destinations {
-      .container {
-        .top-2 {
-          margin-top: 2.88rem;
-          .bishoftu,
-          .bishoftu1 {
-            .bishoftu-img {
-              img {
-                width: 40rem;
-              }
-            }
-            .bishoftu-desc {
-              h4,
-              p {
-                margin-top: 1.88rem;
-              }
-            }
-          }
-        }
-        .bottom-3 {
-          margin-top: 2.88rem;
-          .bishoftu {
-            .bishoftu-img {
-              img {
-                width: 30rem;
-              }
-            }
-            .bishoftu-desc {
-              h4,
-              p {
-                margin-top: 1.88rem;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .harmony {
-    background: url(../assets/image/harmony.jpg) no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-blend-mode: overlay;
-    height: 40vh;
-    // background-attachment: fixed;
-    margin-top: 6.25rem;
-    .container {
-      position: relative;
-      .harmony-text {
-        // background: $kuriftu-white;
-        justify-content: flex-end;
-        width: 50%;
-        position: absolute;
-        right: 0;
-        background: #fff;
-        padding: 1rem;
-        h4 {
-          @extend .h4;
-
-          font-size: 1.2rem;
-          color: $kuriftu-brown;
-          font-weight: 700;
-        }
-        p {
-          @extend .text;
-          margin-top: 0.94rem;
-          color: $kuriftu-black;
-          font-size: 0.88rem;
-          text-align: left;
-        }
-        .explore {
-          margin-top: 1rem;
-          display: grid;
-          place-items: left;
-          a {
-            font-size: 0.7rem;
-            color: $kuriftu-grey;
-            hr {
-              color: $kuriftu-grey;
-              width: 5rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($md) {
-    .harmony {
-      height: 50vh;
-
-      .container {
-        .harmony-text {
-          width: 30%;
-          .explore {
-            a {
-              font-size: 0.88rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    .harmony {
-      // background: url(../assets/image/harmony-min.jpg) no-repeat;
-
-      margin-top: 8.13rem;
-      .container {
-        .harmony-text {
-          h4 {
-            font-size: 1.3rem;
-          }
-          p {
-            font-size: 1rem;
-          }
-          width: 30%;
-          .explore {
-            a {
-              font-size: 0.88rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xl) {
-    .harmony {
-      background: url(../assets/image/harmony-min.jpg) no-repeat;
-      height: 70vh;
-      .container {
-        .harmony-text {
-          h4 {
-            font-size: 2rem;
-            line-height: 2rem;
-          }
-          p {
-            font-size: 1.3rem;
-          }
-          width: 25%;
-          .explore {
-            a {
-              font-size: 1rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xxl) {
-    .harmony {
-      background: url(../assets/image/harmony2.jpg) no-repeat;
-      background-position: center top;
-    }
-  }
-
-  .memory {
-    margin-top: 6.25rem;
-    .container {
-      display: grid;
-      place-items: center;
-      h2 {
-        color: $kuriftu-brown;
-        @extend .h2;
-
-        margin-top: 0.94rem;
-        text-align: center;
-        text-transform: uppercase;
-      }
-      p {
-        margin-top: 0.94rem;
-        color: $kuriftu-grey;
-        text-align: center;
-      }
-      .memory-slide {
-        margin-top: 4.37rem;
-        display: flex;
-        // justify-content: space-between;
-        gap: 1rem;
-        .memory-slide-card {
-          img {
-            width: 20rem;
-          }
-          .img-bottom {
-            background: $kuriftu-brown;
-
-            padding: 0.5rem;
-            h3 {
-              color: $kuriftu-white;
-              @extend .h3;
-              margin-top: 0rem;
-              text-align: left;
-              text-transform: uppercase;
-            }
-            p {
-              display: flex;
-              margin-top: 0.94rem;
-              color: $kuriftu-white;
-              text-align: left;
-              margin-bottom: 1rem;
-              .arrow {
-                width: 3rem;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($md) {
-    .memory {
-      .container {
-        .memory-slide {
-          gap: 5rem;
-          .memory-slide-card {
-            img {
-              width: 20rem;
-            }
-            .img-bottom {
-              width: 20rem;
-
-              p {
-                .arrow {
-                  width: 2rem;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    .memory {
-      margin-top: 8.13rem;
-      .container {
-        .memory-slide {
-          gap: 8rem;
-          .memory-slide-card {
-            img {
-              width: 25rem;
-            }
-            .img-bottom {
-              width: 25rem;
-            }
-          }
-        }
-      }
-    }
-  }
 
   .wellness2 {
     margin-top: 6.25rem;
@@ -1215,8 +861,6 @@ export default {
             z-index: -1rem;
           }
           .image-name {
-            margin-top: -2.78rem;
-
             padding-left: 2rem;
             padding-right: 2rem;
           }
@@ -1291,95 +935,6 @@ export default {
     }
   }
 
-  .construction {
-    margin-top: 6.25rem;
-    .container {
-      h2 {
-        color: $kuriftu-black;
-        @extend .h2;
-        margin-top: 0.94rem;
-        text-align: left;
-      }
-      .construction-all {
-        display: grid;
-        place-items: center;
-        margin-top: 1.88rem;
-        .construction-img {
-          img {
-            width: 17rem;
-          }
-        }
-        .constr-desc {
-          h4 {
-            @extend .h4;
-            margin-top: 0.94rem;
-            text-align: center;
-          }
-          p {
-            @extend .text;
-            margin-top: 0.94rem;
-            text-align: center;
-            color: $kuriftu-grey;
-          }
-          .book-buttons {
-            display: flex;
-            justify-content: center;
-            margin-top: 1.88rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($md) {
-    .construction {
-      .container {
-        .construction-all {
-          .construction-img {
-            img {
-              width: 20rem;
-            }
-          }
-          .constr-desc {
-            margin-left: 5rem;
-            margin-right: 5rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    .construction {
-      margin-top: 8.13rem;
-      .container {
-        .construction-all {
-          margin-top: 4.37rem;
-          display: flex;
-          .construction-img {
-            img {
-              width: 23rem;
-            }
-          }
-          .constr-desc {
-            width: 100%-60%;
-            h4 {
-              margin-top: 0rem;
-              text-align: left;
-              font-size: 1.5rem;
-            }
-            p {
-              margin-top: 1.88rem;
-              text-align: left;
-            }
-            .book-buttons {
-              justify-content: flex-start;
-              gap: 1rem;
-              margin-top: 2.88rem;
-            }
-          }
-        }
-      }
-    }
-  }
   .testimonials {
     margin-top: 6.25rem;
     .container {
@@ -1438,15 +993,18 @@ export default {
         .footer-link-container {
           .upper {
             display: grid;
+            grid-template-columns: 1fr 1fr;
             place-items: center;
+
             .desti {
               .desti-title {
                 color: $kuriftu-brown;
                 @extend .title;
-                font-size: 1.13rem;
-                text-transform: uppercase;
+                font-family: "Neue Helvetica Bold";
                 margin-top: 4.37rem;
                 text-align: center;
+                font-size: 1rem;
+                text-transform: uppercase;
               }
               .desti-list {
                 text-align: center;
@@ -1456,9 +1014,9 @@ export default {
                 // gap: 3.31rem;
                 div {
                   display: grid;
-                  grid-template-columns: 1fr 1fr 1fr;
-                  gap: 3rem;
-                  margin-top: 0.98rem;
+                  place-items: left;
+                  gap: 1rem;
+                  margin-top: 0.8rem;
                   .footer-link {
                     a {
                       color: $kuriftu-white;
@@ -1474,10 +1032,11 @@ export default {
           h3 {
             color: $kuriftu-brown;
             @extend .title;
-            font-size: 1.13rem;
-            text-transform: uppercase;
+            font-family: "Neue Helvetica Bold";
             margin-top: 4.37rem;
             text-align: center;
+            font-size: 1rem;
+            text-transform: uppercase;
           }
           .icon-container {
             display: flex;
@@ -1502,8 +1061,6 @@ export default {
         }
         p {
           color: $kuriftu-white;
-          @extend .title;
-
           font-size: 0.88rem;
           margin-top: 1.88rem;
           line-height: 1.3rem;
@@ -1515,6 +1072,7 @@ export default {
       }
     }
   }
+
   @include responsive($md) {
     .footer {
       .container {
