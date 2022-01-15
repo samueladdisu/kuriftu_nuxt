@@ -505,7 +505,7 @@ export default {
             min-width: 11.31rem;
             position: absolute;
 
-            margin-top: -3.4rem;
+            margin-top: -3.27rem;
 
             h3 {
               color: $kuriftu-white;
