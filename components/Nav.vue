@@ -1,8 +1,8 @@
 <template>
-  <div class="main">
+  
     <div class="whole-nav">
       <div class="nav-menu">
-        <div class="menu-close">
+        <div class="menu-close" @click="closeNav">
           <div class="line">
             <hr class="frist-line" />
             <hr class="second-line" />
@@ -76,37 +76,27 @@
         </div>
       </div>
     </div>
-  </div>
+
 </template>
 <script>
 export default {
-  data() {
-    return {
-      checkIn: "",
-      checkOut: "",
-      location: "",
-      data: "",
-    };
-  },
   methods: {
-    getData() {
-      axios
-        .post("http://localhost/reservation_system/book.php", {
-          action: "fetchall",
-        })
-        .then((response) => {
-          this.data = response.data;
-        });
-    },
-  },
+    closeNav(){
+      this.$emit('close')
+    }
+  }
+ 
 };
 </script>
 
 <style lang="scss" scoped>
-.main {
+
   .whole-nav {
     background: #f5f5f2;
     height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
     .nav-menu {
       display: flex;
       justify-content: space-between;
@@ -500,5 +490,5 @@ export default {
       height: 100vh;
     }
   }
-}
+
 </style>
