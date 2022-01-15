@@ -1,9 +1,7 @@
 <template>
   <div class="main">
     <HeaderApp />
-    <div class="fixed-button">
-      <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>
-    </div>
+
     <section class="welcome" style="overflow-x: hidden">
       <div class="container">
         <div class="welcome-wrapper" style="overflow-x: hidden">
@@ -339,99 +337,6 @@
         </div>
       </div>
     </section>
-
-    <footer class="footer">
-      <div class="container">
-        <section class="footer-wrapper">
-          <div class="footer-link-container">
-            <div class="upper">
-              <div class="desti">
-                <h3 class="desti-title">Destination</h3>
-                <ul class="desti-list">
-                  <div>
-                    <li class="footer-link"><a href="#">Bishoftu</a></li>
-                    <li class="footer-link"><a href="#">Entoto</a></li>
-                    <li class="footer-link"><a href="#">Awash</a></li>
-                    <li class="footer-link"><a href="#">Water Park</a></li>
-                    <li class="footer-link"><a href="#">Lake Tana</a></li>
-                    <li class="footer-link"><a href="#"></a></li>
-                  </div>
-
-                  <div></div>
-                </ul>
-              </div>
-
-              <div class="desti">
-                <h3 class="desti-title">Wellness</h3>
-                <ul class="desti-list">
-                  <div>
-                    <li class="footer-link"><a href="#">Spa</a></li>
-                    <li class="footer-link"><a href="#">Pool</a></li>
-                    <li class="footer-link"><a href="#">Massage</a></li>
-                    <li class="footer-link"><a href="#">Manicure </a></li>
-                    <li class="footer-link"><a href="#">Pedicure</a></li>
-                    <li class="footer-link"><a href="#"></a></li>
-                  </div>
-
-                  <div></div>
-                </ul>
-              </div>
-
-              <div class="desti">
-                <h3 class="desti-title">Experience</h3>
-                <ul class="desti-list">
-                  <div>
-                    <li class="footer-link"><a href="#">Kayaking</a></li>
-                    <li class="footer-link"><a href="#">Archery</a></li>
-                    <li class="footer-link"><a href="#">Cycling</a></li>
-                    <li class="footer-link"><a href="#">Paintball </a></li>
-                    <li class="footer-link"><a href="#">Horse Riding</a></li>
-                    <li class="footer-link"><a href="#"></a></li>
-                  </div>
-
-                  <div></div>
-                </ul>
-              </div>
-
-              <div class="desti">
-                <h3 class="desti-title">Quick Links</h3>
-                <ul class="desti-list">
-                  <div>
-                    <li class="footer-link"><a href="#">Home</a></li>
-                    <li class="footer-link"><a href="#">Entoto</a></li>
-                    <li class="footer-link"><a href="#">Our Story</a></li>
-                    <li class="footer-link"><a href="#">Lake Tana </a></li>
-                    <li class="footer-link"><a href="#">Awash</a></li>
-                    <li class="footer-link"><a href="#"></a></li>
-                  </div>
-
-                  <div></div>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="social">
-            <h3 class="desti-title">follow us on</h3>
-
-            <div class="icon-container">
-              <img src="../assets/image/Icons/facebook.svg" alt="" />
-              <img src="../assets/image/Icons/instagram.svg" alt="" />
-              <img src="../assets/image/Icons/youtube.svg" alt="" />
-            </div>
-          </div>
-        </section>
-
-        <hr />
-        <div class="lower">
-          <img src="../assets/image/LOGO 1.svg" alt="" />
-          <p>
-            &copy; 2022. All Rights Reserved. Web Design & Development by
-            <a href="https://versavvymedia.com/">Versavvy Media PLC</a>
-          </p>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 
@@ -526,7 +431,6 @@ export default {
 
 <style lang="scss">
 .main {
-  background: $kuriftu-white;
   header {
     background: url("~/assets/image/Home.jpg") rgba(0, 6, 27, 0.22) no-repeat;
     background-position: center center;
@@ -601,25 +505,7 @@ export default {
       height: 100vh;
     }
   }
-  .fixed-button {
-    background: $kuriftu-black;
-    position: fixed;
-    width: 100%;
 
-    height: 10vh;
-    z-index: 9999;
-
-    // display: grid;
-    text-align: center;
-    .btn {
-      margin: 1.3rem;
-    }
-  }
-  @include responsive($lg) {
-    .fixed-button {
-      display: none;
-    }
-  }
   .welcome {
     margin-top: 6.25rem;
     .container {

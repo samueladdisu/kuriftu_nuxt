@@ -1,17 +1,25 @@
 <template>
-<div>
-  <Nuxt />
-  <FooterApp />
-</div>
+  <div>
+    <Nuxt />
+    <Fixed />
+    <FooterApp />
+  </div>
 </template>
 
 <script>
-import FooterApp from '../components/FooterApp.vue'
+import FooterApp from "../components/FooterApp.vue";
+import Fixed from "../components/Fixed.vue";
 
 export default {
   components: {
-    FooterApp
+    FooterApp,
+    Fixed,
   },
-  
-}
+};
 </script>
+
+<style lang="scss" >
+body {
+  background: $kuriftu-white;
+}
+</style>
