@@ -36,11 +36,11 @@
     <div class="fixed-button">
       <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>
     </div>
-    <section class="stay-offer">
+    <section class="stay-offer" style="overflow-x: hidden">
       <div class="container">
         <h2>Your Stay</h2>
-        <div class="stay-offer-all">
-          <div class="stay-slide">
+        <div class="stay-offer-all" style="overflow-x: hidden">
+          <div class="stay-slide" data-aos="slide-right">
             <div class="back-icon">
               <img src="../assets/image/Icons/circle-back.svg" alt="" />
             </div>
@@ -51,7 +51,7 @@
               <img src="../assets/image/Icons/circle-next.svg" alt="" />
             </div>
           </div>
-          <div class="stay-desc">
+          <div class="stay-desc" data-aos="slide-left">
             <h4>Deluxe Suite</h4>
             <p class="header-title">
               Treat your loved ones to Ethiopia’s greatest family destination
@@ -73,7 +73,7 @@
       <div class="container">
         <h2>Dining</h2>
         <div class="dining-wrapper">
-          <div class="dining-card">
+          <div class="dining-card" data-aos="slide-up">
             <div class="dining-img">
               <img src="../assets/image/bahirdardining1.jpg" alt="" />
             </div>
@@ -84,7 +84,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
-          <div class="dining-card">
+          <div class="dining-card" data-aos="slide-up" data-aos-delay="500">
             <div class="dining-img">
               <img src="../assets/image/bahirdardining2.jpg" alt="" />
             </div>
@@ -95,7 +95,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
-          <div class="dining-card">
+          <div class="dining-card" data-aos="slide-up" data-aos-delay="600">
             <div class="dining-img">
               <img src="../assets/image/bahirdardining3.jpg" alt="" />
             </div>
@@ -109,19 +109,29 @@
         </div>
       </div>
     </section>
-    <section class="wellness2">
+    <section class="wellness">
       <div class="container">
         <h2>Wellness</h2>
       </div>
       <div class="wellness-slide">
-        <div class="well-1">
+        <div class="well-1 1">
           <img class="wellness-img" src="../assets/image/massage1.jpg" alt="" />
           <div class="image-name">
             <h5>Massages</h5>
           </div>
         </div>
-        <div class="well-1">
-          <img class="wellness-img" src="../assets/image/massage2.jpg" alt="" />
+        <div class="well-1 2">
+          <img class="wellness-img" src="../assets/image/massage1.jpg" alt="" />
+          <div class="image-name">
+            <h5>Massages</h5>
+          </div>
+        </div>
+        <div class="well-1 3">
+          <img
+            class="wellness-img"
+            src="../assets/image/wellness-min.jpg"
+            alt=""
+          />
           <div class="image-name">
             <h5>Spa</h5>
           </div>
@@ -129,8 +139,8 @@
       </div>
       <div class="container">
         <div class="wellness-button">
-          <img src="../assets/image/Icons/back.svg" alt="" />
-          <img src="../assets/image/Icons/next.svg" alt="" />
+          <img src="../assets/image/Icons/back.svg" class="prev" alt="" />
+          <img src="../assets/image/Icons/next.svg" class="next" alt="" />
         </div>
       </div>
     </section>
@@ -311,6 +321,8 @@
 
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default {
   data() {
     return {
@@ -320,17 +332,35 @@ export default {
       data: "",
     };
   },
-  methods: {
-    getData() {
-      axios
-        .post("http://localhost/reservation_system/book.php", {
-          action: "fetchall",
-        })
-        .then((response) => {
-          this.data = response.data;
-        });
-    },
+  mounted() {
+    AOS.init({
+      duration: 1500,
+      offset: 120,
+      easing: "ease",
+      once: false,
+      anchorPlacement: "top-bottom",
+    });
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    let container = document.querySelector(".wellness");
+
+    gsap.to(".well-1", {
+      x: () =>
+        -(container.scrollWidth - document.documentElement.clientWidth) + "px",
+
+      scrollTrigger: {
+        trigger: container,
+        invalidateOnRefresh: true,
+        // start: "top center",
+        toggleActions: "restart pause reverse pause",
+        pin: true,
+        scrub: 1,
+        end: () => "+=" + container.offsetWidth,
+      },
+    });
   },
+  methods: {},
 };
 </script>
 
@@ -343,7 +373,7 @@ export default {
     background-size: cover;
     background-blend-mode: overlay;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     z-index: -1;
 
     nav {
@@ -436,13 +466,13 @@ export default {
     .container {
       h2 {
         color: $kuriftu-black;
-        @extend .h2;
+        @extend .title;
         margin-top: 0.94rem;
         text-align: left;
       }
       .stay-offer-all {
-        display: grid;
-        place-items: center;
+        display: flex;
+        flex-direction: column;
         .stay-slide {
           margin-top: 1.88rem;
           display: flex;
@@ -455,7 +485,8 @@ export default {
           margin-left: 1rem;
           margin-right: 1rem;
           h4 {
-            @extend .h4;
+            @extend .title;
+            font-size: 1.5rem;
             margin-top: 0.94rem;
             color: $kuriftu-brown;
             text-align: left;
@@ -491,8 +522,8 @@ export default {
             }
           }
           .stay-desc {
-            margin-left: 9rem;
-            margin-right: 9rem;
+            // margin-left: 9rem;
+            // margin-right: 9rem;
 
             .book-buttons {
               display: flex;
@@ -510,7 +541,7 @@ export default {
       margin-top: 8.13rem;
       .container {
         .stay-offer-all {
-          display: flex;
+          flex-direction: row;
 
           .stay-slide {
             margin-top: 4.37rem;
@@ -529,8 +560,9 @@ export default {
           }
           .stay-desc {
             width: 100%-20%;
-            margin-left: 5rem;
-            margin-right: 5rem;
+            // margin-left: 5rem;
+            // margin-right: 5rem;
+            margin-top: 5rem;
             .book-buttons {
               display: flex;
               justify-content: left;
@@ -562,7 +594,7 @@ export default {
     .container {
       h2 {
         color: $kuriftu-black;
-        @extend .h2;
+        @extend .title;
         margin-top: 0.94rem;
         text-align: left;
       }
@@ -582,14 +614,15 @@ export default {
             background: $kuriftu-red;
             padding: 0.8rem;
             width: 50%;
+            min-width: 11.31rem;
             position: absolute;
 
             margin-top: -3.4rem;
 
             h3 {
               color: $kuriftu-white;
-              @extend .h3;
-              font-size: 1rem;
+              @extend .caps;
+
               text-align: center;
             }
           }
@@ -688,7 +721,7 @@ export default {
     .container {
       h2 {
         color: $kuriftu-brown;
-        @extend .h2;
+        @extend .title;
         margin-top: 0.94rem;
         text-align: center;
       }
@@ -703,7 +736,7 @@ export default {
           }
           h3 {
             color: $kuriftu-black;
-            @extend .h2;
+            @extend .title;
             margin-top: 0.94rem;
             font-size: 1.2rem;
             text-align: center;
@@ -744,7 +777,7 @@ export default {
     .container {
       h2 {
         color: $kuriftu-black;
-        @extend .h2;
+        @extend .title;
         margin-top: 0.94rem;
       }
       .gallery-wrapper {
@@ -800,13 +833,367 @@ export default {
       }
     }
   }
-
-  .wellness2 {
+  .destinations {
     margin-top: 6.25rem;
+    .container {
+      display: grid;
+      place-items: center;
+      h2 {
+        color: $kuriftu-brown;
+        @extend .h2;
+        margin-top: 0.94rem;
+        text-align: center;
+      }
+      p {
+        margin-top: 0.94rem;
+        color: $kuriftu-grey;
+        font-size: 0.88rem;
+        text-align: center;
+      }
+      .top-2,
+      .bottom-3 {
+        .bishoftu,
+        .bishoftu1 {
+          margin-top: 1.88rem;
+          .bishoftu-img {
+            img {
+              width: 20rem;
+            }
+          }
+          .bishoftu-desc {
+            h4 {
+              @extend .h4;
+              margin-top: 0.94rem;
+            }
+            p {
+              @extend .text;
+              margin-top: 0.94rem;
+              color: $kuriftu-black;
+              text-align: left;
+            }
+            .explore {
+              margin-top: 1.88rem;
+              display: grid;
+              place-items: left;
+              a {
+                font-size: 1rem;
+                color: $kuriftu-grey;
+                hr {
+                  color: $kuriftu-grey;
+                  width: 5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($md) {
+    .destinations {
+      .container {
+        .top-2 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-items: flex-end;
+          gap: 1rem;
+        }
+        .bottom-3 {
+          display: grid;
+          align-items: flex-end;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+  @include responsive($lg) {
+    .destinations {
+      margin-top: 8.13rem;
+      .container {
+        .top-2 {
+          margin-top: 2.88rem;
+          .bishoftu,
+          .bishoftu1 {
+            .bishoftu-desc {
+              h4,
+              p {
+                margin-top: 1.88rem;
+              }
+            }
+          }
+        }
+        .bottom-3 {
+          margin-top: 2.88rem;
+          .bishoftu {
+            .bishoftu-desc {
+              h4,
+              p {
+                margin-top: 1.88rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($xl) {
+    .destinations {
+      .container {
+        .top-2 {
+          margin-top: 2.88rem;
+          .bishoftu,
+          .bishoftu1 {
+            .bishoftu-img {
+              img {
+                width: 40rem;
+              }
+            }
+            .bishoftu-desc {
+              h4,
+              p {
+                margin-top: 1.88rem;
+              }
+            }
+          }
+        }
+        .bottom-3 {
+          margin-top: 2.88rem;
+          .bishoftu {
+            .bishoftu-img {
+              img {
+                width: 30rem;
+              }
+            }
+            .bishoftu-desc {
+              h4,
+              p {
+                margin-top: 1.88rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .harmony {
+    background: url(../assets/image/harmony.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 40vh;
+    // background-attachment: fixed;
+    margin-top: 6.25rem;
+    .container {
+      position: relative;
+      .harmony-text {
+        // background: $kuriftu-white;
+        justify-content: flex-end;
+        width: 50%;
+        position: absolute;
+        right: 0;
+        background: #fff;
+        padding: 1rem;
+        h4 {
+          @extend .h4;
+
+          font-size: 1.2rem;
+          color: $kuriftu-brown;
+          font-weight: 700;
+        }
+        p {
+          @extend .text;
+          margin-top: 0.94rem;
+          color: $kuriftu-black;
+          font-size: 0.88rem;
+          text-align: left;
+        }
+        .explore {
+          margin-top: 1rem;
+          display: grid;
+          place-items: left;
+          a {
+            font-size: 0.7rem;
+            color: $kuriftu-grey;
+            hr {
+              color: $kuriftu-grey;
+              width: 5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($md) {
+    .harmony {
+      height: 50vh;
+
+      .container {
+        .harmony-text {
+          width: 30%;
+          .explore {
+            a {
+              font-size: 0.88rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($lg) {
+    .harmony {
+      // background: url(../assets/image/harmony-min.jpg) no-repeat;
+
+      margin-top: 8.13rem;
+      .container {
+        .harmony-text {
+          h4 {
+            font-size: 1.3rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+          width: 30%;
+          .explore {
+            a {
+              font-size: 0.88rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($xl) {
+    .harmony {
+      background: url(../assets/image/harmony-min.jpg) no-repeat;
+      height: 70vh;
+      .container {
+        .harmony-text {
+          h4 {
+            font-size: 2rem;
+            line-height: 2rem;
+          }
+          p {
+            font-size: 1.3rem;
+          }
+          width: 25%;
+          .explore {
+            a {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($xxl) {
+    .harmony {
+      background: url(../assets/image/harmony2.jpg) no-repeat;
+      background-position: center top;
+    }
+  }
+
+  .memory {
+    margin-top: 6.25rem;
+    .container {
+      display: grid;
+      place-items: center;
+      h2 {
+        color: $kuriftu-brown;
+        @extend .h2;
+
+        margin-top: 0.94rem;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      p {
+        margin-top: 0.94rem;
+        color: $kuriftu-grey;
+        text-align: center;
+      }
+      .memory-slide {
+        margin-top: 4.37rem;
+        display: flex;
+        // justify-content: space-between;
+        gap: 1rem;
+        .memory-slide-card {
+          img {
+            width: 20rem;
+          }
+          .img-bottom {
+            background: $kuriftu-brown;
+
+            padding: 0.5rem;
+            h3 {
+              color: $kuriftu-white;
+              @extend .h3;
+              margin-top: 0rem;
+              text-align: left;
+              text-transform: uppercase;
+            }
+            p {
+              display: flex;
+              margin-top: 0.94rem;
+              color: $kuriftu-white;
+              text-align: left;
+              margin-bottom: 1rem;
+              .arrow {
+                width: 3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($md) {
+    .memory {
+      .container {
+        .memory-slide {
+          gap: 5rem;
+          .memory-slide-card {
+            img {
+              width: 20rem;
+            }
+            .img-bottom {
+              width: 20rem;
+
+              p {
+                .arrow {
+                  width: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($lg) {
+    .memory {
+      margin-top: 8.13rem;
+      .container {
+        .memory-slide {
+          gap: 8rem;
+          .memory-slide-card {
+            img {
+              width: 25rem;
+            }
+            .img-bottom {
+              width: 25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .wellness {
+    margin-top: 6.25rem;
+    overflow-x: hidden;
     .container {
       h2 {
         color: $kuriftu-black;
-        @extend .h2;
+        @extend .title;
 
         margin-top: 0.94rem;
         text-align: left;
@@ -818,21 +1205,27 @@ export default {
       margin-top: 1.88rem;
       gap: 2rem;
       margin-left: 1rem;
-
+      width: 100vw;
+      // height: 100vh;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
       .well-1 {
+        min-width: 100%;
+        width: 100%;
+        height: 100%;
+        transform: translateX(0%);
+        position: relative;
         .wellness-img {
-          // position: relative;
-          // width: 20rem;
-          // height: 15rem;
-          z-index: -1rem;
+          // min-height: 25.19rem;
+          object-fit: cover;
         }
         .image-name {
           position: absolute;
           background: $kuriftu-brown;
           margin-top: -2.7rem;
-
-          padding: 0.5rem;
-
+          padding: 0.5rem 1rem;
           h5 {
             // width: 90%;
             color: $kuriftu-white;
@@ -848,18 +1241,18 @@ export default {
         margin-top: 1.88rem;
         display: flex;
         gap: 1rem;
+        transform: translateX(30%);
       }
     }
   }
   @include responsive($md) {
-    .wellness2 {
+    .wellness {
       .wellness-slide {
-        margin-left: 13rem;
+        // margin-left: 13rem;
 
         .well-1 {
-          .wellness-img {
-            z-index: -1rem;
-          }
+          transform: translateX(50%);
+          // min-width: none;
           .image-name {
             padding-left: 2rem;
             padding-right: 2rem;
@@ -869,18 +1262,22 @@ export default {
       .container {
         .wellness-button {
           margin-top: 4.37rem;
+          transform: translateX(50%);
         }
       }
     }
   }
   @include responsive($lg) {
-    .wellness2 {
+    .wellness {
       margin-top: 8.13rem;
       .wellness-slide {
         margin-top: 4.37rem;
-        margin-left: 20rem;
-
         .well-1 {
+          transform: translateX(100%);
+          min-width: auto;
+          img {
+            width: 100%;
+          }
           .image-name {
             margin-top: -3rem;
           }
@@ -888,18 +1285,16 @@ export default {
       }
       .container {
         .wellness-button {
-          margin-top: 4.37rem;
-          margin-left: 10rem;
+          transform: translateX(30%);
         }
       }
     }
   }
   @include responsive($xl) {
-    .wellness2 {
+    .wellness {
       margin-top: 8.13rem;
       .wellness-slide {
         margin-top: 4.37rem;
-        margin-left: 35rem;
 
         .well-1 {
           .image-name {
@@ -910,22 +1305,16 @@ export default {
       .container {
         .wellness-button {
           margin-top: 4.37rem;
-          margin-left: 10rem;
-          img {
-            width: 2.5rem;
-          }
         }
       }
     }
   }
   @include responsive($xxl) {
-    .wellness2 {
-      .wellness-slide {
-        margin-left: 70rem;
-      }
+    .wellness {
+      // .wellness-slide {
+      // }
       .container {
         .wellness-button {
-          margin-left: 15rem;
           gap: 3rem;
           img {
             width: 3.5rem;

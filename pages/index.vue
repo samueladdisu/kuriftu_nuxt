@@ -1,38 +1,6 @@
 <template>
   <div class="main">
-    <header>
-      <nav>
-        <div class="container">
-          <div class="menu-line">
-            <div class="line">
-              <hr />
-              <hr />
-            </div>
-          </div>
-          <div class="logo">
-            <img src="../assets/image/LOGO 1.svg" alt="" />
-          </div>
-          <div class="nav-book-button">
-            <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>
-          </div>
-        </div>
-        <div class="social">
-          <div class="container">
-            <img
-              class="icons"
-              src="../assets/image/Icons/facebook.svg"
-              alt=""
-            />
-            <img
-              class="icons"
-              src="../assets/image/Icons/instagram.svg"
-              alt=""
-            />
-            <img class="icons" src="../assets/image/Icons/youtube.svg" alt="" />
-          </div>
-        </div>
-      </nav>
-    </header>
+    <HeaderApp />
     <div class="fixed-button">
       <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>
     </div>
@@ -458,7 +426,7 @@
         <div class="lower">
           <img src="../assets/image/LOGO 1.svg" alt="" />
           <p>
-            &copy; 2021. All Rights Reserved. Web Design & Development by
+            &copy; 2022. All Rights Reserved. Web Design & Development by
             <a href="https://versavvymedia.com/">Versavvy Media PLC</a>
           </p>
         </div>
@@ -472,7 +440,9 @@
 <script>
 import AOS from "aos";
 import "aos/dist/aos.css";
+import HeaderApp from "../components/HeaderApp.vue";
 export default {
+  components: { HeaderApp },
   data() {
     return {
       checkIn: "",
@@ -498,7 +468,6 @@ export default {
     gsap.to(".well-1", {
       x: () =>
         -(container.scrollWidth - document.documentElement.clientWidth) + "px",
-
       scrollTrigger: {
         trigger: container,
         invalidateOnRefresh: true,
@@ -1122,7 +1091,7 @@ export default {
         min-width: 100%;
         width: 100%;
         height: 100%;
-        transform: translateX(30%);
+        transform: translateX(0%);
         position: relative;
 
         .image-name {
