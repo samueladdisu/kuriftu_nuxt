@@ -33,9 +33,9 @@
         </div>
       </nav>
     </header>
-    <div class="fixed-button">
+    <!-- <div class="fixed-button">
       <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>
-    </div>
+    </div> -->
     <section class="experience">
       <div class="container">
         <!-- <p>Unforgettable, Memorable experiences</p> -->
@@ -355,9 +355,7 @@ export default {
           .experi-desc {
             width: 60%;
             border-radius: 13rem;
-            h2 {
-              // padding: 1rem;
-            }
+
             h4 {
               margin-top: 2.88rem;
               // padding: 1rem;
@@ -391,7 +389,7 @@ export default {
               @extend .title;
               font-size: 0.9rem;
               text-transform: uppercase;
-              color: $kuriftu-black;
+              color: $kuriftu-grey;
 
               &:hover {
                 color: $kuriftu-blue;
@@ -531,7 +529,7 @@ export default {
         .exper-wrapper {
           // margin-left: 5rem;
           // margin-right: 5rem;
-          gap: 5rem;
+          gap: 10rem;
 
           .exper-card {
             margin-top: 4.88rem;
@@ -587,8 +585,8 @@ export default {
         .exper-wrapper {
           // margin-left: 5rem;
           // margin-right: 5rem;
-          gap: 6rem;
-
+          // gap: 6rem;
+          margin-top: 6rem;
           .exper-card {
             .exper-img {
               img {
