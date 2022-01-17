@@ -310,6 +310,7 @@
             </div>
           </div>
         </div>
+ 
       </div>
     </section>
 
@@ -337,6 +338,7 @@
         </div>
       </div>
     </section>
+      
   </div>
 </template>
 
@@ -346,8 +348,12 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HeaderApp from "../components/HeaderApp.vue";
+
 export default {
-  components: { HeaderApp },
+  components: { 
+    HeaderApp, 
+   
+    },
   data() {
     return {
       checkIn: "",
@@ -388,7 +394,7 @@ export default {
       margin: 10,
       loop: true,
       autoplay: true,
-      autoplayTimeout: 2000,
+      autoplayTimeout: 5000,
       autoplayHoverPause: true,
       responsive: {
         0: {
@@ -416,15 +422,7 @@ export default {
         });
       }
     },
-    getData() {
-      axios
-        .post("http://localhost/reservation_system/book.php", {
-          action: "fetchall",
-        })
-        .then((response) => {
-          this.data = response.data;
-        });
-    },
+   
   },
 };
 </script>

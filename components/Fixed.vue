@@ -1,6 +1,6 @@
 <template>
   <div class="fixed-button">
-    <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>
+    <a class="btn btn-outline-white" href="./tana">BOOK NOW</a>
   </div>
 </template>
 

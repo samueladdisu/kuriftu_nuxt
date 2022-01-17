@@ -1,9 +1,12 @@
 <template>
   <div class="main">
+      <transition name="nav">
+           <Nav v-if="showNav" @close="showNav = !showNav"/>
+        </transition>
     <header>
       <nav>
         <div class="container">
-          <div class="menu-line">
+          <div class="menu-line" @click="showNav = !showNav">
             <div class="line">
               <hr />
               <hr />
@@ -229,13 +232,18 @@
 <script>
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Nav from "../components/Nav.vue"
 export default {
+  components: {
+    Nav,
+  },
   data() {
     return {
       checkIn: "",
       checkOut: "",
       location: "",
       data: "",
+      showNav: false
     };
   },
   mounted() {
@@ -273,6 +281,7 @@ export default {
 <style lang="scss" scoped>
 .main {
   background: $kuriftu-white;
+  
   header {
     background: url("../assets/image/tana.jpg") rgba(0, 6, 27, 0.22) no-repeat;
     background-position: center center;
