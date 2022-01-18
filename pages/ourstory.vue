@@ -45,7 +45,61 @@
         </p>
       </div>
     </section>
+    <section class="story-picture">
+      <div class="container">
+        <div class="story-wrapper">
+          <div class="story-card">
+            <img src="../assets/image/friststory.jpg" alt="" />
 
+            <div class="back-card"></div>
+          </div>
+          <div class="story-card1">
+            <h2>How It All Began</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
+              tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam
+              lectus at massa enim elementum varius dictumst. Nulla a, sed enim
+              turpis non lacinia fusce. Quis volutpat sit ullamcorper vitae
+              magna vel sit pharetra scelerisque.
+            </p>
+          </div>
+        </div>
+        <div class="story-wrapper">
+          <div class="story-card reverse">
+            <img src="../assets/image/secondstory.jpg" alt="" />
+
+            <div class="back-card"></div>
+          </div>
+          <div class="story-card1 reverse1">
+            <h2>The Past Years</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
+              tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam
+              lectus at massa enim elementum varius dictumst. Nulla a, sed enim
+              turpis non lacinia fusce. Quis volutpat sit ullamcorper vitae
+              magna vel sit pharetra scelerisque.
+            </p>
+          </div>
+        </div>
+        <div class="story-wrapper">
+          <div class="story-card">
+            <img src="../assets/image/thridstory.jpg" alt="" />
+
+            <div class="back-card"></div>
+          </div>
+          <div class="story-card1">
+            <h2>The Persent</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
+              tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam
+              lectus at massa enim elementum varius dictumst. Nulla a, sed enim
+              turpis non lacinia fusce. Quis volutpat sit ullamcorper vitae
+              magna vel sit pharetra scelerisque.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="special-offer">
       <div class="container">
         <h2>Explore Our Packages</h2>
@@ -55,7 +109,7 @@
               <img src="../assets/image/Icons/circle-back.svg" alt="" />
             </div>
             <div class="slide-card">
-              <img src="../assets/image/spaspecial.jpg" alt="" />
+              <img src="../assets/image/storyoffer.jpg" alt="" />
             </div>
             <div class="next-icon">
               <img src="../assets/image/Icons/circle-next.svg" alt="" />
@@ -179,7 +233,149 @@ export default {};
       }
     }
   }
+  @include responsive($lg) {
+    .story {
+      margin-top: 8.13rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+  }
+  @include responsive($xl) {
+    .story {
+      margin-left: 10rem;
+      margin-right: 10rem;
+    }
+  }
+  .story-picture {
+    margin-top: 6.25rem;
+    .container {
+      .story-wrapper {
+        margin-top: 2.88rem;
+        .story-card {
+          display: grid;
+          position: relative;
 
+          img {
+            width: 18rem;
+          }
+          .back-card {
+            position: absolute;
+            background: #fff;
+            z-index: -1;
+            top: 1.69rem;
+            left: 1.69rem;
+            width: 18rem;
+            height: 13rem;
+          }
+        }
+        .story-card1 {
+          // margin-top: 16rem;
+          h2 {
+            color: $kuriftu-brown;
+            @extend .title;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            font-weight: 200;
+            text-align: left;
+          }
+          p {
+            @extend .text;
+            margin-top: 0.94rem;
+            color: $kuriftu-black;
+            font-size: 0.9rem;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  @include responsive($md) {
+    .story-picture {
+      .container {
+        .story-wrapper {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          // align-items: center;
+          gap: 3rem;
+          .reverse {
+            grid-column-start: 2;
+          }
+          .reverse1 {
+            grid-column-start: 1;
+            grid-row-start: 1;
+          }
+          .story-card1 {
+            margin-top: 6rem;
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive($lg) {
+    .story-picture {
+      margin-top: 8.13rem;
+      .container {
+        .story-wrapper {
+          margin-top: 4.37rem;
+          // place-items: center;
+          .story-card {
+            img {
+              width: 20rem;
+            }
+
+            .back-card {
+              z-index: -1;
+              top: 1.69rem;
+              left: 1.69rem;
+              width: 20.38rem;
+              height: 14.94rem;
+            }
+          }
+          .story-card1 {
+            margin-top: 8rem;
+            h2 {
+              margin-top: 0rem;
+              width: 12rem;
+              line-height: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive($xl) {
+    .story-picture {
+      margin-top: 8.13rem;
+      .container {
+        width: 100%-20%;
+        .story-wrapper {
+          place-items: center;
+          gap: 0rem;
+          margin-top: 5rem;
+          .story-card {
+            img {
+              width: 28rem;
+            }
+
+            .back-card {
+              z-index: -1;
+              top: 2.69rem;
+              left: 2.69rem;
+              width: 27.38rem;
+              height: 19.94rem;
+            }
+          }
+          .story-card1 {
+            p {
+              width: 30rem;
+            }
+          }
+        }
+      }
+    }
+  }
   .special-offer {
     margin-top: 6.25rem;
     .container {
@@ -312,6 +508,7 @@ export default {};
         .special-offer-all {
           display: flex;
           align-items: flex-start;
+          margin-top: 4.37rem;
           .special-slide {
             .slide-card {
               img {
