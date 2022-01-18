@@ -1209,6 +1209,10 @@ $trans: all 0.5s ease-in-out;
   color: $kuriftu-white;
   background: $kuriftu-red;
 }
+.btn-blue {
+  color: $kuriftu-white;
+  background: $kuriftu-blue;
+}
 .btn-rounded-secondary {
   @extend .btn-rounded;
   background: $kuriftu-white;

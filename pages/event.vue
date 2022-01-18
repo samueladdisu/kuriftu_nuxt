@@ -33,48 +33,23 @@
         </div>
       </nav>
     </header>
-    <!-- <div class="fixed-button">
-      <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>
-    </div> -->
-    <section class="experience">
-      <div class="container">
-        <!-- <p>Unforgettable, Memorable experiences</p> -->
-        <div class="experience-wrapper">
-          <div class="experi-desc">
-            <h2>Experience</h2>
-            <h4>Unforgettable, Memorable experiences</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
-              tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam
-              lectus at massa enim elementum varius dictumst. Nulla a, sed enim
-              turpis non lacinia fusce. Quis volutpat sit ullamcorper vitae
-              magna vel sit pharetra scelerisque magna vel sit pharetra
-              scelerisque.
-            </p>
-          </div>
-          <div class="experi-img">
-            <img src="../assets/image/3D.svg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="experience-links">
+
+    <section class="event-links">
       <div class="container">
         <div class="destination-links">
           <ul>
-            <li><a class="active" href="#">Entoto</a></li>
-            <li><a href="#">Waterpark</a></li>
-            <li><a href="#">Lake Tana</a></li>
-            <li><a href="#">Awash</a></li>
+            <li><a class="active" href="#">Wedding</a></li>
+            <li><a href="#">Corporate events</a></li>
+            <li><a href="#">Brithday</a></li>
           </ul>
         </div>
         <div class="exper-wrapper">
           <div class="exper-card">
             <div class="exper-img">
-              <img src="../assets/image/entoto-exper.jpg" alt="" />
+              <img src="../assets/image/celeb1.jpg" alt="" />
             </div>
             <div class="exper-title">
-              <h3>Baking</h3>
+              <h3>Concerts</h3>
             </div>
             <div class="exper-desc">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -89,10 +64,10 @@
 
           <div class="exper-card1">
             <div class="exper-img">
-              <img src="../assets/image/entoto-exper2.jpg" alt="" />
+              <img src="../assets/image/lequanda.jpg" alt="" />
             </div>
             <div class="exper-title">
-              <h3>Rock ClImBing</h3>
+              <h3>Lequada fest</h3>
             </div>
             <div class="exper-desc">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -108,10 +83,10 @@
         <div class="exper-wrapper">
           <div class="exper-card">
             <div class="exper-img">
-              <img src="../assets/image/entoto-exper3.jpg" alt="" />
+              <img src="../assets/image/celeb3.jpg" alt="" />
             </div>
             <div class="exper-title">
-              <h3>Paintball</h3>
+              <h3>Valentines day</h3>
             </div>
             <div class="exper-desc">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -126,10 +101,10 @@
 
           <div class="exper-card1">
             <div class="exper-img">
-              <img src="../assets/image/entoto-exper4.jpg" alt="" />
+              <img src="../assets/image/celeb4.jpg" alt="" />
             </div>
             <div class="exper-title">
-              <h3>Horse Riding</h3>
+              <h3>Kebela</h3>
             </div>
             <div class="exper-desc">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -174,7 +149,7 @@ export default {
 .main {
   background: $kuriftu-white;
   header {
-    background: url("../assets/image/exprience.jpg") rgba(0, 6, 27, 0.22)
+    background: url("../assets/image/celebration.jpg") rgba(0, 6, 27, 0.22)
       no-repeat;
     background-position: center center;
     background-size: cover;
@@ -248,135 +223,8 @@ export default {
       height: 100vh;
     }
   }
-  .fixed-button {
-    background: $kuriftu-black;
-    position: fixed;
-    width: 100%;
 
-    height: 10vh;
-    z-index: 9999;
-
-    // display: grid;
-    text-align: center;
-    .btn {
-      margin: 1.3rem;
-    }
-  }
-  @include responsive($lg) {
-    .fixed-button {
-      display: none;
-    }
-  }
-  .experience {
-    margin-top: 6.25rem;
-    .container {
-      .experience-wrapper {
-        .experi-desc {
-          h2 {
-            color: $kuriftu-brown;
-            @extend .title;
-            margin-top: 0.94rem;
-            text-align: left;
-          }
-          h4 {
-            @extend .text;
-            margin-top: 0.94rem;
-            text-align: left;
-            color: $kuriftu-grey;
-          }
-          p {
-            @extend .text;
-            margin-top: 0.94rem;
-            text-align: left;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($md) {
-    .experience {
-      .container {
-        .experience-wrapper {
-          display: flex;
-          place-items: flex-end;
-          // align-items: center;
-          .experi-desc {
-            width: 90%;
-
-            background: $kuriftu-white;
-            border-radius: 5rem;
-            opacity: 0.6;
-            z-index: 99;
-            padding: 1rem;
-            p {
-              font-size: 0.8rem;
-              line-height: 1.3rem;
-              opacity: 100%;
-            }
-          }
-          .experi-img {
-            margin-left: -4rem;
-
-            img {
-              width: 50rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    .experience {
-      .container {
-        .experience-wrapper {
-          .experi-desc {
-            width: 90%;
-            border-radius: 7rem;
-            padding: 0.5rem;
-            p {
-              font-size: 1rem;
-              line-height: 1.75rem;
-            }
-          }
-          .experi-img {
-            margin-left: -5rem;
-            img {
-              width: 50rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xl) {
-    .experience {
-      .container {
-        .experience-wrapper {
-          .experi-desc {
-            width: 60%;
-            border-radius: 13rem;
-
-            h4 {
-              margin-top: 2.88rem;
-              // padding: 1rem;
-            }
-            p {
-              // margin-top: 2.88rem;
-              font-size: 1.13rem;
-              padding-right: 1rem;
-            }
-          }
-          .experi-img {
-            margin-left: -8rem;
-            img {
-              width: 45rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  .experience-links {
+  .event-links {
     margin-top: 6.25rem;
     .container {
       .destination-links {
@@ -392,10 +240,10 @@ export default {
               color: $kuriftu-grey;
 
               &:hover {
-                color: $kuriftu-blue;
+                color: $kuriftu-green;
               }
               .active {
-                color: $kuriftu-blue;
+                color: $kuriftu-green;
               }
             }
           }
@@ -414,7 +262,7 @@ export default {
             }
           }
           .exper-title {
-            background: $kuriftu-purple;
+            background: $kuriftu-green;
             padding: 0.8rem;
             width: 50%;
             min-width: 11.31rem;
@@ -463,7 +311,7 @@ export default {
     }
   }
   @include responsive($md) {
-    .experience-links {
+    .event-links {
       .container {
         .destination-links {
           ul {
@@ -495,7 +343,7 @@ export default {
     }
   }
   @include responsive($lg) {
-    .experience-links {
+    .event-links {
       margin-top: 8.13rem;
       .container {
         .destination-links {
@@ -519,7 +367,7 @@ export default {
     }
   }
   @include responsive($xl) {
-    .experience-links {
+    .event-links {
       .container {
         .destination-links {
           ul {
@@ -580,7 +428,7 @@ export default {
     }
   }
   @include responsive($xxl) {
-    .experience-links {
+    .event-links {
       .container {
         .exper-wrapper {
           // margin-left: 5rem;
