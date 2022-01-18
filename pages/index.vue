@@ -2,13 +2,13 @@
   <div class="main">
     <HeaderApp />
 
-    <section class="welcome" style="overflow-x: hidden">
+    <section class="welcome">
       <div class="container">
-        <div class="welcome-wrapper" style="overflow-x: hidden">
-          <div class="welcome-img" data-aos="slide-right">
+        <div class="welcome-wrapper">
+          <div class="welcome-img" data-aos="slide-up">
             <img src="../assets/image/welcome.jpg" alt="" />
           </div>
-          <div class="welcome-desc" data-aos="slide-left">
+          <div class="welcome-desc" data-aos="slide-up">
             <h4>WELCOME TO KURIFTU RESORT</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
@@ -533,6 +533,7 @@ export default {
             display: flex;
             gap: 0.5rem;
             margin-top: 1.88rem;
+            width: 100%;
           }
         }
       }
