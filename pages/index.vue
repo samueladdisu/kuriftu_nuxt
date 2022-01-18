@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <HeaderApp />
+    <HeaderApp :src="require(`../assets/image/Home.jpg`)" />
 
     <section class="welcome">
       <div class="container">
@@ -310,7 +310,6 @@
             </div>
           </div>
         </div>
- 
       </div>
     </section>
 
@@ -338,7 +337,6 @@
         </div>
       </div>
     </section>
-      
   </div>
 </template>
 
@@ -350,10 +348,9 @@ import "aos/dist/aos.css";
 import HeaderApp from "../components/HeaderApp.vue";
 
 export default {
-  components: { 
-    HeaderApp, 
-   
-    },
+  components: {
+    HeaderApp,
+  },
   data() {
     return {
       checkIn: "",
@@ -422,88 +419,12 @@ export default {
         });
       }
     },
-   
   },
 };
 </script>
 
 <style lang="scss">
 .main {
-  header {
-    background: url("~/assets/image/Home.jpg") rgba(0, 6, 27, 0.22) no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-blend-mode: overlay;
-    width: 100%;
-    height: 90vh;
-    z-index: -1;
-    nav {
-      .container {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        .menu-line {
-          margin-top: 1rem;
-          .line {
-            hr {
-              margin: auto;
-              margin-top: 1rem;
-              color: $kuriftu-white;
-              // height: 10rem;
-              width: 2.35rem;
-            }
-          }
-        }
-        .logo {
-          margin-top: 1rem;
-          width: 9rem;
-          @include responsive($md) {
-            width: 11rem;
-          }
-        }
-        .nav-book-button {
-          display: none;
-        }
-      }
-      .social {
-        .container {
-          display: grid;
-          align-items: start;
-          justify-items: center;
-          margin-top: 13rem;
-          @include responsive($md) {
-            margin-top: 20rem;
-          }
-
-          .icons {
-            margin-top: 2rem;
-            width: 1.5rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    header {
-      nav {
-        .container {
-          align-items: center;
-
-          .nav-book-button {
-            margin-top: 1rem;
-
-            display: block;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xl) {
-    header {
-      height: 100vh;
-    }
-  }
-
   .welcome {
     margin-top: 6.25rem;
     .container {

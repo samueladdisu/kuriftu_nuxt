@@ -1,38 +1,7 @@
 <template>
   <div class="main">
-    <header>
-      <nav>
-        <div class="container">
-          <div class="menu-line">
-            <div class="line">
-              <hr />
-              <hr />
-            </div>
-          </div>
-          <div class="logo">
-            <img src="../assets/image/LOGO 1.svg" alt="" />
-          </div>
-          <div class="nav-book-button">
-            <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>
-          </div>
-        </div>
-        <div class="social">
-          <div class="container">
-            <img
-              class="icons"
-              src="../assets/image/Icons/facebook.svg"
-              alt=""
-            />
-            <img
-              class="icons"
-              src="../assets/image/Icons/instagram.svg"
-              alt=""
-            />
-            <img class="icons" src="../assets/image/Icons/youtube.svg" alt="" />
-          </div>
-        </div>
-      </nav>
-    </header>
+    <HeaderApp :src="require(`../assets/image/wellness.jpg`)" />
+
     <section class="wellness-option">
       <div class="container">
         <div class="wellness-links">
@@ -46,7 +15,7 @@
           </ul>
         </div>
         <div class="wellness-wrapper">
-          <div class="wellness-card">
+          <div class="wellness-card" data-aos="slide-up">
             <div class="wellness-img">
               <img src="../assets/image/Spa.jpg" alt="" />
             </div>
@@ -59,7 +28,7 @@
               <a class="btn btn-blue" href="#">BUY NOW</a>
             </div>
           </div>
-          <div class="wellness-card">
+          <div class="wellness-card" data-aos="slide-up" data-aos-delay="500">
             <div class="wellness-img">
               <img src="../assets/image/spa2.jpg" alt="" />
             </div>
@@ -72,7 +41,7 @@
               <a class="btn btn-blue" href="#">BUY NOW</a>
             </div>
           </div>
-          <div class="wellness-card">
+          <div class="wellness-card" data-aos="slide-up" data-aos-delay="600">
             <div class="wellness-img">
               <img src="../assets/image/spa3.jpg" alt="" />
             </div>
@@ -85,7 +54,7 @@
               <a class="btn btn-blue" href="#">BUY NOW</a>
             </div>
           </div>
-          <div class="wellness-card">
+          <div class="wellness-card" data-aos="slide-up">
             <div class="wellness-img">
               <img src="../assets/image/spa4.jpg" alt="" />
             </div>
@@ -98,7 +67,7 @@
               <a class="btn btn-blue" href="#">BUY NOW</a>
             </div>
           </div>
-          <div class="wellness-card">
+          <div class="wellness-card" data-aos="slide-up" data-aos-delay="500">
             <div class="wellness-img">
               <img src="../assets/image/Spa.jpg" alt="" />
             </div>
@@ -111,7 +80,7 @@
               <a class="btn btn-blue" href="#">BUY NOW</a>
             </div>
           </div>
-          <div class="wellness-card">
+          <div class="wellness-card" data-aos="slide-up" data-aos-delay="600">
             <div class="wellness-img">
               <img src="../assets/image/spa3.jpg" alt="" />
             </div>
@@ -129,8 +98,8 @@
     </section>
     <section class="spa-special-offer">
       <div class="container">
-        <div class="special-offer-all" style="overflow-x: hidden">
-          <div class="special-slide" data-aos="slide-right">
+        <div class="special-offer-all">
+          <div class="special-slide" data-aos="slide-up">
             <div class="back-icon">
               <img src="../assets/image/Icons/spaback.svg" alt="" />
             </div>
@@ -141,7 +110,7 @@
               <img src="../assets/image/Icons/spanext.svg" alt="" />
             </div>
           </div>
-          <div class="gift-desc" data-aos="slide-left">
+          <div class="gift-desc" data-aos="slide-up">
             <h3>special offer</h3>
             <h4>Gift Vouchers</h4>
             <p class="header-title">
@@ -165,86 +134,28 @@
 </template>
 
 <script>
-export default {};
+import AOS from "aos";
+import "aos/dist/aos.css";
+import HeaderApp from "../components/HeaderApp.vue";
+
+export default {
+  components: {
+    HeaderApp,
+  },
+  mounted() {
+    AOS.init({
+      duration: 1500,
+      offset: 120,
+      easing: "ease",
+      once: false,
+      anchorPlacement: "top-bottom",
+    });
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .main {
-  header {
-    background: url("../assets/image/wellness.jpg") rgba(0, 6, 27, 0.22)
-      no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-blend-mode: overlay;
-    width: 100%;
-    height: 90vh;
-    z-index: -1;
-    nav {
-      .container {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        .menu-line {
-          margin-top: 1rem;
-          .line {
-            hr {
-              margin: auto;
-              margin-top: 1rem;
-              color: $kuriftu-white;
-              // height: 10rem;
-              width: 2.35rem;
-            }
-          }
-        }
-        .logo {
-          margin-top: 1rem;
-          width: 9rem;
-          @include responsive($md) {
-            width: 11rem;
-          }
-        }
-        .nav-book-button {
-          display: none;
-        }
-      }
-      .social {
-        .container {
-          display: grid;
-          align-items: start;
-          justify-items: center;
-          margin-top: 13rem;
-          @include responsive($md) {
-            margin-top: 20rem;
-          }
-
-          .icons {
-            margin-top: 2rem;
-            width: 1.5rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    header {
-      nav {
-        .container {
-          align-items: center;
-
-          .nav-book-button {
-            margin-top: 1rem;
-
-            display: block;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xl) {
-    header {
-      height: 100vh;
-    }
-  }
   .wellness-option {
     margin-top: 6.25rem;
     .container {

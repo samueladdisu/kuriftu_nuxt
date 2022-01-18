@@ -15,6 +15,12 @@ export default {
     FooterApp,
     Fixed,
   },
+  data() {
+    return {
+      showNav: false,
+    };
+  },
+  methods: {},
 };
 </script>
 

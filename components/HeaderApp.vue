@@ -1,9 +1,21 @@
 <template>
-  <header>
-    <!-- <img src="~/assets/image/Home.jpg" class="header-img" alt=""> -->
+  <div>
+    <transition
+      appear
+      @before-enter="beforeEnter"
+      @enter="enter"
+      @before-leave="beforeLeave"
+      @leave="leave"
+      @after-leave="afterLeave"
+    >
+      <NavMenu v-if="showNav" @close="closeNav" />
+    </transition>
+    <header>
+      <img :src="src" class="bg-img" alt="" />
+
       <nav>
         <div class="container">
-          <div class="menu-line">
+          <div class="menu-line" @click="toggleNav">
             <div class="line">
               <hr />
               <hr />
@@ -33,93 +45,153 @@
         </div>
       </nav>
     </header>
+  </div>
 </template>
 
 <script>
-export default {
+import NavMenu from "../components/NavMenu.vue";
 
-}
+export default {
+  props: ["src"],
+  components: {
+    NavMenu,
+  },
+  data() {
+    return {
+      showNav: false,
+    };
+  },
+  methods: {
+    toggleNav() {
+      this.showNav = !this.showNav;
+    },
+    closeNav() {
+      this.showNav = !this.showNav;
+    },
+    beforeEnter(el) {
+      console.log("before enter ");
+      el.style.transform = "translateX(-100%)";
+    },
+
+    enter(el, done) {
+      console.log("starting to enter");
+      gsap.to(el, {
+        duration: 1,
+        x: 0,
+        ease: "circ.out",
+        onComplete: done,
+      });
+    },
+    beforeLeave(el) {
+      console.log("before leave ");
+      el.style.transform = "translateX(0)";
+    },
+
+    leave(el, done) {
+      console.log("starting to leave");
+      gsap.to(el, {
+        duration: 1,
+        x: -100 + "%",
+        ease: "expo.out",
+        onComplete: done,
+      });
+    },
+    afterLeave() {
+      console.log("after leave");
+    },
+  },
+};
 </script>
 
-<style lang="scss">
- header {
-    background: url("~/assets/image/Home.jpg") no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-blend-mode: overlay;
+<style lang="scss" scoped>
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 90vh;
-    // z-index: -1;
-    // position: relative;
-    .header-img{
-      position: absolute;
-      top: 0;
-      z-index: -1;
+    height: 100%;
+    background: rgb(0, 6, 27);
+  }
+  .bg-img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  nav {
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    .container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .menu-line {
+        margin-top: 1rem;
+        .line {
+          hr {
+            margin: auto;
+            margin-top: 1rem;
+            color: $kuriftu-white;
+            // height: 10rem;
+            width: 2.35rem;
+          }
+        }
+      }
+      .logo {
+        margin-top: 1rem;
+        width: 9rem;
+        @include responsive($md) {
+          width: 11rem;
+        }
+      }
+      .nav-book-button {
+        display: none;
+      }
     }
+    .social {
+      .container {
+        display: grid;
+        align-items: start;
+        justify-items: center;
+        margin-top: 13rem;
+        @include responsive($md) {
+          margin-top: 20rem;
+        }
+
+        .icons {
+          margin-top: 2rem;
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+}
+@include responsive($lg) {
+  header {
     nav {
       .container {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        .menu-line {
-          margin-top: 1rem;
-          .line {
-            hr {
-              margin: auto;
-              margin-top: 1rem;
-              color: $kuriftu-white;
-              // height: 10rem;
-              width: 2.35rem;
-            }
-          }
-        }
-        .logo {
-          margin-top: 1rem;
-          width: 9rem;
-          @include responsive($md) {
-            width: 11rem;
-          }
-        }
+        align-items: center;
+
         .nav-book-button {
-          display: none;
-        }
-      }
-      .social {
-        .container {
-          display: grid;
-          align-items: start;
-          justify-items: center;
-          margin-top: 13rem;
-          @include responsive($md) {
-            margin-top: 20rem;
-          }
+          margin-top: 1rem;
 
-          .icons {
-            margin-top: 2rem;
-            width: 1.5rem;
-          }
+          display: block;
         }
       }
     }
   }
-  @include responsive($lg) {
-    header {
-      nav {
-        .container {
-          align-items: center;
-
-          .nav-book-button {
-            margin-top: 1rem;
-
-            display: block;
-          }
-        }
-      }
-    }
+}
+@include responsive($xl) {
+  header {
+    height: 100vh;
   }
-  @include responsive($xl) {
-    header {
-      height: 100vh;
-    }
-  }
+}
 </style>
