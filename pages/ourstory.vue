@@ -266,6 +266,8 @@ export default {};
             left: 1.69rem;
             width: 18rem;
             height: 13rem;
+            // border-style: solid;
+            // border-color:  $kuriftu-red;
           }
         }
         .story-card1 {
