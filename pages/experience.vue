@@ -31,85 +31,320 @@
       <div class="container">
         <div class="destination-links">
           <ul>
-            <li><a class="active" href="#">Entoto</a></li>
-            <li><a href="#">Waterpark</a></li>
-            <li><a href="#">Lake Tana</a></li>
-            <li><a href="#">Awash</a></li>
+            <li>
+              <a :class="{ active: entoto }" @click="showEntoto">Entoto</a>
+            </li>
+            <li>
+              <a :class="{ active: waterpark }" @click="showWater">Waterpark</a>
+            </li>
+            <li>
+              <a :class="{ active: tana }" @click="showTana">Lake Tana</a>
+            </li>
+            <li><a :class="{ active: awash }" @click="showAwash">Awash</a></li>
           </ul>
         </div>
         <div class="exper-wrapper">
-          <div class="exper-card" data-aos="slide-up">
-            <div class="exper-img">
-              <img src="../assets/image/entoto-exper.jpg" alt="" />
-            </div>
-            <div class="exper-title">
-              <h3>Baking</h3>
-            </div>
-            <div class="exper-desc">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <div class="explore">
-                <a href="#"
-                  >EXPLORE
-                  <hr
-                /></a>
+          <article class="entoto" v-if="entoto">
+            <div class="exper-card" data-aos="slide-up">
+              <div class="exper-img">
+                <img src="../assets/image/entoto-exper.jpg" alt="" />
+              </div>
+              <div class="exper-title">
+                <h3>Baking</h3>
+              </div>
+              <div class="exper-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="explore">
+                  <a href="#"
+                    >EXPLORE
+                    <hr
+                  /></a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="exper-card1" data-aos="slide-up" data-aos-delay="500">
-            <div class="exper-img">
-              <img src="../assets/image/entoto-exper2.jpg" alt="" />
-            </div>
-            <div class="exper-title">
-              <h3>Rock ClImBing</h3>
-            </div>
-            <div class="exper-desc">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <div class="explore">
-                <a href="#"
-                  >EXPLORE
-                  <hr
-                /></a>
+            <div class="exper-card1" data-aos="slide-up" data-aos-delay="500">
+              <div class="exper-img">
+                <img src="../assets/image/entoto-exper2.jpg" alt="" />
+              </div>
+              <div class="exper-title">
+                <h3>Rock ClImBing</h3>
+              </div>
+              <div class="exper-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="explore">
+                  <a href="#"
+                    >EXPLORE
+                    <hr
+                  /></a>
+                </div>
               </div>
             </div>
-          </div>
+          </article>
+          <article class="tana" v-if="tana">
+            <div class="exper-card" data-aos="slide-up">
+              <div class="exper-img">
+                <img src="../assets/image/entoto-exper.jpg" alt="" />
+              </div>
+              <div class="exper-title">
+                <h3>Baking</h3>
+              </div>
+              <div class="exper-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="explore">
+                  <a href="#"
+                    >EXPLORE
+                    <hr
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="exper-card1" data-aos="slide-up" data-aos-delay="500">
+              <div class="exper-img">
+                <img src="../assets/image/entoto-exper2.jpg" alt="" />
+              </div>
+              <div class="exper-title">
+                <h3>Rock ClImBing</h3>
+              </div>
+              <div class="exper-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="explore">
+                  <a href="#"
+                    >EXPLORE
+                    <hr
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="awash" v-if="awash">
+            <div class="exper-card" data-aos="slide-up">
+              <div class="exper-img">
+                <img src="../assets/image/entoto-exper.jpg" alt="" />
+              </div>
+              <div class="exper-title">
+                <h3>Baking</h3>
+              </div>
+              <div class="exper-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="explore">
+                  <a href="#"
+                    >EXPLORE
+                    <hr
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="exper-card1" data-aos="slide-up" data-aos-delay="500">
+              <div class="exper-img">
+                <img src="../assets/image/entoto-exper2.jpg" alt="" />
+              </div>
+              <div class="exper-title">
+                <h3>Rock ClImBing</h3>
+              </div>
+              <div class="exper-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="explore">
+                  <a href="#"
+                    >EXPLORE
+                    <hr
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="waterpark" v-if="waterpark">
+            <div class="exper-card" data-aos="slide-up">
+              <div class="exper-img">
+                <img src="../assets/image/lazy.jpg" alt="" />
+              </div>
+              <div class="exper-title">
+                <h3>Rides</h3>
+              </div>
+              <div class="exper-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="explore">
+                  <a href="#"
+                    >EXPLORE
+                    <hr
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="exper-card1" data-aos="slide-up" data-aos-delay="500">
+              <div class="exper-img">
+                <img src="../assets/image/lazy.jpg" alt="" />
+              </div>
+              <div class="exper-title">
+                <h3>slide</h3>
+              </div>
+              <div class="exper-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="explore">
+                  <a href="#"
+                    >EXPLORE
+                    <hr
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
         <div class="exper-wrapper">
-          <div class="exper-card" data-aos="slide-up">
-            <div class="exper-img">
-              <img src="../assets/image/entoto-exper3.jpg" alt="" />
-            </div>
-            <div class="exper-title">
-              <h3>Paintball</h3>
-            </div>
-            <div class="exper-desc">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <div class="explore">
-                <a href="#"
-                  >EXPLORE
-                  <hr
-                /></a>
+          <article class="entoto" v-if="entoto">
+            <div class="exper-card" data-aos="slide-up">
+              <div class="exper-img">
+                <img src="../assets/image/entoto-exper3.jpg" alt="" />
+              </div>
+              <div class="exper-title">
+                <h3>Paintball</h3>
+              </div>
+              <div class="exper-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="explore">
+                  <a href="#"
+                    >EXPLORE
+                    <hr
+                  /></a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="exper-card1" data-aos="slide-up" data-aos-delay="500">
-            <div class="exper-img">
-              <img src="../assets/image/entoto-exper4.jpg" alt="" />
-            </div>
-            <div class="exper-title">
-              <h3>Horse Riding</h3>
-            </div>
-            <div class="exper-desc">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <div class="explore">
-                <a href="#"
-                  >EXPLORE
-                  <hr
-                /></a>
+            <div class="exper-card1" data-aos="slide-up" data-aos-delay="500">
+              <div class="exper-img">
+                <img src="../assets/image/entoto-exper4.jpg" alt="" />
+              </div>
+              <div class="exper-title">
+                <h3>Horse Riding</h3>
+              </div>
+              <div class="exper-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="explore">
+                  <a href="#"
+                    >EXPLORE
+                    <hr
+                  /></a>
+                </div>
               </div>
             </div>
-          </div>
+          </article>
+
+          <article class="tana" v-if="tana">
+            <div class="exper-card" data-aos="slide-up">
+              <div class="exper-img">
+                <img src="../assets/image/entoto-exper3.jpg" alt="" />
+              </div>
+              <div class="exper-title">
+                <h3>Paintball</h3>
+              </div>
+              <div class="exper-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="explore">
+                  <a href="#"
+                    >EXPLORE
+                    <hr
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="exper-card1" data-aos="slide-up" data-aos-delay="500">
+              <div class="exper-img">
+                <img src="../assets/image/entoto-exper4.jpg" alt="" />
+              </div>
+              <div class="exper-title">
+                <h3>Horse Riding</h3>
+              </div>
+              <div class="exper-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="explore">
+                  <a href="#"
+                    >EXPLORE
+                    <hr
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="awash" v-if="awash">
+            <div class="exper-card" data-aos="slide-up">
+              <div class="exper-img">
+                <img src="../assets/image/entoto-exper3.jpg" alt="" />
+              </div>
+              <div class="exper-title">
+                <h3>Paintball</h3>
+              </div>
+              <div class="exper-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="explore">
+                  <a href="#"
+                    >EXPLORE
+                    <hr
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="exper-card1" data-aos="slide-up" data-aos-delay="500">
+              <div class="exper-img">
+                <img src="../assets/image/entoto-exper4.jpg" alt="" />
+              </div>
+              <div class="exper-title">
+                <h3>Horse Riding</h3>
+              </div>
+              <div class="exper-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="explore">
+                  <a href="#"
+                    >EXPLORE
+                    <hr
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="waterpark" v-if="waterpark">
+            <div class="exper-card" data-aos="slide-up">
+              <div class="exper-img">
+                <img src="../assets/image/lazy.jpg" alt="" />
+              </div>
+              <div class="exper-title">
+                <h3>Rides</h3>
+              </div>
+              <div class="exper-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="explore">
+                  <a href="#"
+                    >EXPLORE
+                    <hr
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="exper-card1" data-aos="slide-up" data-aos-delay="500">
+              <div class="exper-img">
+                <img src="../assets/image/lazy.jpg" alt="" />
+              </div>
+              <div class="exper-title">
+                <h3>slide</h3>
+              </div>
+              <div class="exper-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="explore">
+                  <a href="#"
+                    >EXPLORE
+                    <hr
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -118,8 +353,19 @@
 <script>
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import HeaderApp from "../components/HeaderApp.vue";
 export default {
+  components: {
+    HeaderApp,
+  },
+  data() {
+    return {
+      waterpark: false,
+      tana: false,
+      awash: false,
+      entoto: true,
+    };
+  },
   mounted() {
     AOS.init({
       duration: 1500,
@@ -128,6 +374,32 @@ export default {
       once: false,
       anchorPlacement: "top-bottom",
     });
+  },
+  methods: {
+    showWater() {
+      this.waterpark = true;
+      this.tana = false;
+      this.awash = false;
+      this.entoto = false;
+    },
+    showEntoto() {
+      this.waterpark = false;
+      this.tana = false;
+      this.awash = false;
+      this.entoto = true;
+    },
+    showTana() {
+      this.waterpark = false;
+      this.tana = true;
+      this.awash = false;
+      this.entoto = false;
+    },
+    showAwash() {
+      this.waterpark = false;
+      this.tana = false;
+      this.awash = true;
+      this.entoto = false;
+    },
   },
 };
 </script>
@@ -283,7 +555,7 @@ export default {
                 color: $kuriftu-blue;
               }
               .active {
-                color: $kuriftu-blue;
+                color: $kuriftu-blue !important;
               }
             }
           }
@@ -364,18 +636,21 @@ export default {
           }
         }
         .exper-wrapper {
-          display: flex;
-          gap: 5rem;
-          justify-content: center;
-          .exper-card {
-            .exper-title {
-              width: 10%;
+          article {
+            display: flex;
+            gap: 5rem;
+            justify-content: center;
+            .exper-card {
+              .exper-title {
+                width: 10%;
+              }
             }
-          }
-          .exper-card1 {
-            margin-bottom: -10rem;
-            .exper-title {
-              width: 10%;
+            .exper-card1 {
+              margin-bottom: -10rem;
+              margin-top: 4.88rem;
+              .exper-title {
+                width: 10%;
+              }
             }
           }
         }
@@ -395,12 +670,14 @@ export default {
           // margin-left: 5rem;
           // margin-right: 5rem;
           gap: 3rem;
-
-          .exper-card {
-            margin-top: 4rem;
-          }
-          .exper-card1 {
-            margin-top: 4rem;
+          article {
+            .exper-card {
+              margin-top: 1.88rem;
+            }
+            .exper-card1 {
+              margin-bottom: -10rem;
+              margin-top: 4rem;
+            }
           }
         }
       }

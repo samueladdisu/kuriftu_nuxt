@@ -1,42 +1,9 @@
 <template>
   <div class="main">
-    <header>
-      <nav>
-        <div class="container">
-          <div class="menu-line">
-            <div class="line">
-              <hr />
-              <hr />
-            </div>
-          </div>
-          <div class="logo">
-            <img src="../assets/image/LOGO 1.svg" alt="" />
-          </div>
-          <div class="nav-book-button">
-            <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>
-          </div>
-        </div>
-        <div class="social">
-          <div class="container">
-            <img
-              class="icons"
-              src="../assets/image/Icons/facebook.svg"
-              alt=""
-            />
-            <img
-              class="icons"
-              src="../assets/image/Icons/instagram.svg"
-              alt=""
-            />
-            <img class="icons" src="../assets/image/Icons/youtube.svg" alt="" />
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <section class="story">
+    <HeaderApp :src="require(`../assets/image/ourstory.jpg`)" />
+    <section class="story" style="overflow-x: hidden">
       <div class="container">
-        <p>
+        <p data-aos="zoom-out">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
           tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam lectus
           at massa enim elementum varius dictumst. Nulla a, sed enim turpis non
@@ -103,8 +70,8 @@
     <section class="special-offer">
       <div class="container">
         <h2>Explore Our Packages</h2>
-        <div class="special-offer-all" style="overflow-x: hidden">
-          <div class="special-slide" data-aos="slide-right">
+        <div class="special-offer-all">
+          <div class="special-slide" data-aos="slide-up">
             <div class="back-icon">
               <img src="../assets/image/Icons/circle-back.svg" alt="" />
             </div>
@@ -115,7 +82,7 @@
               <img src="../assets/image/Icons/circle-next.svg" alt="" />
             </div>
           </div>
-          <div class="gift-desc" data-aos="slide-left">
+          <div class="gift-desc" data-aos="slide-up">
             <h3>special offer</h3>
             <h4>Gift Vouchers</h4>
             <p class="header-title">
@@ -139,14 +106,30 @@
 </template>
 
 <script>
-export default {};
+import AOS from "aos";
+import "aos/dist/aos.css";
+import HeaderApp from "../components/HeaderApp.vue";
+
+export default {
+  components: {
+    HeaderApp,
+  },
+  mounted() {
+    AOS.init({
+      duration: 1500,
+      offset: 120,
+      easing: "ease",
+      once: false,
+      anchorPlacement: "top-bottom",
+    });
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .main {
   header {
-    background: url("../assets/image/ourstory.jpg") rgba(0, 6, 27, 0.22)
-      no-repeat;
+    background: url("") rgba(0, 6, 27, 0.22) no-repeat;
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -252,7 +235,7 @@ export default {};
       .story-wrapper {
         margin-top: 2.88rem;
         .story-card {
-          display: grid;
+          // display: grid;
           position: relative;
 
           img {
@@ -305,7 +288,7 @@ export default {};
             grid-row-start: 1;
           }
           .story-card1 {
-            margin-top: 6rem;
+            margin-top: 2rem;
           }
         }
       }

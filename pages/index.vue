@@ -73,10 +73,10 @@
         <div class="bottom-3">
           <div class="bishoftu" data-aos="slide-up">
             <div class="bishoftu-img">
-              <img src="../assets/image/bishoftu2.jpg" alt="" />
+              <img src="../assets/image/entoto.jpg" alt="" />
             </div>
             <div class="bishoftu-desc">
-              <h4>Waterpark</h4>
+              <h4>entoto</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Facilisis tincidunt nisl elementum ultrices luctus habitasse.
@@ -91,10 +91,10 @@
           </div>
           <div class="bishoftu" data-aos="slide-up">
             <div class="bishoftu-img">
-              <img src="../assets/image/bishoftu2.jpg" alt="" />
+              <img src="../assets/image/awash.jpg" alt="" />
             </div>
             <div class="bishoftu-desc">
-              <h4>Waterpark</h4>
+              <h4>awash</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Facilisis tincidunt nisl elementum ultrices luctus habitasse.
@@ -109,10 +109,10 @@
           </div>
           <div class="bishoftu" data-aos="slide-up">
             <div class="bishoftu-img">
-              <img src="../assets/image/bishoftu2.jpg" alt="" />
+              <img src="../assets/image/tana.jpg" alt="" />
             </div>
             <div class="bishoftu-desc">
-              <h4>Waterpark</h4>
+              <h4>lake tana</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Facilisis tincidunt nisl elementum ultrices luctus habitasse.

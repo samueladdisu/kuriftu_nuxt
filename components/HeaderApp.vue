@@ -22,7 +22,9 @@
             </div>
           </div>
           <div class="logo">
-            <img src="../assets/image/LOGO 1.svg" alt="" />
+            <nuxt-link to="/">
+              <img src="../assets/image/LOGO 1.svg" alt="" />
+            </nuxt-link>
           </div>
           <div class="nav-book-button">
             <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>

@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <HeaderApp :src="require(`../assets/image/tana.jpg`)" />
+    <HeaderApp :src="require(`../assets/image/dz-cover.jpg`)" />
 
     <section class="stay-offer">
       <div class="container">
