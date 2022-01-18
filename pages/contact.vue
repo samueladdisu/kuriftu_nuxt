@@ -1,38 +1,6 @@
 <template>
   <div class="main">
-    <header>
-      <nav>
-        <div class="container">
-          <div class="menu-line">
-            <div class="line">
-              <hr />
-              <hr />
-            </div>
-          </div>
-          <div class="logo">
-            <img src="../assets/image/LOGO 1.svg" alt="" />
-          </div>
-          <div class="nav-book-button">
-            <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>
-          </div>
-        </div>
-        <div class="social">
-          <div class="container">
-            <img
-              class="icons"
-              src="../assets/image/Icons/facebook.svg"
-              alt=""
-            />
-            <img
-              class="icons"
-              src="../assets/image/Icons/instagram.svg"
-              alt=""
-            />
-            <img class="icons" src="../assets/image/Icons/youtube.svg" alt="" />
-          </div>
-        </div>
-      </nav>
-    </header>
+    <HeaderApp :src="require(`../assets/image/contact.jpg`)" />
     <section class="contact-form">
       <div class="container">
         <div class="contact-wrapper">
@@ -124,81 +92,6 @@ export default {};
 
 <style lang="scss" scoped>
 .main {
-  header {
-    background: url("../assets/image/contact.jpg") rgba(0, 6, 27, 0.22)
-      no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-blend-mode: overlay;
-    width: 100%;
-    height: 90vh;
-    z-index: -1;
-    nav {
-      .container {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        .menu-line {
-          margin-top: 1rem;
-          .line {
-            hr {
-              margin: auto;
-              margin-top: 1rem;
-              color: $kuriftu-white;
-              // height: 10rem;
-              width: 2.35rem;
-            }
-          }
-        }
-        .logo {
-          margin-top: 1rem;
-          width: 9rem;
-          @include responsive($md) {
-            width: 11rem;
-          }
-        }
-        .nav-book-button {
-          display: none;
-        }
-      }
-      .social {
-        .container {
-          display: grid;
-          align-items: start;
-          justify-items: center;
-          margin-top: 13rem;
-          @include responsive($md) {
-            margin-top: 20rem;
-          }
-
-          .icons {
-            margin-top: 2rem;
-            width: 1.5rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    header {
-      nav {
-        .container {
-          align-items: center;
-
-          .nav-book-button {
-            margin-top: 1rem;
-
-            display: block;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xl) {
-    header {
-      height: 100vh;
-    }
-  }
   .contact-form {
     margin-top: 6.25rem;
     .container {
