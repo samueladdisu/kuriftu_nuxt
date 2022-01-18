@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/layouts/default", {data:[{}],fetch:{},mutations:void 0});

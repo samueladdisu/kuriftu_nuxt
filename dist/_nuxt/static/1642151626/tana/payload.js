@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/tana", {data:[{}],fetch:{},mutations:void 0});
