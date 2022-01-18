@@ -16,7 +16,6 @@ export default {};
   width: 100%;
 
   height: 10vh;
-  z-index: 9999;
 
   // display: grid;
   text-align: center;

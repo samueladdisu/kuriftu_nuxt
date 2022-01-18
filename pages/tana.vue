@@ -1,12 +1,19 @@
 <template>
   <div class="main">
-      <transition name="nav">
-           <Nav v-if="showNav" @close="showNav = !showNav"/>
-        </transition>
+    <transition
+      appear
+      @before-enter="beforeEnter"
+      @enter="enter"
+      @before-leave="beforeLeave"
+      @leave="leave"
+      @after-leave="afterLeave"
+    >
+      <Nav v-if="showNav" @close="closeNav" />
+    </transition>
     <header>
       <nav>
         <div class="container">
-          <div class="menu-line" @click="showNav = !showNav">
+          <div class="menu-line" @click="toggleNav">
             <div class="line">
               <hr />
               <hr />
@@ -37,11 +44,11 @@
       </nav>
     </header>
 
-    <section class="stay-offer" style="overflow-x: hidden">
+    <section class="stay-offer">
       <div class="container">
         <h2>Your Stay</h2>
-        <div class="stay-offer-all" style="overflow-x: hidden">
-          <div class="stay-slide" data-aos="slide-right">
+        <div class="stay-offer-all">
+          <div class="stay-slide" data-aos="slide-up">
             <div class="back-icon">
               <img src="../assets/image/Icons/circle-back.svg" alt="" />
             </div>
@@ -52,7 +59,7 @@
               <img src="../assets/image/Icons/circle-next.svg" alt="" />
             </div>
           </div>
-          <div class="stay-desc" data-aos="slide-left">
+          <div class="stay-desc" data-aos="slide-up">
             <h4>Deluxe Suite</h4>
             <p class="header-title">
               Treat your loved ones to Ethiopia’s greatest family destination
@@ -149,15 +156,10 @@
       <div class="container">
         <h2>Celebration and Events</h2>
         <div class="event-wrapper">
-          <!-- <div class="event-cards">
-            <div class="event-img">
-              <img src="../assets/image/event1.jpg" alt="" />
-            </div>
-          </div> -->
-          <div class="event-cards">
+          <div class="event-cards a">
             <div class="event-img">
               <img src="../assets/image/event.jpg" alt="" />
-              <h3>Outside Events</h3>
+              <h3>Outside 1</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Facilisis tincidunt nisl elementum ultrices luctus habitasse.
@@ -166,10 +168,40 @@
               </p>
             </div>
           </div>
-          <div class="event-cards">
-            <!-- <div class="event-img">
-              <img src="../assets/image/event2.jpg" alt="" />
-            </div> -->
+
+          <div class="event-cards b">
+            <div class="event-img">
+              <img src="../assets/image/event.jpg" alt="" />
+              <h3>Outside 2</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
+              </p>
+            </div>
+          </div>
+
+          <div class="event-cards c">
+            <div class="event-img">
+              <img src="../assets/image/event.jpg" alt="" />
+              <h3>Outside 3</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <div class="tabs-container" @click="tabs">
+            <div class="tab a"></div>
+            <div class="tab b"></div>
+            <div class="tab c"></div>
+            <div class="active"></div>
           </div>
         </div>
       </div>
@@ -232,7 +264,7 @@
 <script>
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Nav from "../components/Nav.vue"
+import Nav from "../components/Nav.vue";
 export default {
   components: {
     Nav,
@@ -243,10 +275,11 @@ export default {
       checkOut: "",
       location: "",
       data: "",
-      showNav: false
+      showNav: false,
     };
   },
   mounted() {
+    gsap.registerPlugin(ScrollTrigger);
     AOS.init({
       duration: 1500,
       offset: 120,
@@ -254,8 +287,6 @@ export default {
       once: false,
       anchorPlacement: "top-bottom",
     });
-
-    gsap.registerPlugin(ScrollTrigger);
 
     let container = document.querySelector(".wellness");
 
@@ -274,14 +305,90 @@ export default {
       },
     });
   },
-  methods: {},
+  methods: {
+    toggleNav() {
+      this.showNav = !this.showNav;
+    },
+    tabs(e) {
+      if (e.target.classList.contains("a")) {
+        gsap.to(".active", {
+          duration: 1,
+          x: 0,
+          ease: "power3.out",
+        });
+
+        gsap.to(".event-cards", {
+          duration: 1,
+          x: 0,
+          ease: "power3.out",
+        });
+      } else if (e.target.classList.contains("b")) {
+        gsap.to(".active", {
+          duration: 1,
+          x: 100 + "%",
+          ease: "power3.out",
+        });
+        gsap.to(".event-cards", {
+          duration: 1,
+          x: -110 + "%",
+          ease: "power3.out",
+        });
+      } else if (e.target.classList.contains("c")) {
+        gsap.to(".active", {
+          duration: 1,
+          x: 200 + "%",
+          ease: "power3.out",
+        });
+
+        gsap.to(".event-cards", {
+          duration: 1,
+          x: -225 + "%",
+          ease: "power3.out",
+        });
+      }
+    },
+    closeNav() {
+      this.showNav = !this.showNav;
+    },
+    beforeEnter(el) {
+      console.log("before enter ");
+      el.style.transform = "translateX(-100%)";
+    },
+
+    enter(el, done) {
+      console.log("starting to enter");
+      gsap.to(el, {
+        duration: 1,
+        x: 0,
+        ease: "circ.out",
+        onComplete: done,
+      });
+    },
+    beforeLeave(el) {
+      console.log("before leave ");
+      el.style.transform = "translateX(0)";
+    },
+
+    leave(el, done) {
+      console.log("starting to leave");
+      gsap.to(el, {
+        duration: 1,
+        x: -100 + "%",
+        ease: "expo.out",
+        onComplete: done,
+      });
+    },
+    afterLeave() {
+      console.log("after leave");
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .main {
   background: $kuriftu-white;
-  
+
   header {
     background: url("../assets/image/tana.jpg") rgba(0, 6, 27, 0.22) no-repeat;
     background-position: center center;
@@ -615,7 +722,32 @@ export default {
   }
   .event {
     margin-top: 6.25rem;
+    overflow-x: hidden;
     .container {
+      .tabs {
+        margin: 1.88rem auto 6.25rem;
+        // background: lightblue;
+        display: grid;
+        place-items: center;
+        width: 100%;
+        .tabs-container {
+          display: flex;
+          position: relative;
+          .active {
+            position: absolute;
+            top: 0;
+            height: 0.25rem;
+            width: 5.94rem;
+            transform: translate(100%, -30%);
+            background: $kuriftu-black;
+          }
+          .tab {
+            height: 0.13rem;
+            width: 5.94rem;
+            background: #c4c4c4;
+          }
+        }
+      }
       h2 {
         color: $kuriftu-brown;
         @extend .title;
@@ -623,11 +755,16 @@ export default {
         text-align: center;
       }
       .event-wrapper {
-        // display: flex;
+        display: flex;
+        gap: 2.69rem;
+        width: 300%;
         .event-cards {
           margin-top: 1.88rem;
           display: grid;
           place-items: center;
+          // transform: translateX(-225%);
+          transform: translateX(-110%);
+          // transform: translateX(0%);
           .event-img {
             width: 20rem;
           }
@@ -652,18 +789,39 @@ export default {
   @include responsive($md) {
     .event {
       margin-top: 6.25rem;
+      .container {
+        .tabs {
+          .tabs-container {
+            // width: 40%;
+            margin: 0 auto;
+            .tab {
+            }
+          }
+        }
+        .event-wrapper {
+          gap: 6rem;
+          .event-cards {
+            width: 39.19rem;
+            .event-img {
+              width: 100%;
+            }
+          }
+        }
+      }
     }
   }
   @include responsive($lg) {
     .event {
       margin-top: 8.13rem;
       .container {
+        .tabs {
+          .tabs-container {
+          }
+        }
         .event-wrapper {
-          // display: flex;
+          width: 600%;
           .event-cards {
             .event-img {
-              margin-top: 1.88rem;
-              width: 25rem;
             }
           }
         }
