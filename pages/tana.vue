@@ -637,8 +637,8 @@ export default {
           .tabs-container {
             // width: 40%;
             margin: 0 auto;
-            .tab {
-            }
+            // .tab {
+            // }
           }
         }
         .event-wrapper {
@@ -657,16 +657,16 @@ export default {
     .event {
       margin-top: 8.13rem;
       .container {
-        .tabs {
-          .tabs-container {
-          }
-        }
+        // .tabs {
+        //   .tabs-container {
+        //   }
+        // }
         .event-wrapper {
           width: 600%;
-          .event-cards {
-            .event-img {
-            }
-          }
+          // .event-cards {
+          //   .event-img {
+          //   }
+          // }
         }
       }
     }
