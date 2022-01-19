@@ -113,57 +113,28 @@
     <section class="event">
       <div class="container">
         <h2>Celebration and Events</h2>
-        <div class="event-wrapper">
-          <div class="event-cards a">
-            <div class="event-img">
-              <img src="../assets/image/event.jpg" alt="" />
-              <h3>Outside 1</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-              </p>
-            </div>
-          </div>
-
-          <div class="event-cards b">
-            <div class="event-img">
-              <img src="../assets/image/event.jpg" alt="" />
-              <h3>Outside 2</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-              </p>
-            </div>
-          </div>
-
-          <div class="event-cards c">
-            <div class="event-img">
-              <img src="../assets/image/event.jpg" alt="" />
-              <h3>Outside 3</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="tabs">
-          <div class="tabs-container" @click="tabs">
-            <div class="tab a"></div>
-            <div class="tab b"></div>
-            <div class="tab c"></div>
-            <div class="active"></div>
-          </div>
-        </div>
+        <Event />
       </div>
     </section>
+    <!-- <div class="container">
+      <div class="center">
+        <div>
+          <img src="../assets/image/event.jpg" alt="" />
+        </div>
+        <div>
+          <img src="../assets/image/event.jpg" alt="" />
+        </div>
+        <div>
+          <img src="../assets/image/event.jpg" alt="" />
+        </div>
+        <div>
+          <img src="../assets/image/event.jpg" alt="" />
+        </div>
+        <div>
+          <img src="../assets/image/event.jpg" alt="" />
+        </div>
+      </div>
+    </div> -->
     <section class="gallery">
       <div class="container">
         <h2>Gallery</h2>
@@ -222,8 +193,11 @@
 <script>
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Event from "../components/Event.vue";
 export default {
-  components: {},
+  components: {
+    Event,
+  },
   data() {
     return {
       checkIn: "",
@@ -242,6 +216,7 @@ export default {
       once: false,
       anchorPlacement: "top-bottom",
     });
+
     gsap.registerPlugin(ScrollTrigger);
 
     let container = document.querySelector(".wellness");
@@ -262,44 +237,42 @@ export default {
     });
   },
   methods: {
-    tabs(e) {
-      if (e.target.classList.contains("a")) {
-        gsap.to(".active", {
-          duration: 1,
-          x: 0,
-          ease: "power3.out",
-        });
-
-        gsap.to(".event-cards", {
-          duration: 1,
-          x: 0,
-          ease: "power3.out",
-        });
-      } else if (e.target.classList.contains("b")) {
-        gsap.to(".active", {
-          duration: 1,
-          x: 100 + "%",
-          ease: "power3.out",
-        });
-        gsap.to(".event-cards", {
-          duration: 1,
-          x: -110 + "%",
-          ease: "power3.out",
-        });
-      } else if (e.target.classList.contains("c")) {
-        gsap.to(".active", {
-          duration: 1,
-          x: 200 + "%",
-          ease: "power3.out",
-        });
-
-        gsap.to(".event-cards", {
-          duration: 1,
-          x: -225 + "%",
-          ease: "power3.out",
-        });
-      }
-    },
+    // tabs(e) {
+    //   if (e.target.classList.contains("a")) {
+    //     gsap.to(".active", {
+    //       duration: 1,
+    //       x: 0,
+    //       ease: "power3.out",
+    //     });
+    //     gsap.to(".event-cards", {
+    //       duration: 1,
+    //       x: 0,
+    //       ease: "power3.out",
+    //     });
+    //   } else if (e.target.classList.contains("b")) {
+    //     gsap.to(".active", {
+    //       duration: 1,
+    //       x: 100 + "%",
+    //       ease: "power3.out",
+    //     });
+    //     gsap.to(".event-cards", {
+    //       duration: 1,
+    //       x: -110 + "%",
+    //       ease: "power3.out",
+    //     });
+    //   } else if (e.target.classList.contains("c")) {
+    //     gsap.to(".active", {
+    //       duration: 1,
+    //       x: 200 + "%",
+    //       ease: "power3.out",
+    //     });
+    //     gsap.to(".event-cards", {
+    //       duration: 1,
+    //       x: -225 + "%",
+    //       ease: "power3.out",
+    //     });
+    //   }
+    // },
   },
 };
 </script>
@@ -565,7 +538,6 @@ export default {
   }
   .event {
     margin-top: 6.25rem;
-    overflow-x: hidden;
     .container {
       .tabs {
         margin: 1.88rem auto 6.25rem;
@@ -597,36 +569,6 @@ export default {
         margin-top: 0.94rem;
         text-align: center;
       }
-      .event-wrapper {
-        display: flex;
-        gap: 2.69rem;
-        width: 300%;
-        .event-cards {
-          margin-top: 1.88rem;
-          display: grid;
-          place-items: center;
-          // transform: translateX(-225%);
-          transform: translateX(-110%);
-          // transform: translateX(0%);
-          .event-img {
-            width: 20rem;
-          }
-          h3 {
-            color: $kuriftu-black;
-            @extend .title;
-            margin-top: 0.94rem;
-            font-size: 1.2rem;
-            text-align: center;
-          }
-
-          p {
-            @extend .text;
-            margin-top: 0.94rem;
-            color: $kuriftu-grey;
-            text-align: center;
-          }
-        }
-      }
     }
   }
   @include responsive($md) {
@@ -641,15 +583,15 @@ export default {
             // }
           }
         }
-        .event-wrapper {
-          gap: 6rem;
-          .event-cards {
-            width: 39.19rem;
-            .event-img {
-              width: 100%;
-            }
-          }
-        }
+        // .event-wrapper {
+        //   gap: 6rem;
+        //   .event-cards {
+        //     width: 39.19rem;
+        //     .event-img {
+        //       width: 100%;
+        //     }
+        //   }
+        // }
       }
     }
   }
@@ -661,13 +603,13 @@ export default {
         //   .tabs-container {
         //   }
         // }
-        .event-wrapper {
-          width: 600%;
-          // .event-cards {
-          //   .event-img {
-          //   }
-          // }
-        }
+        // .event-wrapper {
+        //   width: 600%;
+        // .event-cards {
+        //   .event-img {
+        //   }
+        // }
+        // }
       }
     }
   }

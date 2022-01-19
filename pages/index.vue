@@ -18,7 +18,11 @@
               magna vel sit pharetra scelerisque.
             </p>
             <div class="book-buttons">
-              <a class="btn btn-primary" href="#">BOOK NOW</a>
+              <a
+                class="btn btn-primary"
+                href="https://versavvymedia.com/reservation_system/reserve.php"
+                >BOOK NOW</a
+              >
               <a class="btn btn-outline-brown" href="#">VIEW GALLERY</a>
             </div>
           </div>
@@ -44,10 +48,10 @@
                 Facilisis tincidunt nisl elementum ultrices luctus habitasse.
               </p>
               <div class="explore">
-                <a href="#"
-                  >EXPLORE
-                  <hr
-                /></a>
+                <nuxt-link to="/bishoftu">
+                  EXPLORE
+                  <hr />
+                </nuxt-link>
               </div>
             </div>
           </div>
@@ -62,10 +66,10 @@
                 Facilisis tincidunt nisl elementum ultrices luctus habitasse.
               </p>
               <div class="explore">
-                <a href="#"
-                  >EXPLORE
-                  <hr
-                /></a>
+                <nuxt-link to="/waterpark">
+                  EXPLORE
+                  <hr />
+                </nuxt-link>
               </div>
             </div>
           </div>
@@ -82,10 +86,10 @@
                 Facilisis tincidunt nisl elementum ultrices luctus habitasse.
               </p>
               <div class="explore">
-                <a href="#"
-                  >EXPLORE
-                  <hr
-                /></a>
+                <nuxt-link to="/entoto">
+                  EXPLORE
+                  <hr />
+                </nuxt-link>
               </div>
             </div>
           </div>
@@ -94,16 +98,16 @@
               <img src="../assets/image/awash.jpg" alt="" />
             </div>
             <div class="bishoftu-desc">
-              <h4>awash</h4>
+              <h4>semera</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Facilisis tincidunt nisl elementum ultrices luctus habitasse.
               </p>
               <div class="explore">
-                <a href="#"
-                  >EXPLORE
-                  <hr
-                /></a>
+                <nuxt-link to="/semera">
+                  EXPLORE
+                  <hr />
+                </nuxt-link>
               </div>
             </div>
           </div>
@@ -118,10 +122,10 @@
                 Facilisis tincidunt nisl elementum ultrices luctus habitasse.
               </p>
               <div class="explore">
-                <a href="#"
-                  >EXPLORE
-                  <hr
-                /></a>
+                <nuxt-link to="/tana">
+                  EXPLORE
+                  <hr />
+                </nuxt-link>
               </div>
             </div>
           </div>
@@ -134,10 +138,10 @@
           <h4>Harmony at its Finest</h4>
           <p>An endless variety of experiences await you.</p>
           <div class="explore">
-            <a href="#"
-              >EXPLORE
-              <hr
-            /></a>
+            <nuxt-link to="/experience">
+              EXPLORE
+              <hr />
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -150,7 +154,7 @@
           <!-- <img src="../assets/image/Icons/back.svg" alt="" /> -->
 
           <div class="memory-slide-card item">
-            <img src="../assets/image/lequanda.jpg" alt="" />
+            <img src="../assets/image/celeb1.jpg" class="owlImg" alt="" />
             <div class="img-bottom">
               <h3>lequanda</h3>
               <div class="bottom-content">
@@ -165,7 +169,7 @@
           </div>
 
           <div class="memory-slide-card item">
-            <img src="../assets/image/lequanda.jpg" alt="" />
+            <img src="../assets/image/celeb3.jpg" class="owlImg" alt="" />
             <div class="img-bottom">
               <h3>lequanda</h3>
               <div class="bottom-content">
@@ -179,7 +183,7 @@
             </div>
           </div>
           <div class="memory-slide-card item">
-            <img src="../assets/image/lequanda.jpg" alt="" />
+            <img src="../assets/image/celeb4.jpg" class="owlImg" alt="" />
             <div class="img-bottom">
               <h3>lequanda</h3>
               <div class="bottom-content">
@@ -193,21 +197,7 @@
             </div>
           </div>
           <div class="memory-slide-card item">
-            <img src="../assets/image/lequanda.jpg" alt="" />
-            <div class="img-bottom">
-              <h3>lequanda</h3>
-              <div class="bottom-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <img
-                  class="arrow"
-                  src="../assets/image/Icons/arrow-black.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <div class="memory-slide-card item">
-            <img src="../assets/image/lequanda.jpg" alt="" />
+            <img src="../assets/image/event1.jpg" class="owlImg" alt="" />
             <div class="img-bottom">
               <h3>lequanda</h3>
               <div class="bottom-content">
@@ -812,6 +802,10 @@ export default {
         .memory-slide-card {
           min-width: 100%;
           margin-bottom: 1rem;
+          .owlImg {
+            min-height: 26.25rem;
+            object-fit: cover;
+          }
           .img-bottom {
             background: $kuriftu-brown;
             padding: 1rem 0.75rem 1.19rem;

@@ -30,7 +30,9 @@
               <nuxt-link to="/wellness"> SPA & Wellness</nuxt-link>
             </li>
             <li>
-              <a href="#">Reservation</a>
+              <a href="https://versavvymedia.com/reservation_system/reserve.php"
+                >Reservation</a
+              >
             </li>
             <li>
               <a href="#">Gift Voucher</a>
@@ -68,13 +70,13 @@
                 <nuxt-link to="/tana"> Tana </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/awash"> Awash</nuxt-link>
+                <nuxt-link to="/awash"> Semera</nuxt-link>
               </li>
               <li>
                 <nuxt-link to="/entoto">Entoto</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/semera">Semera</nuxt-link>
+                <nuxt-link to="/adama">Adama</nuxt-link>
               </li>
             </ul>
           </div>

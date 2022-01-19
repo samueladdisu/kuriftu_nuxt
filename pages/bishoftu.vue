@@ -113,55 +113,7 @@
     <section class="event">
       <div class="container">
         <h2>Celebration and Events</h2>
-        <div class="event-wrapper">
-          <div class="event-cards a">
-            <div class="event-img">
-              <img src="../assets/image/event.jpg" alt="" />
-              <h3>Outside 1</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-              </p>
-            </div>
-          </div>
-
-          <div class="event-cards b">
-            <div class="event-img">
-              <img src="../assets/image/event.jpg" alt="" />
-              <h3>Outside 2</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-              </p>
-            </div>
-          </div>
-
-          <div class="event-cards c">
-            <div class="event-img">
-              <img src="../assets/image/event.jpg" alt="" />
-              <h3>Outside 3</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="tabs">
-          <div class="tabs-container" @click="tabs">
-            <div class="tab a"></div>
-            <div class="tab b"></div>
-            <div class="tab c"></div>
-            <div class="active"></div>
-          </div>
-        </div>
+        <Event />
       </div>
     </section>
     <section class="gallery">
@@ -222,8 +174,11 @@
 <script>
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Event from "../components/Event.vue";
 export default {
-  components: {},
+  components: {
+    Event,
+  },
   data() {
     return {
       checkIn: "",

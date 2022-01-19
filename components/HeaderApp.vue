@@ -27,7 +27,11 @@
             </nuxt-link>
           </div>
           <div class="nav-book-button">
-            <a class="btn btn-outline-white" href="./contact">BOOK NOW</a>
+            <a
+              class="btn btn-outline-white"
+              href="https://versavvymedia.com/reservation_system/reserve.php"
+              >BOOK NOW</a
+            >
           </div>
         </div>
         <div class="social">

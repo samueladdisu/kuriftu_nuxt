@@ -545,17 +545,17 @@ export default {
           justify-content: center;
           gap: 1rem;
           li {
+            .active {
+              color: $kuriftu-blue !important;
+            }
             a {
               @extend .title;
               font-size: 0.9rem;
               text-transform: uppercase;
               color: $kuriftu-grey;
-
+              cursor: pointer;
               &:hover {
                 color: $kuriftu-blue;
-              }
-              .active {
-                color: $kuriftu-blue !important;
               }
             }
           }
