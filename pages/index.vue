@@ -104,7 +104,7 @@
                 Facilisis tincidunt nisl elementum ultrices luctus habitasse.
               </p>
               <div class="explore">
-                <nuxt-link to="/semera">
+                <nuxt-link to="/awash">
                   EXPLORE
                   <hr />
                 </nuxt-link>
