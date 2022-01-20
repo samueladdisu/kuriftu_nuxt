@@ -219,7 +219,7 @@
       <div class="container">
         <h2>Wellness</h2>
       </div>
-      <div class="wellness-slide">
+      <div class="wellness-slide" vue-dragscroll>
         <div class="well-1 1">
           <img
             class="wellness-img"
@@ -276,7 +276,7 @@
             <div class="back-icon">
               <img src="../assets/image/Icons/circle-back.svg" alt="" />
             </div>
-            <div class="slide-card">
+            <div class="slide-card swiper-slide">
               <img src="../assets/image/waterpark2.jpg" alt="" />
             </div>
             <div class="next-icon">
@@ -359,6 +359,18 @@ export default {
       anchorPlacement: "top-bottom",
     });
     this.showCarousel = true;
+    var swiper = new Swiper(".special-slide2", {
+      effect: "flip",
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
     gsap.registerPlugin(ScrollTrigger);
 
     let container = document.querySelector(".wellness");
@@ -371,7 +383,7 @@ export default {
         invalidateOnRefresh: true,
         // start: "top center",
         toggleActions: "restart pause reverse pause",
-        pin: true,
+        pin: false,
         scrub: 1,
         end: () => "+=" + container.offsetWidth,
       },
@@ -405,6 +417,12 @@ export default {
         gsap.to(".well-1", {
           duration: 1,
           x: "50%",
+          ease: "expo.out",
+        });
+      } else if (e.target.classList.contains("next")) {
+        gsap.to(".well-1", {
+          duration: 1,
+          x: "-50%",
           ease: "expo.out",
         });
       }
@@ -865,7 +883,7 @@ export default {
 
   .wellness {
     margin-top: 6.25rem;
-    overflow-x: hidden;
+    overflow: hidden;
     .container {
       h2 {
         color: $kuriftu-black;
@@ -1012,6 +1030,7 @@ export default {
       .special-offer-all {
         display: grid;
         place-items: center;
+
         .special-slide {
           margin-top: 1.88rem;
           display: flex;
@@ -1030,6 +1049,7 @@ export default {
         }
         .gift-desc {
           margin-top: 1.88rem;
+          max-width: 29.9rem;
           h4 {
             @extend .title;
             margin-top: 0.94rem;
@@ -1086,8 +1106,7 @@ export default {
       margin-top: 8.13rem;
       .container {
         .special-offer-all {
-          display: flex;
-
+          grid-template-columns: 1fr 1fr;
           .special-slide {
             margin-top: 4.37rem;
             .slide-card {
@@ -1152,6 +1171,7 @@ export default {
           }
         }
         .constr-desc {
+          max-width: 29.9rem;
           h4 {
             @extend .title;
             margin-top: 0.94rem;
@@ -1181,10 +1201,10 @@ export default {
               width: 20rem;
             }
           }
-          .constr-desc {
-            margin-left: 5rem;
-            margin-right: 5rem;
-          }
+          // .constr-desc {
+          //   margin-left: 5rem;
+          //   margin-right: 5rem;
+          // }
         }
       }
     }
@@ -1195,14 +1215,13 @@ export default {
       .container {
         .construction-all {
           margin-top: 4.37rem;
-          display: flex;
+          grid-template-columns: 1fr 1fr;
           .construction-img {
             img {
               width: 23rem;
             }
           }
           .constr-desc {
-            width: 100%-60%;
             h4 {
               margin-top: 0rem;
               text-align: left;

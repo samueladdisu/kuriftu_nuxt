@@ -230,8 +230,8 @@ export default {
         invalidateOnRefresh: true,
         // start: "top center",
         toggleActions: "restart pause reverse pause",
-        pin: true,
-        scrub: 1,
+        pin: false,
+        scrub: true,
         end: () => "+=" + container.offsetWidth,
       },
     });

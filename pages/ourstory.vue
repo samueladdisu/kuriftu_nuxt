@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <HeaderApp :src="require(`../assets/image/ourstory.jpg`)" />
-    <section class="story" style="overflow-x: hidden">
+    <section class="story" style="overflow: hidden">
       <div class="container">
         <p data-aos="zoom-out">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis

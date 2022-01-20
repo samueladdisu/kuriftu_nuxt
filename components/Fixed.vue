@@ -1,6 +1,10 @@
 <template>
   <div class="fixed-button">
-    <a class="btn btn-outline-white" href="./tana">BOOK NOW</a>
+    <a
+      class="btn btn-outline-white"
+      href="./https://versavvymedia.com/reservation_system/reserve.php"
+      >BOOK NOW</a
+    >
   </div>
 </template>
 
@@ -14,7 +18,7 @@ export default {};
   position: fixed;
   bottom: 0;
   width: 100%;
-
+  z-index: 999;
   height: 10vh;
 
   // display: grid;

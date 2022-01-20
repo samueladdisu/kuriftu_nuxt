@@ -25,9 +25,11 @@ export default {
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js' },
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js' },
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js' },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Draggable.min.js' },
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' },
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' },
-      { src: 'https://unpkg.com/swiper/swiper-bundle.min.js' }
+      { src: 'https://unpkg.com/swiper/swiper-bundle.min.js' },
+      { src: 'https://unpkg.com/vue-dragscroll@3.0.1/dist/vue-dragscroll.min.js' }
 
     ]
   },

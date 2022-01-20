@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <HeaderApp :src="require(`../assets/image/celebration.jpg`)" />
+    <HeaderApp :src="require(`../assets/image/event-bg.jpg`)" />
 
     <section class="event-links">
       <div class="container">

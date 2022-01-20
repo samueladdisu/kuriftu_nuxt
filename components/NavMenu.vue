@@ -30,15 +30,16 @@
               <nuxt-link to="/wellness"> SPA & Wellness</nuxt-link>
             </li>
             <li>
+              <nuxt-link to="/event"> Celebration & Events</nuxt-link>
+            </li>
+            <li>
               <a href="https://versavvymedia.com/reservation_system/reserve.php"
                 >Reservation</a
               >
             </li>
-            <li>
-              <a href="#">Gift Voucher</a>
-            </li>
+
             <li class="bottom-nav">
-              <nuxt-link to="/event"> Celebration & Events</nuxt-link>
+              <nuxt-link to="/ourstory"> Our Story </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/contact"> Contact Us </nuxt-link>
@@ -95,10 +96,10 @@
               tincidunt nis
             </p>
             <div class="explore">
-              <a href="#"
-                >Discover More
-                <hr
-              /></a>
+              <nuxt-link to="/entoto">
+                Discover More
+                <hr />
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -186,6 +187,7 @@ export default {
     margin-bottom: 1rem;
     .menu-close {
       margin-top: 1rem;
+      cursor: pointer;
       .line {
         margin-top: 1rem;
         .frist-line {

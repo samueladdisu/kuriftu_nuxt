@@ -12,9 +12,9 @@
     </transition>
     <header>
       <img :src="src" class="bg-img" alt="" />
-
+      <div class="bg-linear"></div>
       <nav>
-        <div class="container">
+        <div class="container top-nav">
           <div class="menu-line" @click="toggleNav">
             <div class="line">
               <hr />
@@ -26,6 +26,7 @@
               <img src="../assets/image/LOGO 1.svg" alt="" />
             </nuxt-link>
           </div>
+
           <div class="nav-book-button">
             <a
               class="btn btn-outline-white"
@@ -128,6 +129,13 @@ header {
     height: 100%;
     object-fit: cover;
   }
+  .bg-linear {
+    background: linear-gradient(180deg, #000000 -35.31%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    top: 0;
+  }
   nav {
     z-index: 999;
     position: absolute;
@@ -135,12 +143,20 @@ header {
     height: 100%;
     top: 0;
     left: 0;
+    .top-nav {
+      position: sticky;
+      top: 0;
+      bottom: 0;
+      width: 90%;
+      margin: 0 auto;
+    }
     .container {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       .menu-line {
         margin-top: 1rem;
+        cursor: pointer;
         .line {
           hr {
             margin: auto;
