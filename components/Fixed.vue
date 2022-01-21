@@ -1,15 +1,20 @@
 <template>
   <div class="fixed-button">
-    <a
-      class="btn btn-outline-white"
-      href="./https://versavvymedia.com/reservation_system/reserve.php"
-      >BOOK NOW</a
-    >
+    <a class="btn btn-outline-white" @click="redirect">BOOK NOW</a>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    redirect() {
+      window.open(
+        "https://versavvymedia.com/reservation_system/reserve.php",
+        "_blank"
+      );
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
