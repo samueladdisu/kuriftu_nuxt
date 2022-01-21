@@ -39,10 +39,14 @@
             </li>
 
             <li class="bottom-nav">
-              <nuxt-link to="/ourstory"> Our Story </nuxt-link>
+              <nuxt-link to="/ourstory" class="bottom-link">
+                Our Story
+              </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/contact"> Contact Us </nuxt-link>
+              <nuxt-link to="/contact" class="bottom-link">
+                Contact Us
+              </nuxt-link>
             </li>
           </ul>
         </div>
@@ -247,6 +251,9 @@ export default {
           .bottom-nav {
             margin-top: 3rem;
           }
+          .bottom-link {
+            font-size: 0.88rem;
+          }
         }
       }
 
@@ -354,6 +361,9 @@ export default {
                 &:hover {
                   color: $kuriftu-brown;
                 }
+              }
+              .bottom-link {
+                font-size: 1rem !important;
               }
             }
             .bottom-nav {

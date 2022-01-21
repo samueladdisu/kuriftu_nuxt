@@ -28,11 +28,7 @@
           </div>
 
           <div class="nav-book-button">
-            <a
-              class="btn btn-outline-white"
-              href="https://versavvymedia.com/reservation_system/reserve.php"
-              >BOOK NOW</a
-            >
+            <a class="btn btn-outline-white" @click="redirect">BOOK NOW</a>
           </div>
         </div>
         <div class="social">
@@ -71,6 +67,12 @@ export default {
   methods: {
     toggleNav() {
       this.showNav = !this.showNav;
+    },
+    redirect() {
+      window.open(
+        "https://versavvymedia.com/reservation_system/reserve.php",
+        "_blank"
+      );
     },
     closeNav() {
       this.showNav = !this.showNav;

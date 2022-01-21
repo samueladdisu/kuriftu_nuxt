@@ -18,11 +18,7 @@
               magna vel sit pharetra scelerisque.
             </p>
             <div class="book-buttons">
-              <a
-                class="btn btn-primary"
-                href="https://versavvymedia.com/reservation_system/reserve.php"
-                >BOOK NOW</a
-              >
+              <a class="btn btn-primary" @click="redirect">BOOK NOW</a>
               <a class="btn btn-outline-brown" href="#">VIEW GALLERY</a>
             </div>
           </div>
@@ -412,6 +408,12 @@ export default {
     });
   },
   methods: {
+    redirect() {
+      window.open(
+        "https://versavvymedia.com/reservation_system/reserve.php",
+        "_blank"
+      );
+    },
     move(e) {
       if (e.target.classList.contains("prev")) {
         gsap.to(".well-1", {
