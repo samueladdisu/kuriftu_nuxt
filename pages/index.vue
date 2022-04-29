@@ -9,7 +9,7 @@
             <img src="../assets/image/welcome.jpg" alt="" />
           </div>
           <div class="welcome-desc" data-aos="slide-up">
-            <h4>WELCOME TO KURIFTU RESORT</h4>
+            <h4>WELCOME TO KURIFTU RESORT & SPA</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
               tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam
@@ -35,13 +35,18 @@
         <div class="top-2">
           <div class="bishoftu" data-aos="slide-up">
             <div class="bishoftu-img">
-              <img src="../assets/image/bishoftu2.jpg" alt="" />
+              <img
+                class="bit_small"
+                src="../assets/image/bishoftu2.jpg"
+                alt=""
+              />
             </div>
             <div class="bishoftu-desc">
               <h4>Bishoftu</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
+                With achingly perfect panoramas, Kuriftu Bishoftu is where
+                luxury reaches its pinnacle and service is simultaneously warm,
+                genuine and sensational.
               </p>
               <div class="explore">
                 <nuxt-link to="/bishoftu">
@@ -58,8 +63,11 @@
             <div class="bishoftu-desc">
               <h4>Waterpark</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
+                The Kuriftu Water Park is East Africa’s Largest Water Park and
+                Ethiopia’s first. Boasting over 30,000 square meters of fun
+                while featuring a wide range of activities, such as:Boomerang
+                Slide, Triple Spiral Slide, 2 Water Houses, Wave Pool with a
+                Performance Stage, Fekat Circus and a Food Court.
               </p>
               <div class="explore">
                 <nuxt-link to="/waterpark">
@@ -76,10 +84,12 @@
               <img src="../assets/image/entoto.jpg" alt="" />
             </div>
             <div class="bishoftu-desc">
-              <h4>entoto</h4>
+              <h4>Entoto</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
+                This unique park was created within a record time of 9 months.
+                This Adventure Park is the first of its kind in Ethiopia and has
+                even been selected as one of the top destinations in the world
+                by Conde Nast Traveler (2021)
               </p>
               <div class="explore">
                 <nuxt-link to="/entoto">
@@ -94,10 +104,13 @@
               <img src="../assets/image/awash.jpg" alt="" />
             </div>
             <div class="bishoftu-desc">
-              <h4>semera</h4>
+              <h4>Afar</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
+                This luxury resort is set in the tranquil region of Afar and is
+                the new gateway to Eastern Ethiopia. Within driving distance of
+                attractions, such as, Allolobad (Natural Hot Spring), Dalol and
+                Erte Ale, this property will be your ideal starting point for a
+                desert adventure.
               </p>
               <div class="explore">
                 <nuxt-link to="/awash">
@@ -112,13 +125,54 @@
               <img src="../assets/image/tana.jpg" alt="" />
             </div>
             <div class="bishoftu-desc">
-              <h4>lake tana</h4>
+              <h4>Lake Tana</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis tincidunt nisl elementum ultrices luctus habitasse.
+                The ideal getaway. Relax at the source of the Nile. Immerse
+                yourself in the rich history of Ethiopia with landscapes of
+                Bahir Dar's native architecture and monolithic churches.
               </p>
               <div class="explore">
                 <nuxt-link to="/tana">
+                  EXPLORE
+                  <hr />
+                </nuxt-link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-2">
+          <div class="bishoftu" data-aos="slide-up">
+            <div class="bishoftu-img">
+              <img src="../assets/image/awashfalls.jpg" alt="" />
+            </div>
+            <div class="bishoftu-desc">
+              <h4>Awash</h4>
+              <p>
+                Part of the Kuriftu Boutique collection, Awash Falls allows
+                guests to immerse themselves in the beauty of nature while
+                giving them the chance to see wildlife and experience the
+                wonders of this amazing national park
+              </p>
+              <div class="explore">
+                <nuxt-link to="/bishoftu">
+                  EXPLORE
+                  <hr />
+                </nuxt-link>
+              </div>
+            </div>
+          </div>
+          <div class="bishoftu1" data-aos="slide-up">
+            <div class="bishoftu-img">
+              <img src="../assets/image/wellness.jpg" alt="" />
+            </div>
+            <div class="bishoftu-desc">
+              <h4>Boston Day Spa</h4>
+              <p>
+                Experience our luxurious full service spa and salon located in
+                the heart of Addis Ababa’s entertainment district.
+              </p>
+              <div class="explore">
+                <nuxt-link to="/waterpark">
                   EXPLORE
                   <hr />
                 </nuxt-link>
@@ -142,12 +196,12 @@
         </div>
       </div>
     </section>
-    <section class="memory">
+    <!-- <section class="memory">
       <div class="container">
         <h2>Make a Memory That Will Last a Life time</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div class="memory-slide owl-carousel">
-          <!-- <img src="../assets/image/Icons/back.svg" alt="" /> -->
+          <img src="../assets/image/Icons/back.svg" alt="" />
 
           <div class="memory-slide-card item">
             <img src="../assets/image/celeb1.jpg" class="owlImg" alt="" />
@@ -207,11 +261,11 @@
             </div>
           </div>
 
-          <!-- <img src="../assets/image/Icons/next.svg" alt="" /> -->
+          <img src="../assets/image/Icons/next.svg" alt="" />
         </div>
       </div>
-    </section>
-    <section class="wellness">
+    </section> -->
+    <!-- <section class="wellness">
       <div class="container">
         <h2>Wellness</h2>
       </div>
@@ -263,43 +317,37 @@
           />
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="special-offer">
       <div class="container">
-        <h2>Special Offer</h2>
+        <h2>Gift Voucher</h2>
         <div class="special-offer-all" style="overflow-x: hidden">
-          <div class="special-slide" data-aos="slide-right">
-            <div class="back-icon">
-              <img src="../assets/image/Icons/circle-back.svg" alt="" />
-            </div>
-            <div class="slide-card swiper-slide">
-              <img src="../assets/image/waterpark2.jpg" alt="" />
-            </div>
-            <div class="next-icon">
-              <img src="../assets/image/Icons/circle-next.svg" alt="" />
-            </div>
+          <div class="card-title">
+            <h3>Destination Voucher</h3>
+            <a href="">See All</a>
           </div>
-          <div class="gift-desc" data-aos="slide-left">
-            <h4>Gift Vouchers</h4>
-            <p class="header-title">
-              Treat your loved ones to Ethiopia’s greatest family destination
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis
-              tincidunt nisl elementum ultrices luctus habitasse. Ut orci nam
-              lectus at massa enim elementum varius dictumst. Nulla a, sed enim
-              turpis non lacinia fusce. Quis volutpat sit ullamcorper vitae
-              magna vel sit pharetra scelerisque.
-            </p>
-            <div class="book-buttons">
-              <a class="btn btn-outline-black" href="#">BUY NOW</a>
-            </div>
+
+          <div class="special-slide" data-aos="fade-in">
+            <img src="../assets/image/gift1.svg" alt="" />
+            <img src="../assets/image/gift2.svg" alt="" />
+            <img src="../assets/image/gift3.svg" alt="" />
+          </div>
+        </div>
+        <div class="special-offer-all" style="overflow-x: hidden">
+          <div class="card-title">
+            <h3>Gift Card</h3>
+            <a href="">See All</a>
+          </div>
+          <div class="special-slide" data-aos="fade-in">
+            <img src="../assets/image/gift4.svg" alt="" />
+            <img src="../assets/image/gift5.svg" alt="" />
+            <img src="../assets/image/gift6.svg" alt="" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="construction">
+    <!-- <section class="construction">
       <div class="container">
         <h2>Construction</h2>
         <div class="construction-all">
@@ -317,16 +365,14 @@
             </p>
             <div class="book-buttons">
               <a class="btn btn-primary" href="#">VIEW MORE</a>
-              <!-- <a class="btn btn-outline-brown" href="#">VIEW GALLERY</a> -->
+           
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
-
-
 
 <script>
 import AOS from "aos";
@@ -367,45 +413,45 @@ export default {
       },
     });
 
-    gsap.registerPlugin(ScrollTrigger);
+    // gsap.registerPlugin(ScrollTrigger);
 
-    let container = document.querySelector(".wellness");
+    // let container = document.querySelector(".wellness");
 
-    gsap.to(".well-1", {
-      x: () =>
-        -(container.scrollWidth - document.documentElement.clientWidth) + "px",
-      scrollTrigger: {
-        trigger: container,
-        invalidateOnRefresh: true,
-        // start: "top center",
-        toggleActions: "restart pause reverse pause",
-        pin: false,
-        scrub: 1,
-        end: () => "+=" + container.offsetWidth,
-      },
-    });
+    // gsap.to(".well-1", {
+    //   x: () =>
+    //     -(container.scrollWidth - document.documentElement.clientWidth) + "px",
+    //   scrollTrigger: {
+    //     trigger: container,
+    //     invalidateOnRefresh: true,
+    //     // start: "top center",
+    //     toggleActions: "restart pause reverse pause",
+    //     pin: false,
+    //     scrub: 1,
+    //     end: () => "+=" + container.offsetWidth,
+    //   },
+    // });
 
-    $(".memory-slide").owlCarousel({
-      margin: 10,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 5000,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1,
-          nav: false,
-        },
-        600: {
-          items: 2,
-          nav: false,
-        },
-        1000: {
-          items: 3,
-          nav: false,
-        },
-      },
-    });
+    // $(".memory-slide").owlCarousel({
+    //   margin: 10,
+    //   loop: true,
+    //   autoplay: true,
+    //   autoplayTimeout: 5000,
+    //   autoplayHoverPause: true,
+    //   responsive: {
+    //     0: {
+    //       items: 1,
+    //       nav: false,
+    //     },
+    //     600: {
+    //       items: 2,
+    //       nav: false,
+    //     },
+    //     1000: {
+    //       items: 3,
+    //       nav: false,
+    //     },
+    //   },
+    // });
   },
   methods: {
     redirect() {
@@ -414,21 +460,21 @@ export default {
         "_blank"
       );
     },
-    move(e) {
-      if (e.target.classList.contains("prev")) {
-        gsap.to(".well-1", {
-          duration: 1,
-          x: "50%",
-          ease: "expo.out",
-        });
-      } else if (e.target.classList.contains("next")) {
-        gsap.to(".well-1", {
-          duration: 1,
-          x: "-50%",
-          ease: "expo.out",
-        });
-      }
-    },
+    // move(e) {
+    //   if (e.target.classList.contains("prev")) {
+    //     gsap.to(".well-1", {
+    //       duration: 1,
+    //       x: "50%",
+    //       ease: "expo.out",
+    //     });
+    //   } else if (e.target.classList.contains("next")) {
+    //     gsap.to(".well-1", {
+    //       duration: 1,
+    //       x: "-50%",
+    //       ease: "expo.out",
+    //     });
+    //   }
+    // },
   },
 };
 </script>
@@ -554,6 +600,8 @@ export default {
           .bishoftu-img {
             img {
               width: 20rem;
+              height: 20rem;
+              object-fit: cover;
             }
           }
           .bishoftu-desc {
@@ -577,6 +625,7 @@ export default {
                 hr {
                   color: $kuriftu-grey;
                   width: 5rem;
+                  border-style: solid;
                 }
               }
             }
@@ -591,12 +640,12 @@ export default {
         .top-2 {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          align-items: flex-end;
+          align-items: flex-start;
           gap: 1rem;
         }
         .bottom-3 {
           display: grid;
-          align-items: flex-end;
+          align-items: flex-start;
           grid-template-columns: 1fr 1fr 1fr;
           gap: 1rem;
         }
@@ -638,6 +687,7 @@ export default {
       .container {
         .top-2 {
           margin-top: 2.88rem;
+
           .bishoftu,
           .bishoftu1 {
             .bishoftu-img {
@@ -659,6 +709,7 @@ export default {
             .bishoftu-img {
               img {
                 width: 30rem;
+                height: 30rem;
               }
             }
             .bishoftu-desc {
@@ -678,6 +729,7 @@ export default {
     background-size: cover;
     background-blend-mode: overlay;
     height: 40vh;
+    width:100%;
     // background-attachment: fixed;
     margin-top: 6.25rem;
     .container {
@@ -1030,9 +1082,22 @@ export default {
         text-align: left;
       }
       .special-offer-all {
-        display: grid;
-        place-items: center;
-
+        // display: grid;
+        // place-items: center;
+        .card-title {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          h3 {
+            color: $kuriftu-brown;
+            margin-top: 2rem;
+            font-size: 1.3rem;
+          }
+          a {
+            margin-top: 2rem;
+            color: $kuriftu-brown;
+          }
+        }
         .special-slide {
           margin-top: 1.88rem;
           display: flex;
